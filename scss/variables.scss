@@ -180,9 +180,9 @@ $email-text-align: left !default;
 @debug($body);
 :root {
   --body: #{$body};
-  --bg: {$bg};
-  --heading-color: {$heading-color};
-  --paragraph-color: {$paragraph-color};
+  --bg: #{$bg};
+  --heading-color: #{$heading-color};
+  --paragraph-color: #{$paragraph-color};
   @each $key, $value in $complete-colors  {
     --#{$key}: #{$value};
   }
