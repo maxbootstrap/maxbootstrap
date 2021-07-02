@@ -1,0 +1,102 @@
+//PROGRESS
+.progress {
+  display: flex;
+  min-height: 1px;
+  height: auto;
+  overflow: hidden;
+  font-size: 1rem;
+  background-color: $progress-bg;
+  border-radius: $btn-radius;
+  .progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //padding: .9rem; //good for text but doesn't allow 0
+    height: 100%;
+    color: $light;
+    text-align: center;
+    font-size: 90%;
+    white-space: nowrap;
+    background-color: $primary;
+    //width: attr(data-progressbar) !important;
+  }
+  
+}
+
+//PROGRESS VERTICAL NEEDS WORK
+
+.progress-bar-vertical {
+  display: flex;
+  align-items: flex-end;
+  float: left;
+  width: 1px;
+  height: 100%;
+  min-height: 50px;
+  margin-right: 1rem;
+  background-color: $progress-bg;
+  border-radius: $btn-radius;
+
+  .progress-bar {
+    width: 100%;
+    height: 0;
+    -webkit-transition: height 0.6s ease;
+    -o-transition: height 0.6s ease;
+    transition: height 0.6s ease;
+    background-color: $primary;
+  }
+}
+
+
+//CIRCLE PERCENTAGE
+.percent-circle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    overflow: visible;
+    padding: 4px;
+    width: 97%;
+    height: 97%;
+    circle {
+      fill: none;
+      stroke-linecap: round;
+      stroke-width: 3;
+      stroke: $light;
+      &.percent-fill {
+        animation: circle-chart-fill 2s reverse; /* 1 */ 
+        transform: rotate(-90deg); /* 2, 3 */
+        transform-origin: center; /* 4 */
+      }
+      
+      &.percent-fill-negative {
+        animation: circle-chart-fill 2s reverse; /* 1 */ 
+        transform: rotate(-90deg) scale(1,-1); /* 1, 2, 3 */
+        transform-origin: center; /* 4 */
+      }
+      &:nth-child(2) {
+        animation: circle-chart-fill 1s reverse;
+        animation-delay: 2s;
+        stroke: $primary;
+      }
+    }
+  }
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    letter-spacing: -.08rem;
+    line-height: .8;
+    span {
+      font-size: .8rem;
+      letter-spacing: -.05rem;
+    }
+  }
+}
+
+@keyframes circle-chart-fill {
+  to { stroke-dasharray: 0 100; }
+}
+

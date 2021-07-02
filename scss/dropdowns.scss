@@ -1,0 +1,132 @@
+//BASIC
+
+.dropdown-toggle {
+  outline: none !important;
+  &::after {
+    display:none
+  }
+}
+
+
+.dropdown-menu, .dropdown-menu-center, .dropdown-menu-right {
+  position: absolute;
+  z-index: 9999;
+  display: block; //none
+  border: none;
+  border-radius: $dropdown-radius * 1.1;
+  background-color: $white;
+  box-shadow: rgba($primary, 0.1) 0px 5px 30px 0px;
+  top: $dropdown-top;
+  min-width: 11rem;
+  text-align: left;
+  overflow: hidden;
+  padding-bottom: 2px;
+
+  .dropdown-item {
+    color: $body;
+    display: block;
+    font-size: $dropdown-font-size;
+    font-weight: $font-weight-regular;
+    line-height: 1.1;
+    letter-spacing: 0.4px !important;
+    text-transform: capitalize;
+    clear: both;
+    border-radius: $dropdown-radius * 1.1;
+    padding: .6rem 1rem;
+    margin: 2px 4px;
+    &:hover {
+      background-color: $light;
+    }
+    &:active, &.active {
+      color: $light;
+      background-color: $primary;
+    }
+    &:first-child {
+      margin-top: 5px;
+    }
+    &.dropdown-item-row {
+      border-radius: 0;
+      padding: .8rem 1.2rem;
+      margin: 8px 0 0 0;
+      color: $white;
+      background-color: $primary;
+      &:hover {
+        opacity: .95;
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  left: 0;
+}
+.dropdown-menu-center {
+  left: calc(-50% + 15px);
+}
+.dropdown-menu-right {
+  margin-right: -2px !important;
+  right: 0;
+  left: auto;
+}
+
+//CARET ARROW
+.dropdown-caret, .dropdown-caret-center, .dropdown-caret-right {
+  position: absolute;
+  top: ($dropdown-top - 6px);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #FFFFFF;
+  @media (max-width: $desktop-breakpoint) {
+    top: (($dropdown-top * .9) - 4px);
+  }
+}
+.dropdown-caret {
+  left: 15px;
+}
+.dropdown-caret-center {
+  left: calc(50% - 15px);
+}
+.dropdown-caret-right {
+  right: 15px;
+  left: auto;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .md-dropdown-menu {
+    left: 0;
+  }
+  .md-dropdown-menu-center {
+    left: calc(-50% + 15px);
+  }
+  .md-dropdown-menu-right {
+    margin-right: -2px !important;
+    right: 0;
+    left: auto;
+  }
+}
+
+//ADD TO TOGGLE
+.dropdown-t-sm {
+  .dropdown-menu, .dropdown-menu-center, .dropdown-menu-right {
+    top: $dropdown-top * .72;
+  }
+  .dropdown-caret, .dropdown-caret-center, .dropdown-caret-right {
+    top: (($dropdown-top * .72) - 6px);
+    @media (max-width: $desktop-breakpoint) {
+      top: (($dropdown-top * .72) - 4px);
+    }
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  .md-dropdown-t-sm {
+    .dropdown-menu, .dropdown-menu-center, .dropdown-menu-right {
+      top: $dropdown-top * .72;
+    }
+    .dropdown-caret, .dropdown-caret-center, .dropdown-caret-right {
+      top: (($dropdown-top * .72) - 6px);
+      @media (max-width: $desktop-breakpoint) {
+        top: (($dropdown-top * .72) - 4px);
+      }
+    }
+  }
+}

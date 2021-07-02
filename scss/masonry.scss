@@ -1,0 +1,233 @@
+//SHOULD USE GRID
+.masonry {
+  position: relative;
+  display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 2vh;
+	grid-auto-flow: dense;
+  height: auto;
+
+  .masonry-cell {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: $btn-radius;
+
+
+    &:first-child {
+      grid-column-start: span 2;
+      grid-row-start: span 2;
+    }
+
+    &:nth-child(2n+3){
+      grid-row-start: span 2;
+    }
+
+    &:nth-child(4n+5){
+      grid-column-start: span 2;
+      grid-row-start: span 2;
+    }
+
+    &:nth-child(6n+7){
+      grid-row-start: span 1;
+    }
+
+    &:nth-child(8n+9){
+      grid-column-start: span 1;
+      grid-row-start: span 1;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    grid-template-columns: auto auto auto;
+    .masonry-cell {
+      //max-height: 500px;
+      &:nth-child(3){
+        //grid-row-start: span 2;
+      }
+    }
+  }
+}
+
+//DOESNT WORK
+.masonry-2 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  //grid-template-rows: repeat(14, 1fr);
+	grid-gap: 2vh;
+  width: 100%;
+  height: auto;
+
+  .masonry-cell {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: $btn-radius;
+
+    &:first-child {
+      grid-column: 1 / 6;
+      grid-row: 1 / 6;
+    }
+
+    &:nth-child(2){
+      grid-column: 6 / 9;
+      grid-row: 1 / 11;
+    }
+
+    &:nth-child(3){
+      grid-column: 9 / 12;
+      grid-row: 1 / 4;
+    }
+
+    &:nth-child(4){
+      grid-column: 12 / -1;
+      grid-row: 1 / 4;
+    }
+
+    &:nth-child(5){
+      grid-column: 1 / 4;
+      grid-row: 6 / 11;
+    }
+
+    &:nth-child(6){
+      grid-column: 4 / 6;
+      grid-row: 6 / 7;
+    }
+
+    &:nth-child(7){
+      grid-column: 4 / 6;
+      grid-row: 7 / 11;
+    }
+
+    &:nth-child(8){
+      grid-column: 1 / 6;
+      grid-row: 11 / -1;
+    }
+
+    &:nth-child(9){
+      grid-column: 6 / 12;
+      grid-row: 11 / -1;
+    }
+
+    &:nth-child(10){
+      grid-column: 9 / 12;
+      grid-row: 4 / 11;
+    }
+
+    &:nth-child(11){
+      grid-column: 12 / 13;
+      grid-row: 4 / 6;
+    }
+
+    &:nth-child(12){
+      grid-column: 13 / -1;
+      grid-row: 4 / 6;
+    }
+
+    &:nth-child(13){
+      grid-column: 12 / -1;
+      grid-row: 6 / 13;
+    }
+
+    &:nth-child(14){
+      grid-column: 12 / -1;
+      grid-row: 13 / -1;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  }
+  @media (max-width: $desktop-breakpoint) {
+    grid-template-columns: auto auto auto;
+    .masonry-cell {
+      //max-height: 500px;
+      &:nth-child(3){
+        //grid-row-start: span 2;
+      }
+    }
+  }
+}
+
+
+//MY TEST
+.masonry-3 {
+  max-width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  //grid-template-rows: 400px 400px 400px 400px 400px;
+  grid-gap: 1rem;
+
+
+  .masonry-cell {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: $btn-radius;
+
+    //1
+    &:nth-child(8n-1) {
+      grid-row: 1 / span 2;
+      grid-column: 1 / 3; 
+    }
+
+    //4
+    &:nth-child(8n-4) {
+      grid-column: 3 / 5;
+    }
+
+    //6
+    &:nth-child(8n-6) {
+      grid-column: 2 / 4;
+    }
+
+    //8
+    &:nth-child(8n-8) {
+      grid-column: 1 / 3;
+    }
+
+    //9
+    &:nth-child(8n-9) {
+      grid-column: 1 / 3;
+    }
+
+    //10
+    &:nth-child(8n-10) {
+      grid-row: 4 / span 2;
+      grid-column: 3 / 5;
+    }
+  }
+}
+
+
+
+$z: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+@each $row in $z {
+	.masonry-gap-#{$row} {
+    grid-gap: #{$row}vh;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  @each $row in $z {
+    .md-masonry-gap-#{$row} {
+      grid-gap: #{$row}vh;
+    }
+  }
+}

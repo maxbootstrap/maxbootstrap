@@ -1,0 +1,92 @@
+//LINE TABS
+.tabs-line {
+  font-size: 0.95rem;
+  padding-bottom: 0rem;
+  border-bottom: 1px darken($light, 5%) solid;
+  color: $gray;
+  display: flex;
+  //display: inline-flex;
+  flex-direction: row;
+  .tab-link {
+    color: $gray;
+    letter-spacing: 0.6px;
+    border-radius: 0;
+    padding: .8rem;
+    padding-bottom: 1rem;
+    border: 0px;
+    border-bottom: 4px solid transparent;
+    background-color: transparent;
+    outline: none !important;
+    white-space: nowrap;
+    &:hover {
+      color: $body;
+    }
+    &.active {
+      cursor: default;
+      color: $primary;
+      background-color: transparent;
+      border-bottom: 4px solid $primary;
+      outline: none !important;
+      &:hover {
+      }
+    }
+  }
+}
+
+//LINE TABS
+.tabs-line-sm {
+  .tab-link {
+    padding-bottom: .6rem;
+  }
+}
+
+//LINE VERTICAL
+.tabs-vertical {
+  border-bottom: none;
+}
+@media (min-width: $desktop-breakpoint) {
+  .tabs-vertical {
+    flex-direction: column;
+    flex-wrap: wrap;
+    .tab-link {
+      display: block;
+      width: fit-content;
+      text-align: left !important;
+      padding: .2rem;
+      padding-left: 1rem;
+      margin-bottom: .5rem;
+      &.active {
+        border-left: 4px solid $primary;
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+
+//LINE VERTICAL
+.tabs-btn {
+  display: inline-flex;
+  flex-direction: row;
+  .tab-link {
+    text-align: center;
+    padding: .4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: .1rem;
+    border-radius: $btn-radius;
+    &.active {
+      color: $light;
+      border-left: none;
+      border-bottom: none;
+      background-color: $primary;
+    }
+  }
+}
+
+
+
+//BTN TABS
+//use regular btn's
+
+//BTN VERTICAL

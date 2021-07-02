@@ -1,0 +1,121 @@
+.form-muted {
+  margin-bottom: .8rem;
+  label {
+    color: $form-label;
+    font-size: .8rem;
+    margin-bottom: .2rem;
+    margin-left: .2rem;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.3;
+    text-transform: uppercase;
+    .btn {
+      border: none !important;
+      font-size: .6rem !important;
+      padding: 0.1rem 0.4rem !important;
+      line-height: 1;
+      margin-top: -1px;
+    }
+  }
+  select {
+    background-color: $form-bg;
+    border: 1px solid transparent;
+    line-height: 1.5rem;
+    height: 3rem;
+    &:focus {
+        box-shadow: 0 0px 0px 0 $form-bg;
+        border: none !important;
+    }
+  }
+  input, textarea {
+    width: 100%;
+    display: block;
+    outline: none;
+    color: $form-text;
+    background-color: $light;
+    border: 1px solid $light;
+    border-radius: $input-radius;
+    box-shadow: transparent;
+    transition: box-shadow .15s ease;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    &:focus {
+        box-shadow: 0 0px 0px 0 $form-bg;
+        background-color: lighten($form-bg, 5%);
+    }
+    &::placeholder {
+    }
+  }
+  input  {
+    padding: 12px 14px;
+    max-width: 600px;
+   }
+   textarea {
+    padding: 12px 14px;
+    resize: vertical;
+   }
+}
+
+.form-muted-select {
+  margin-bottom: .8rem;
+  position: relative;
+  max-width: 600px;
+  label {
+    color: $form-label;
+    font-size: .8rem;
+    margin-bottom: .2rem;
+    margin-left: .2rem;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.3;
+    text-transform: uppercase;
+  }
+  select {
+    background-color: $light;
+    border: none !important;
+    padding: 12px 14px;
+    color: $form-text;
+    line-height: 1.5rem;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &::-ms-expand {
+      display: none;
+    }
+    &:focus {
+      outline: none;
+      border: none !important;
+    }
+    &>option{
+      //color: $light !important;
+    }
+    &>option:disabled {
+      //color: white;
+    }
+  }
+  &>option{
+    padding-bottom: 1rem;
+  }
+  &:after {
+    content: ' ';
+    position: absolute;
+    top: 55%;
+    right: 20px;
+    pointer-events: none;
+    opacity: 0.4;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    height: 10px;
+    width: 10px;
+    transform: rotate(135deg);
+  }
+}
+
+
+
+//CHECKBOX
+.custom-control-label::before {
+  background-color: $light !important;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: $primary !important;
+}

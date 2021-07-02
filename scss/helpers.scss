@@ -1,0 +1,1311 @@
+//PADDING
+.py-auto {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+.px-auto {
+  padding-left: auto;
+  padding-right: auto;
+}
+
+$sizes: (
+  0.25rem, 0.5rem, 0.75rem, 1rem, 1.25rem, 1.5rem, 1.75rem, 2rem, 2.25rem, 2.5rem, 2.75rem, 3rem, 4rem, 5rem, 6rem, 7rem, 8rem, 9rem, 10rem, 11rem, 12rem, 13rem, 14rem, 15rem, 16rem, 17rem, 18rem, 19rem, 20rem
+);
+$sizesPX: (
+  1px, 5px, 10px, 15px, 20px, 25px, 30px, 35px, 40px, 45px, 50px, 60px, 70px, 80px, 90px, 100px, 150px, 200px, 250px, 300px, 350px, 400px, 450px, 500px, 550px, 600px, 650px, 700px, 750px, 800px, 850px, 900px, 950px, 1000px
+);
+$paddings: p, pl, pr, pt, pb, py, px;
+
+@each $row in $paddings {
+  .#{$row}-0 {
+    @if $row == p { padding: 0 !important;
+    } @else if $row == pl { padding-left: 0 !important;
+    } @else if $row == pr { padding-right: 0 !important;
+    } @else if $row == pt { padding-top: 0 !important;
+    } @else if $row == pb { padding-bottom: 0 !important;
+    } @else if $row == py { padding-top: 0 !important; padding-bottom: 0 !important;
+    } @else if $row == px { padding-left: 0 !important; padding-right: 0 !important;
+    }
+  }
+  // .#{$row}-1px {
+  //   @if $row == p { padding: 1px !important;
+  //   } @else if $row == pl { padding-left: 1px !important;
+  //   } @else if $row == pr { padding-right: 1px !important;
+  //   } @else if $row == pt { padding-top: 1px !important;
+  //   } @else if $row == pb { padding-bottom: 1px !important;
+  //   } @else if $row == py { padding-top: 1px !important; padding-bottom: 1px !important;
+  //   } @else if $row == px { padding-left: 1px !important; padding-right: 1px !important;
+  //   }
+  // }
+}
+@each $row in $paddings {
+  @each $size in $sizes {
+  $i: index($sizes, $size);
+    .#{$row}-#{$i} {
+      @if $row == p { padding: #{$size} !important;
+      } @else if $row == pl { padding-left: #{$size} !important;
+      } @else if $row == pr { padding-right: #{$size} !important;
+      } @else if $row == pt { padding-top: #{$size} !important;
+      } @else if $row == pb { padding-bottom: #{$size} !important;
+      } @else if $row == py { padding-top: #{$size} !important; padding-bottom: #{$size} !important;
+      } @else if $row == px { padding-left: #{$size} !important; padding-right: #{$size} !important;
+      }
+    }
+  }
+}
+@each $row in $paddings {
+  @each $size in $sizesPX {
+    .#{$row}-#{$size} {
+      @if $row == p { padding: #{$size} !important;
+      } @else if $row == pl { padding-left: #{$size} !important;
+      } @else if $row == pr { padding-right: #{$size} !important;
+      } @else if $row == pt { padding-top: #{$size} !important;
+      } @else if $row == pb { padding-bottom: #{$size} !important;
+      } @else if $row == py { padding-top: #{$size} !important; padding-bottom: #{$size} !important;
+      } @else if $row == px { padding-left: #{$size} !important; padding-right: #{$size} !important;
+      }
+    }
+  }
+}
+
+@each $row in $paddings {
+  .#{$row}-var {
+    @if $row == p { padding: var(--p-var, 0) !important;
+    } @else if $row == pl { padding-left: var(--pl-var, 0) !important;
+    } @else if $row == pr { padding-right: var(--pr-var, 0) !important;
+    } @else if $row == pt { padding-top: var(--pt-var, 0) !important;
+    } @else if $row == pb { padding-bottom: var(--pb-var, 0) !important;
+    } @else if $row == py { padding-top: var(--py-var, 0) !important; padding-bottom: var(--py-var, 0) !important;
+    } @else if $row == px { padding-left: var(--px-var, 0) !important; padding-right: var(--px-var, 0) !important;
+    }
+  }
+}
+
+
+//DESKTOP PADDING
+@media (min-width: $desktop-breakpoint) {
+  @each $row in $paddings {
+    .md-#{$row}-0 {
+      @if $row == p { padding: 0 !important;
+      } @else if $row == pl { padding-left: 0 !important;
+      } @else if $row == pr { padding-right: 0 !important;
+      } @else if $row == pt { padding-top: 0 !important;
+      } @else if $row == pb { padding-bottom: 0 !important;
+      } @else if $row == py { padding-top: 0 !important; padding-bottom: 0 !important;
+      } @else if $row == px { padding-left: 0 !important; padding-right: 0 !important;
+      }
+    }
+    // .md-#{$row}-1px {
+    //   @if $row == p { padding: 1px !important;
+    //   } @else if $row == pl { padding-left: 1px !important;
+    //   } @else if $row == pr { padding-right: 1px !important;
+    //   } @else if $row == pt { padding-top: 1px !important;
+    //   } @else if $row == pb { padding-bottom: 1px !important;
+    //   } @else if $row == py { padding-top: 1px !important; padding-bottom: 1px !important;
+    //   } @else if $row == px { padding-left: 1px !important; padding-right: 1px !important;
+    //   }
+    // }
+    @each $size in $sizes {
+      $i: index($sizes, $size);
+      .md-#{$row}-#{$i} {
+        @if $row == p { padding: #{$size} !important;
+        } @else if $row == pl { padding-left: #{$size} !important;
+        } @else if $row == pr { padding-right: #{$size} !important;
+        } @else if $row == pt { padding-top: #{$size} !important;
+        } @else if $row == pb { padding-bottom: #{$size} !important;
+        } @else if $row == py { padding-top: #{$size} !important; padding-bottom: #{$size} !important;
+        } @else if $row == px { padding-left: #{$size} !important; padding-right: #{$size} !important;
+        }
+      }
+    }
+    @each $size in $sizesPX {
+      .md-#{$row}-#{$size} {
+        @if $row == p { padding: #{$size} !important;
+        } @else if $row == pl { padding-left: #{$size} !important;
+        } @else if $row == pr { padding-right: #{$size} !important;
+        } @else if $row == pt { padding-top: #{$size} !important;
+        } @else if $row == pb { padding-bottom: #{$size} !important;
+        } @else if $row == py { padding-top: #{$size} !important; padding-bottom: #{$size} !important;
+        } @else if $row == px { padding-left: #{$size} !important; padding-right: #{$size} !important;
+        }
+      }
+    }
+
+    @each $row in $paddings {
+      .md-#{$row}-var {
+        @if $row == p { padding: var(--md-p-var, 0) !important;
+        } @else if $row == pl { padding-left: var(--md-pl-var, 0) !important;
+        } @else if $row == pr { padding-right: var(--md-pr-var, 0) !important;
+        } @else if $row == pt { padding-top: var(--md-pt-var, 0) !important;
+        } @else if $row == pb { padding-bottom: var(--md-pb-var, 0) !important;
+        } @else if $row == py { padding-top: var(--md-py-var, 0) !important; padding-bottom: var(--md-py-var, 0) !important;
+        } @else if $row == px { padding-left: var(--md-px-var, 0) !important; padding-right: var(--md-px-var, 0) !important;
+        }
+      }
+    }
+
+  }
+}
+
+//MOBILE PADDING
+@media (max-width: $desktop-breakpoint) {
+  @each $row in $paddings {
+    .sm-#{$row}-0 {
+      @if $row == p { padding: 0 !important;
+      } @else if $row == pl { padding-left: 0 !important;
+      } @else if $row == pr { padding-right: 0 !important;
+      } @else if $row == pt { padding-top: 0 !important;
+      } @else if $row == pb { padding-bottom: 0 !important;
+      } @else if $row == py { padding-top: 0 !important; padding-bottom: 0 !important;
+      } @else if $row == px { padding-left: 0 !important; padding-right: 0 !important;
+      }
+    }
+    // .sm-#{$row}-1px {
+    //   @if $row == p { padding: 1px !important;
+    //   } @else if $row == pl { padding-left: 1px !important;
+    //   } @else if $row == pr { padding-right: 1px !important;
+    //   } @else if $row == pt { padding-top: 1px !important;
+    //   } @else if $row == pb { padding-bottom: 1px !important;
+    //   } @else if $row == py { padding-top: 1px !important; padding-bottom: 1px !important;
+    //   } @else if $row == px { padding-left: 1px !important; padding-right: 1px !important;
+    //   }
+    // }
+    @each $size in $sizes {
+      $i: index($sizes, $size);
+      .sm-#{$row}-#{$i} {
+        @if $row == p { padding: #{$size} !important;
+        } @else if $row == pl { padding-left: #{$size} !important;
+        } @else if $row == pr { padding-right: #{$size} !important;
+        } @else if $row == pt { padding-top: #{$size} !important;
+        } @else if $row == pb { padding-bottom: #{$size} !important;
+        } @else if $row == py { padding-top: #{$size} !important; padding-bottom: #{$size} !important;
+        } @else if $row == px { padding-left: #{$size} !important; padding-right: #{$size} !important;
+        }
+      }
+    }
+    @each $size in $sizes {
+      .sm-#{$row}-#{$size} {
+        @if $row == p { padding: #{$size} !important;
+        } @else if $row == pl { padding-left: #{$size} !important;
+        } @else if $row == pr { padding-right: #{$size} !important;
+        } @else if $row == pt { padding-top: #{$size} !important;
+        } @else if $row == pb { padding-bottom: #{$size} !important;
+        } @else if $row == py { padding-top: #{$size} !important; padding-bottom: #{$size} !important;
+        } @else if $row == px { padding-left: #{$size} !important; padding-right: #{$size} !important;
+        }
+      }
+    }
+    @each $row in $paddings {
+      .sm-#{$row}-var {
+        @if $row == p { padding: var(--sm-p-var, 0) !important;
+        } @else if $row == pl { padding-left: var(--sm-pl-var, 0) !important;
+        } @else if $row == pr { padding-right: var(--sm-pr-var, 0) !important;
+        } @else if $row == pt { padding-top: var(--sm-pt-var, 0) !important;
+        } @else if $row == pb { padding-bottom: var(--sm-pb-var, 0) !important;
+        } @else if $row == py { padding-top: var(--sm-py-var, 0) !important; padding-bottom: var(--sm-py-var, 0) !important;
+        } @else if $row == px { padding-left: var(--sm-px-var, 0) !important; padding-right: var(--sm-px-var, 0) !important;
+        }
+      }
+    }
+  }
+}
+
+//MARGINS
+.my-auto {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+.ml-auto {
+  margin-left: auto !important;
+}
+.mr-auto {
+  margin-right: auto !important;
+}
+.mt-screen, .mt-full {
+  margin-top: 100vh !important;
+}
+.mb-screen, .mb-full {
+  margin-bottom: 100vh !important;
+}
+.mt-full {
+  margin-top: 100% !important;
+}
+.mb-full {
+  margin-bottom: 100% !important;
+}
+// .mt-full {
+//   margin-top: calc(100vh - 0px);
+// }
+
+
+@media (max-width: $desktop-breakpoint) {
+  .sm-my-auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+  .sm-mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  .sm-ml-auto {
+    margin-left: auto !important;
+  }
+  .sm-mr-auto {
+    margin-right: auto !important;
+  }
+  
+  .sm-mt-screen {
+    margin-top: 100vh !important;
+  }
+  .sm-mb-screen {
+    margin-bottom: 100vh !important;
+  }
+  .sm-mt-full {
+    margin-top: 100% !important;
+  }
+  .sm-mb-full {
+    margin-bottom: 100% !important;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .md-my-auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+  .md-mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  .md-ml-auto {
+    margin-left: auto !important;
+  }
+  .md-mr-auto {
+    margin-right: auto !important;
+  }
+  
+  .md-mt-screen {
+    margin-top: 100vh !important;
+  }
+  .md-mb-screen {
+    margin-bottom: 100vh !important;
+  }
+  .md-mt-full {
+    margin-top: 100% !important;
+  }
+  .md-mb-full {
+    margin-bottom: 100% !important;
+  }
+}
+
+//MARGINS
+$margins: m, ml, mr, mt, mb, my, mx;
+@each $row in $margins {
+  .#{$row}-0 {
+    @if $row == m { margin: 0 !important;
+    } @else if $row == ml { margin-left: 0 !important;
+    } @else if $row == mr { margin-right: 0 !important;
+    } @else if $row == mt { margin-top: 0 !important;
+    } @else if $row == mb { margin-bottom: 0 !important;
+    } @else if $row == my { margin-top: 0 !important; margin-bottom: 0 !important;
+    } @else if $row == mx { margin-left: 0 !important; margin-right: 0 !important;
+    }
+  }
+  // .#{$row}-1px {
+  //   @if $row == m { margin: 1px !important;
+  //   } @else if $row == ml { margin-left: 1px !important;
+  //   } @else if $row == mr { margin-right: 1px !important;
+  //   } @else if $row == mt { margin-top: 1px !important;
+  //   } @else if $row == mb { margin-bottom: 1px !important;
+  //   } @else if $row == my { margin-top: 1px !important; margin-bottom: 1px !important;
+  //   } @else if $row == mx { margin-left: 1px !important; margin-right: 1px !important;
+  //   }
+  // }
+  @each $size in $sizes {
+    $i: index($sizes, $size);
+      .#{$row}-#{$i} {
+        @if $row == m { margin: #{$size} !important;
+        } @else if $row == ml { margin-left: #{$size} !important;
+        } @else if $row == mr { margin-right: #{$size} !important;
+        } @else if $row == mt { margin-top: #{$size} !important;
+        } @else if $row == mb { margin-bottom: #{$size} !important;
+        } @else if $row == my { margin-top: #{$size} !important; margin-bottom: #{$size} !important;
+        } @else if $row == mx { margin-left: #{$size} !important; margin-right: #{$size} !important;
+        }
+      }
+      //Negative
+      .#{$row}--#{$i} {
+        @if $row == ml { margin-left: -#{$size} !important;
+        } @else if $row == mr { margin-right: -#{$size} !important;
+        } @else if $row == mt { margin-top: -#{$size} !important;
+        } @else if $row == mb { margin-bottom: -#{$size} !important;
+        }
+      }
+    }
+    @each $size in $sizesPX {
+      .#{$row}-#{$size} {
+        @if $row == m { margin: #{$size} !important;
+        } @else if $row == ml { margin-left: #{$size} !important;
+        } @else if $row == mr { margin-right: #{$size} !important;
+        } @else if $row == mt { margin-top: #{$size} !important;
+        } @else if $row == mb { margin-bottom: #{$size} !important;
+        } @else if $row == my { margin-top: #{$size} !important; margin-bottom: #{$size} !important;
+        } @else if $row == mx { margin-left: #{$size} !important; margin-right: #{$size} !important;
+        }
+      }
+      //Negative
+      .#{$row}--#{$size} {
+        @if $row == ml { margin-left: -#{$size} !important;
+        } @else if $row == mr { margin-right: -#{$size} !important;
+        } @else if $row == mt { margin-top: -#{$size} !important;
+        } @else if $row == mb { margin-bottom: -#{$size} !important;
+        }
+      }
+    }
+
+    .#{$row}-var {
+      @if $row == m { margin: var(--m-var, 0) !important;
+      } @else if $row == ml { margin-left: var(--ml-var, 0) !important;
+      } @else if $row == mr { margin-right: var(--mr-var, 0) !important;
+      } @else if $row == mt { margin-top: var(--mt-var, 0) !important;
+      } @else if $row == mb { margin-bottom: var(--mb-var, 0) !important;
+      } @else if $row == my { margin-top: var(--my-var, 0) !important; margin-bottom: var(--my-var, 0) !important;
+      } @else if $row == mx { margin-left: var(--mx-var, 0) !important; margin-right: var(--mx-var, 0) !important;
+      }
+    }
+}
+//DESKTOP MARGIN
+@media (min-width: $desktop-breakpoint) {
+  @each $row in $margins {
+    .md-#{$row}-0 {
+      @if $row == m { margin: 0 !important;
+      } @else if $row == ml { margin-left: 0;
+      } @else if $row == mr { margin-right: 0;
+      } @else if $row == mt { margin-top: 0;
+      } @else if $row == mb { margin-bottom: 0;
+      } @else if $row == my { margin-top: 0; margin-bottom: 0 !important;
+      } @else if $row == mx { margin-left: 0; margin-right: 0 !important;
+      }
+    }
+    // .md-#{$row}-1px {
+    //   @if $row == m { margin: 1px !important;
+    //   } @else if $row == ml { margin-left: 1px !important;
+    //   } @else if $row == mr { margin-right: 1px !important;
+    //   } @else if $row == mt { margin-top: 1px !important;
+    //   } @else if $row == mb { margin-bottom: 1px !important;
+    //   } @else if $row == my { margin-top: 1px !important; margin-bottom: 1px !important;
+    //   } @else if $row == mx { margin-left: 1px !important; margin-right: 1px !important;
+    //   }
+    // }
+    @each $size in $sizes {
+    $i: index($sizes, $size);
+      .md-#{$row}-#{$i} {
+        @if $row == m { margin: #{$size} !important;
+        } @else if $row == ml { margin-left: #{$size} !important;
+        } @else if $row == mr { margin-right: #{$size} !important;
+        } @else if $row == mt { margin-top: #{$size} !important;
+        } @else if $row == mb { margin-bottom: #{$size} !important;
+        } @else if $row == my { margin-top: #{$size} !important; margin-bottom: #{$size} !important;
+        } @else if $row == mx { margin-left: #{$size} !important; margin-right: #{$size} !important;
+        }
+      }
+      //Negative
+      .md-#{$row}--#{$i} {
+        @if $row == ml { margin-left: -#{$size} !important;
+        } @else if $row == mr { margin-right: -#{$size} !important;
+        } @else if $row == mt { margin-top: -#{$size} !important;
+        } @else if $row == mb { margin-bottom: -#{$size} !important;
+        }
+      }
+    }
+    @each $size in $sizesPX {
+      .md-#{$row}-#{$size} {
+        @if $row == m { margin: #{$size} !important;
+        } @else if $row == ml { margin-left: #{$size} !important;
+        } @else if $row == mr { margin-right: #{$size} !important;
+        } @else if $row == mt { margin-top: #{$size} !important;
+        } @else if $row == mb { margin-bottom: #{$size} !important;
+        } @else if $row == my { margin-top: #{$size} !important; margin-bottom: #{$size} !important;
+        } @else if $row == mx { margin-left: #{$size} !important; margin-right: #{$size} !important;
+        }
+      }
+      //Negative
+      .md-#{$row}--#{$size} {
+        @if $row == ml { margin-left: -#{$size} !important;
+        } @else if $row == mr { margin-right: -#{$size} !important;
+        } @else if $row == mt { margin-top: -#{$size} !important;
+        } @else if $row == mb { margin-bottom: -#{$size} !important;
+        }
+      }
+    }
+    .md-#{$row}-var {
+      @if $row == m { margin: var(--md-m-var, 0) !important;
+      } @else if $row == ml { margin-left: var(--md-ml-var, 0) !important;
+      } @else if $row == mr { margin-right: var(--md-mr-var, 0) !important;
+      } @else if $row == mt { margin-top: var(--md-mt-var, 0) !important;
+      } @else if $row == mb { margin-bottom: var(--md-mb-var, 0) !important;
+      } @else if $row == my { margin-top: var(--md-my-var, 0) !important; margin-bottom: var(--md-my-var, 0) !important;
+      } @else if $row == mx { margin-left: var(--md-mx-var, 0) !important; margin-right: var(--md-mx-var, 0) !important;
+      }
+    }
+  }
+}
+//MOBILE MARGIN
+@media (max-width: $desktop-breakpoint) {
+  @each $row in $margins {
+    .sm-#{$row}-0 {
+      @if $row == m { margin: 0 !important;
+      } @else if $row == ml { margin-left: 0 !important;
+      } @else if $row == mr { margin-right: 0 !important;
+      } @else if $row == mt { margin-top: 0 !important;
+      } @else if $row == mb { margin-bottom: 0 !important;
+      } @else if $row == my { margin-top: 0 !important; margin-bottom: 0 !important;
+      } @else if $row == mx { margin-left: 0 !important; margin-right: 0 !important;
+      }
+    }
+    // .sm-#{$row}-1px {
+    //   @if $row == m { margin: 1px !important;
+    //   } @else if $row == ml { margin-left: 1px !important;
+    //   } @else if $row == mr { margin-right: 1px !important;
+    //   } @else if $row == mt { margin-top: 1px !important;
+    //   } @else if $row == mb { margin-bottom: 1px !important;
+    //   } @else if $row == my { margin-top: 1px !important; margin-bottom: 1px !important;
+    //   } @else if $row == mx { margin-left: 1px !important; margin-right: 1px !important;
+    //   }
+    // }
+    @each $size in $sizes {
+    $i: index($sizes, $size);
+      .sm-#{$row}-#{$i} {
+        @if $row == m { margin: #{$size} !important;
+        } @else if $row == ml { margin-left: #{$size} !important;
+        } @else if $row == mr { margin-right: #{$size} !important;
+        } @else if $row == mt { margin-top: #{$size} !important;
+        } @else if $row == mb { margin-bottom: #{$size} !important;
+        } @else if $row == my { margin-top: #{$size} !important; margin-bottom: #{$size} !important;
+        } @else if $row == mx { margin-left: #{$size} !important; margin-right: #{$size} !important;
+        }
+      }
+      //Negative
+      .sm-#{$row}--#{$i} {
+        @if $row == ml { margin-left: -#{$size} !important;
+        } @else if $row == mr { margin-right: -#{$size} !important;
+        } @else if $row == mt { margin-top: -#{$size} !important;
+        } @else if $row == mb { margin-bottom: -#{$size} !important;
+        }
+      }
+    }
+    @each $size in $sizesPX {
+      .sm-#{$row}-#{$size} {
+        @if $row == m { margin: #{$size} !important;
+        } @else if $row == ml { margin-left: #{$size} !important;
+        } @else if $row == mr { margin-right: #{$size} !important;
+        } @else if $row == mt { margin-top: #{$size} !important;
+        } @else if $row == mb { margin-bottom: #{$size} !important;
+        } @else if $row == my { margin-top: #{$size} !important; margin-bottom: #{$size} !important;
+        } @else if $row == mx { margin-left: #{$size} !important; margin-right: #{$size} !important;
+        }
+      }
+      //Negative
+      .sm-#{$row}--#{$size} {
+        @if $row == ml { margin-left: -#{$size} !important;
+        } @else if $row == mr { margin-right: -#{$size} !important;
+        } @else if $row == mt { margin-top: -#{$size} !important;
+        } @else if $row == mb { margin-bottom: -#{$size} !important;
+        }
+      }
+    }
+    .sm-#{$row}-var {
+      @if $row == m { margin: var(--sm-m-var, 0) !important;
+      } @else if $row == ml { margin-left: var(--sm-ml-var, 0) !important;
+      } @else if $row == mr { margin-right: var(--sm-mr-var, 0) !important;
+      } @else if $row == mt { margin-top: var(--sm-mt-var, 0) !important;
+      } @else if $row == mb { margin-bottom: var(--sm-mb-var, 0) !important;
+      } @else if $row == my { margin-top: var(--sm-my-var, 0) !important; margin-bottom: var(--sm-my-var, 0) !important;
+      } @else if $row == mx { margin-left: var(--sm-mx-var, 0) !important; margin-right: var(--sm-mx-var, 0) !important;
+      }
+    }
+  }
+}
+
+
+
+//RADIUS
+.rounded-none, .rounded-0 {
+  border-radius: 0 !important;
+}
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+.rounded {
+  border-radius: 0.25rem;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.rounded-xl {
+  border-radius: 1rem;
+}
+.rounded-xxl {
+  border-radius: 1.5rem;
+}
+.rounded-circle {
+  border-radius: 50%!important;
+}
+.rounded-full {
+  border-radius: 9999px !important;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .md-rounded-none {
+    border-radius: 0;
+  }
+  .md-rounded-sm {
+    border-radius: 0.125rem;
+  }
+  .md-rounded {
+    border-radius: 0.25rem;
+  }
+  .md-rounded-lg {
+    border-radius: 0.5rem;
+  }
+  .md-rounded-xl {
+    border-radius: 1rem;
+  }
+  .md-rounded-xxl {
+    border-radius: 1.5rem;
+  }
+  .md-rounded-full {
+    border-radius: 9999px;
+  }
+}
+
+@media (max-width: $desktop-breakpoint) {
+  .sm-rounded-none {
+    border-radius: 0;
+  }
+  .sm-rounded-sm {
+    border-radius: 0.125rem;
+  }
+  .sm-rounded {
+    border-radius: 0.25rem;
+  }
+  .sm-rounded-lg {
+    border-radius: 0.5rem;
+  }
+  .sm-rounded-xl {
+    border-radius: 1rem;
+  }
+  .sm-rounded-full {
+    border-radius: 9999px;
+  }
+}
+
+.rounded-t-none {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.rounded-r-none {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.rounded-b-none {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.rounded-l-none {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.rounded-t-sm {
+  border-top-left-radius: 0.125rem;
+  border-top-right-radius: 0.125rem;
+}
+
+.rounded-r-sm {
+  border-top-right-radius: 0.125rem;
+  border-bottom-right-radius: 0.125rem;
+}
+
+.rounded-b-sm {
+  border-bottom-right-radius: 0.125rem;
+  border-bottom-left-radius: 0.125rem;
+}
+
+.rounded-l-sm {
+  border-top-left-radius: 0.125rem;
+  border-bottom-left-radius: 0.125rem;
+}
+
+.rounded-t {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.rounded-r {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-b {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.rounded-l {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.rounded-t-xl {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.rounded-r-lg {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.rounded-b-lg {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-b-xl {
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.rounded-l-lg {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-t-full {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.rounded-r-full {
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.rounded-b-full {
+  border-bottom-right-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.rounded-l-full {
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.rounded-tl-none {
+  border-top-left-radius: 0;
+}
+
+.rounded-tr-none {
+  border-top-right-radius: 0;
+}
+
+.rounded-br-none {
+  border-bottom-right-radius: 0;
+}
+
+.rounded-bl-none {
+  border-bottom-left-radius: 0;
+}
+
+.rounded-tl-sm {
+  border-top-left-radius: 0.125rem;
+}
+
+.rounded-tr-sm {
+  border-top-right-radius: 0.125rem;
+}
+
+.rounded-br-sm {
+  border-bottom-right-radius: 0.125rem;
+}
+
+.rounded-bl-sm {
+  border-bottom-left-radius: 0.125rem;
+}
+
+.rounded-tl {
+  border-top-left-radius: 0.25rem;
+}
+
+.rounded-tr {
+  border-top-right-radius: 0.25rem;
+}
+
+.rounded-br {
+  border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-bl {
+  border-bottom-left-radius: 0.25rem;
+}
+
+.rounded-tl-lg {
+  border-top-left-radius: 0.5rem;
+}
+
+.rounded-tr-lg {
+  border-top-right-radius: 0.5rem;
+}
+
+.rounded-br-lg {
+  border-bottom-right-radius: 0.5rem;
+}
+
+.rounded-bl-lg {
+  border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-tl-xl {
+  border-top-left-radius: 1rem;
+}
+
+.rounded-tr-xl {
+  border-top-right-radius: 1rem;
+}
+
+.rounded-br-xl {
+  border-bottom-right-radius: 1rem;
+}
+
+.rounded-bl-xl {
+  border-bottom-left-radius: 1rem;
+}
+
+.rounded-tl-xxl {
+  border-top-left-radius: 1.5rem;
+}
+
+.rounded-tr-xxl {
+  border-top-right-radius: 1.5rem;
+}
+
+.rounded-br-xxl {
+  border-bottom-right-radius: 1.5rem;
+}
+
+.rounded-bl-xxl {
+  border-bottom-left-radius: 1.5rem;
+}
+
+.rounded-tl-full {
+  border-top-left-radius: 9999px;
+}
+
+.rounded-tr-full {
+  border-top-right-radius: 9999px;
+}
+
+.rounded-br-full {
+  border-bottom-right-radius: 9999px;
+}
+
+.rounded-bl-full {
+  border-bottom-left-radius: 9999px;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .md-rounded-t-none {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .md-rounded-r-none {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .md-rounded-b-none {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .md-rounded-l-none {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .md-rounded-t-sm {
+    border-top-left-radius: 0.125rem;
+    border-top-right-radius: 0.125rem;
+  }
+
+  .md-rounded-r-sm {
+    border-top-right-radius: 0.125rem;
+    border-bottom-right-radius: 0.125rem;
+  }
+
+  .md-rounded-b-sm {
+    border-bottom-right-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
+  }
+
+  .md-rounded-l-sm {
+    border-top-left-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
+  }
+
+  .md-rounded-t {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+
+  .md-rounded-r {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+
+  .md-rounded-b {
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .md-rounded-l {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .md-rounded-t-lg {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  .md-rounded-r-lg {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .md-rounded-b-lg {
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .md-rounded-l-lg {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .md-rounded-t-full {
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+  }
+
+  .md-rounded-r-full {
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+  }
+
+  .md-rounded-b-full {
+    border-bottom-right-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+
+  .md-rounded-l-full {
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+  }
+
+  .md-rounded-tl-none {
+    border-top-left-radius: 0;
+  }
+
+  .md-rounded-tr-none {
+    border-top-right-radius: 0;
+  }
+
+  .md-rounded-br-none {
+    border-bottom-right-radius: 0;
+  }
+
+  .md-rounded-bl-none {
+    border-bottom-left-radius: 0;
+  }
+
+  .md-rounded-tl-sm {
+    border-top-left-radius: 0.125rem;
+  }
+
+  .md-rounded-tr-sm {
+    border-top-right-radius: 0.125rem;
+  }
+
+  .md-rounded-br-sm {
+    border-bottom-right-radius: 0.125rem;
+  }
+
+  .md-rounded-bl-sm {
+    border-bottom-left-radius: 0.125rem;
+  }
+
+  .md-rounded-tl {
+    border-top-left-radius: 0.25rem;
+  }
+
+  .md-rounded-tr {
+    border-top-right-radius: 0.25rem;
+  }
+
+  .md-rounded-br {
+    border-bottom-right-radius: 0.25rem;
+  }
+
+  .md-rounded-bl {
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .md-rounded-tl-lg {
+    border-top-left-radius: 0.5rem;
+  }
+
+  .md-rounded-tr-lg {
+    border-top-right-radius: 0.5rem;
+  }
+
+  .md-rounded-br-lg {
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .md-rounded-bl-lg {
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .md-rounded-tl-full {
+    border-top-left-radius: 9999px;
+  }
+
+  .md-rounded-tr-full {
+    border-top-right-radius: 9999px;
+  }
+
+  .md-rounded-br-full {
+    border-bottom-right-radius: 9999px;
+  }
+
+  .md-rounded-bl-full {
+    border-bottom-left-radius: 9999px;
+  }
+}
+
+//BORDERS
+$borders: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
+@each $row in $borders {
+  .border-#{$row}px {
+    border-style: solid;
+    border-width: #{$row}px !important;
+    border-color: $body;
+  }
+  .border-t-#{$row}px {
+    border-top-style: solid;
+    border-top-width: #{$row}px !important;
+    border-color: $body;
+  }
+  .border-b-#{$row}px {
+    border-bottom-style: solid;
+    border-bottom-width: #{$row}px !important;
+    border-color: $body;
+  }
+  .border-l-#{$row}px {
+    border-left-style: solid;
+    border-left-width: #{$row}px !important;
+    border-color: $body;
+  }
+  .border-r-#{$row}px {
+    border-right-style: solid;
+    border-right-width: #{$row}px !important;
+    border-color: $body;
+  }
+  .border-#{$row} {
+    border-style: solid;
+    border-width: #{$row}rem !important;
+    border-color: $body;
+  }
+  .border-t-#{$row} {
+    border-top-style: solid;
+    border-top-width: #{$row}rem !important;
+    border-color: $body;
+  }
+  .border-b-#{$row} {
+    border-bottom-style: solid;
+    border-bottom-width: #{$row}rem !important;
+    border-color: $body;
+  }
+  .border-l-#{$row} {
+    border-left-style: solid;
+    border-left-width: #{$row}rem !important;
+    border-color: $body;
+  }
+  .border-r-#{$row} {
+    border-right-style: solid;
+    border-right-width: #{$row}rem !important;
+    border-color: $body;
+  }
+}
+.border-none {
+  border: none !important;
+}
+.border-solid {
+  border-style: solid !important;
+}
+.border-dashed {
+  border-style: dashed !important;
+}
+.border-dotted {
+  border-style: dotted !important;
+}
+.border-0 {
+  border-style: solid;
+  border-width: 0px !important;
+}
+.border-t-0 {
+  border-top-style: solid;
+  border-top-width: 0px !important;
+}
+.border-b-0 {
+  border-bottom-style: solid;
+  border-bottom-width: 0px !important;
+}
+.border-l-0 {
+  border-left-style: solid;
+  border-left-width: 0px !important;
+}
+.border-r-0 {
+  border-right-style: solid;
+  border-right-width: 0px !important;
+}
+.border-thin {
+  border-style: solid;
+  border-width: 0.5px !important;
+}
+.border-t-thin {
+  border-top-style: solid;
+  border-top-width: 0.5px !important;
+}
+.border-b-thin {
+  border-bottom-style: solid;
+  border-bottom-width: 0.5px !important;
+}
+.border-l-thin {
+  border-left-style: solid;
+  border-left-width: 0.5px !important;
+}
+.border-r-thin {
+  border-right-style: solid;
+  border-right-width: 0.5px !important;
+}
+
+
+
+.hover-border-0 {
+  border-width: 0px !important;
+}
+
+
+//OUTLINE
+
+.outline-0, .outline-none {
+  outline:0 !important;
+  &:focus {
+    outline:0 !important;
+  }
+}
+
+
+//OVERFLOW
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.overflow-x-visible {
+  overflow-x: visible;
+}
+
+.overflow-y-visible {
+  overflow-y: visible;
+}
+
+
+
+//SCROLL
+.scroll-y, .scroll-x {
+	-webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+	&::-webkit-scrollbar {
+    display: none;
+	}
+}
+.scroll-y {
+	overflow-y: auto; //scroll?
+  overflow-x: hidden;
+	height: 100%;
+}
+.scroll-x {
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.scroll-touch {
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-auto {
+  -webkit-overflow-scrolling: auto;
+}
+
+.no-resize {
+	resize: none;
+}
+
+//ANIMATIONS
+.zoom { 
+  transition: all .2s ease-in-out;
+  &:hover { 
+    transform: scale(1.03); 
+  }
+}
+
+
+//ANGLES
+$angles: ('10','20','30','40','50','60','70','80','90','100','110','120','130','140','150','160','170','180','190','200','210','220','230','240','250','260','270','280','290','300','310','320','330','340','350','360') !default;
+@each $angle in $angles {
+  .angle-#{$angle} {
+    --angle: #{$angle}deg;
+  }
+  .bg-angle-#{$angle} {
+    --bg-angle: #{$angle}deg;
+  }
+  .overlay-angle-#{$angle} {
+    --overlay-angle: #{$angle}deg;
+  }
+  .rotate-#{$angle} {
+    transform: rotate(#{$angle}deg);
+  }
+}
+
+//OPACITY
+$opacity: ('0':'0','1':'0.1','2':'0.2','3':'0.3','4':'0.4','5':'0.5','6':'0.6','7':'0.7','8':'0.8','9':'0.9','10':'1','none':'1') !default;
+@each $key, $value in $opacity {
+  .opacity-#{$key} {
+    opacity: #{$value};
+  }
+  .bg-opacity-#{$key} {
+    --bg-opacity: #{$value};
+  }
+}
+
+//OPACITY
+.hover-opacity-10, .hover-opacity-none {
+  transition: background .5s ease-in-out;
+  &:hover {
+    opacity: 1 !important;
+  }
+}
+
+.hover-show {
+  //display: none;
+  opacity: 0 !important;
+  &:hover {
+    opacity: 1 !important;
+    //display: block;
+  }
+}
+
+.hover-hidden {
+  //display: none;
+  opacity: 1 !important;
+  &:hover {
+    opacity: 0 !important;
+    //display: block;
+  }
+}
+
+//ROTATE
+.rotate-vertical {
+  transform-origin: top right;
+  transform: rotate(90deg) translateX(100%);
+  //transform: rotate(90deg)  translateX(100%);
+  //transform-origin: 0 0;
+}
+.rotate-vertical-inverted {
+  transform-origin: top right;
+  transform: rotate(-90deg) translateY(-100%);
+}
+
+
+//VERTICAL
+.vertical-center, .vertical-middle {
+  vertical-align: middle;
+}
+.vertical-top {
+  vertical-align: top;
+}
+.vertical-bottom {
+  vertical-align: bottom;
+}
+.vertical-sub {
+  vertical-align: sub;
+}
+.vertical-super {
+  vertical-align: super;
+}
+.vertical-baseline {
+  vertical-align: baseline;
+}
+.vertical-text-top {
+  vertical-align: text-top;
+}
+.vertical-text-bottom {
+  vertical-align: text-bottom;
+}

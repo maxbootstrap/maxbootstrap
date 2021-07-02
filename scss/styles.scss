@@ -1,0 +1,135 @@
+//OTHER
+hr, .hr {
+  border: 0;
+  height: 1px;
+  background: $light;
+  width: 100%;
+}
+.hr-vertical { 
+  border: 0;
+  width: 1px;
+  height: 100%;
+  background: $light;
+}
+
+.title-line {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 30px;
+  &:before, &:after {
+    content: '';
+    color: #ccc !important;
+    background-color: $gray !important;
+    border-top: 2px solid;
+    border-color: $light !important;
+    margin: 0 30px 0 50px;
+    flex: 1 0 30px;
+  }
+  &:after {
+    margin: 0 50px 0 30px;
+  }
+}
+
+
+//SHADOWS
+.shadow, .shadow:hover	{
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
+}
+.shadow-md, .shadow-md:hover	{
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+.shadow-lg, .shadow-lg:hover	{
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+.shadow-xl, .shadow-xl:hover	{
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+.shadow-2x, .shadow-2x:hover	{
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+}
+.shadow-inner, .shadow-inner:hover	{
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06) !important;
+}
+.shadow-outline, .shadow-outline:hover	{
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5) !important;
+}
+.shadow-none, .shadow-none:hover	{
+  box-shadow: none  !important;
+}
+.shadow-3d {
+  border-bottom-color: $light;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+}
+.shadow-soft {
+  box-shadow:
+  4px 1px 1px rgba(0,0,0,0.04), 
+  4px 2px 2px rgba(0,0,0,0.04), 
+  4px 4px 4px rgba(0,0,0,0.04), 
+  4px 6px 8px rgba(0,0,0,0.04),
+  3px 3px 9px 0 rgba(12, 12, 12, 0.3),
+  -2px -2px 2px 0 rgba(255, 255, 255, 0.3),
+  -4px -4px 5px 0 rgba(255, 255, 255, 0.5)
+  ;
+}
+.shadow-dual, .shadow-dual:hover	{
+  //box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 -4px -6px -2px rgba(255, 255, 255, 0.05);
+}
+.shadow-full {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0px 0px 51px -6px rgba(0,0,0,0.21) !important;
+}
+.hover-shadow-full {
+  &:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), 0px 0px 51px -6px rgba(0,0,0,0.21) !important;
+  }
+}
+
+// .img-shadow {
+//   filter: drop-shadow(0 -36px 106px rgba($dark, 0.08));
+// }
+
+
+
+//OTHER
+.avatar {
+  width: 40px;
+  height: 40px;
+}
+
+
+//BREADCRUMBS
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: transparent;
+  font-size: .8rem;
+  padding: 0.75rem 0.5rem 0.75rem 0;
+  list-style: none;
+  .breadcrumb-item {
+    padding-right: 0.4rem;
+    &:nth-child(n+2) {
+      &:before {
+        display: inline-block;
+        padding-right: 0.4rem;
+        color: lighten($gray, 20%);
+        content: "/";
+      }
+    }
+    a {
+      font-weight: $font-weight-light;
+      color: $gray;
+      &:hover {
+        color: $primary;
+      }
+    }
+    .active {
+      color: $primary;
+    }
+  }
+}

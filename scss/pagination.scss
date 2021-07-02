@@ -1,0 +1,53 @@
+.pagination {
+  display: inline-block;
+  border-radius: $btn-radius;
+  background-color: $white;
+  padding: 3px;
+
+  a {
+    display: inline-block;
+    font-size: .9rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 250ms;
+    margin: 0 1.5px;
+    padding: 0 .7rem;
+    height: 2.5rem;
+    min-width: 2.5rem;
+    border-radius: $btn-radius;
+    border: none;
+    background-color: lighten($light, 2%);
+    line-height: 2.5rem;
+    &:first-child, &:last-child {
+      margin: 0 0;
+      background-color: transparent;
+    }
+    &:hover {
+      background-color: $light;
+    }
+    &.active {
+      color: $white;
+      background-color: $primary;
+    }
+    &.disabled {
+      opacity: .4;
+    }
+  }
+}
+
+.pagination-rounded {
+  border-radius: 3rem;
+  a {
+    border-radius: 2.5rem;
+  }
+}
+
+.pagination-border {
+  a {
+    border: 1px solid lighten($light, 3%);
+    &:hover {
+      border-color: lighten($light, 3%);
+    }
+  }
+}

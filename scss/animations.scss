@@ -1,0 +1,226 @@
+//TRANSITIONS
+.animate-0, .animate-none {
+  transition: all 0ms;
+}
+.animate {
+  transition: all 300ms linear;
+}
+.animate-3ms {
+  transition: all 300ms linear;
+}
+.animate-5ms {
+  transition: all 500ms linear;
+}
+.animate-7ms {
+  transition: all 700ms linear;
+}
+.animate-1 {
+  transition: all 1s linear;
+}
+.animate-3 {
+  transition: all 3s linear;
+}
+.animate-3 {
+  transition: all 3s linear;
+}
+.bg-animate {
+  transition: background 300ms linear;
+}
+.color-animate {
+  transition: color 300ms linear;
+}
+
+//SLIDES
+.animation-slide-left {
+  animation: $animation-duration ease-in-out 0s 1 slideLeft;
+}
+.animation-slide-right {
+  animation: $animation-duration ease-in-out 0s 1 slideRight;
+}
+.animation-slide-top {
+  animation: $animation-duration ease-in-out 0s 1 slideTop;
+}
+.animation-slide-bottom {
+  animation: $animation-duration ease-in-out 0s 1 slideBottom;
+}
+.animation-slide-bottom {
+  animation: $animation-duration ease-in-out 0s 1 slideBottom;
+}
+//SLIDE AND FADE
+.animation-fade-slide-left {
+  animation: $animation-duration ease-in-out 0s 1 slideLeft;
+}
+.animation-fade-slide-right {
+  animation: $animation-duration ease-in-out 0s 1 slideRight;
+}
+.animation-fade-slide-top {
+  animation: $animation-duration ease-in-out 0s 1 fadeSlideTop;
+}
+.animation-fade-slide-bottom {
+  animation: $animation-duration ease-in-out 0s 1 slideBottom;
+}
+.animation-fade-slide-bottom {
+  animation: $animation-duration ease-in-out 0s 1 slideBottom;
+}
+
+//FADE
+.animation-fade-in {
+  animation: $animation-duration ease-in-out 0s 1 fade;
+}
+.animation-fade-out {
+  animation: $animation-duration ease-in-out 0s 1 fadeOut;
+}
+
+
+//KEYFRAMES
+@keyframes slideLeft {
+  0% {
+    transform: translateX($animation-px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-$animation-px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideTop {
+  0% {
+    transform: translateY(-$animation-px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-$animation-px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+//SLIDE AND FADE
+@keyframes fadeSlideTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-$animation-px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+//FADE
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+//JUST CLIP
+@keyframes clip {
+  0% {
+    -webkit-clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+    clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+@keyframes fadeClip {
+  0% {
+    opacity: 0;
+    -webkit-clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+    clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+//SLIDE FADE AND CLIP
+@keyframes fadeSlideRightClip {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+    -webkit-clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+    clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+@keyframes fadeSlideLeftClip {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+    -webkit-clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+    clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+@keyframes fadeSlideTopClip {
+  0% {
+    opacity: 0;
+    transform: translateY(-150px);
+    -webkit-clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+    clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+@keyframes fadeSlideBottomClip {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+    -webkit-clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+    clip-path: polygon(30% 30%, 70% 30%, 70% 70%, 30% 70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+//FOR MIXIN USE @include clipSquare; OR @include clipSquare(100%,100%);
+// 0%   { left: 100px; @include clipSquare(100%,100%); }
+@mixin clipSquare($x: 30%, $y: 70%) {
+  -webkit-clip-path: polygon($x $x, $y $x, $y $y, $x $y);
+  clip-path: polygon($x $x, $y $x, $y $y, $x $y);
+}

@@ -1,0 +1,55 @@
+//ICON BG
+
+.box-icon {
+  overflow: hidden;
+  &::before {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    content: attr(data-icon);
+    font-size: 7rem;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    opacity: .08;
+    transform: rotate3d(0, 0, 1, 15deg) !important;
+  }
+}
+
+
+//NAV
+#navbar {
+  width: 100%;
+}
+
+@media (max-width: $desktop-breakpoint) {
+  #navbar {
+    
+  }
+}
+
+
+.hamburger {
+  display: inline-block;
+  overflow: visible;
+  padding: .2rem;
+  cursor: pointer;
+  transition-timing-function: linear;
+  transition-duration: .15s;
+  transition-property: opacity,filter;
+  text-transform: none;
+  color: inherit;
+  border: 0;
+  background-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
+.hamburger.is-active:hover, .hamburger:hover {
+  opacity: .7;
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+  background-color:#fff
+}
+

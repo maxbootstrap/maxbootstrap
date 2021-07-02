@@ -1,0 +1,243 @@
+$second_theme: false !default; //false, 'light', 'dark'
+//GRID
+$desktop-breakpoint: 868px !default;
+$container: 1300px !default;
+$container-max: 1860px !default;
+$container-min: 1000px !default;
+$columns: 24 !default;
+$container-sm-px: 0.5rem !default; //0 !default;
+
+//BOOTSTRAP
+$grid-columns: $columns !default;
+$grid-gutter-width: 0px !default;
+//$line-height-base: 1.2 !default;
+$container-max-widths: (
+  sm: 540px,
+  md: $desktop-breakpoint,
+  lg: 1000,
+  xl: $container
+) !default;
+
+//COLORS
+$primary: #3B2098 !default;
+$secondary: #112741 !default;
+$gray: #A0AEC0 !default;
+$blue: #4299E1 !default;
+$indigo: #667EEA !default;
+$purple: #9F7AEA !default;
+$green: #1da139 !default;
+$teal: #38B2AC !default;
+$red: #ff2400 !default;
+$pink: #f2658a !default;
+$yellow: #ffeb04 !default;
+$orange: #ff8800 !default;
+$light: #edf2f8 !default;
+$dark: #151d2e !default;
+$white: #ffffff !default;
+$black: #010102 !default;
+$body: $dark !default;
+$bg: white !default;
+
+
+$colors: ('primary':$primary, 'secondary':$secondary, 'dark':$dark, 'light':$light, 'gray':$gray, 'blue':$blue, 'indigo':$indigo, 'purple':$purple, 'green':$green, 'teal':$teal, 'red':$red, 'pink':$pink, 'yellow':$yellow, 'orange':$orange, 'white':$white, 'black':$black) !default;
+$complete-colors: $colors !default;
+@each $key, $color in $complete-colors {
+  $variants-colors: ();
+  $lighten400: 5%; $lighten300: 10%; $lighten200: 12%; $lighten100: 20%; 
+  @if $key == 'light' {
+    $lighten400: 1%; $lighten300: 2%; $lighten200: 3%; $lighten100: 4%;
+  }
+  @if $key == 'white' {
+    $variants-colors: (
+      #{$key}-600: darken($color, 5%),
+      #{$key}-700: darken($color, 10%),
+      #{$key}-800: darken($color, 15%),
+      #{$key}-900: darken($color, 30%)
+    );
+  } @else if $key == 'black' {
+    $variants-colors: (
+      #{$key}-100: lighten($color, $lighten100),
+      #{$key}-200: lighten($color, $lighten200),
+      #{$key}-300: lighten($color, $lighten300),
+      #{$key}-400: lighten($color, $lighten400)
+    );
+  } @else {
+    $variants-colors: (
+      #{$key}-100: lighten($color, $lighten100),
+      #{$key}-200: lighten($color, $lighten200),
+      #{$key}-300: lighten($color, $lighten300),
+      #{$key}-400: lighten($color, $lighten400),
+      #{$key}-500: $color,
+      #{$key}-600: darken($color, 5%),
+      #{$key}-700: darken($color, 10%),
+      #{$key}-800: darken($color, 15%),
+      #{$key}-900: darken($color, 30%)
+    );
+  }
+  $complete-colors: map-merge($complete-colors, $variants-colors);
+}
+$custom-colors: ();
+//@debug $custom-colors;
+$colors: map-merge($colors, $custom-colors);
+
+//TYPE
+//$font-family--wait: "-apple-system, system-ui, BlinkMacSystemFont" !default; Chrome needs to fix bold
+$font-family: "-apple-system" !default;
+$heading-font-family: $font-family !default;
+$font-size: 16px !default;
+$print-font-base: 11pt !default;
+$font-weight-light: 300 !default;
+$font-weight-regular: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: 700 !default;
+$font-weight: $font-weight-regular !default;
+$font-letter-spacing: 0.025em !default;
+$paragraph-weight: $font-weight !default;
+$paragraph-line-height: 1.2 !default;
+$paragraph-color: $body !default;
+$h1-size: 2.6rem !default;
+$h2-size: 2.2rem !default;
+$h3-size: 1.9rem !default;
+$h4-size: 1.6rem !default;
+$h5-size: 1.2rem !default;
+$heading-weight: $font-weight-bold !default;
+$heading-line-height: 1.1 !default;
+$heading-letter-spacing: $font-letter-spacing !default;
+$heading-color: $body !default;
+
+//BUTTONS
+$btn-padding-y: .6rem !default;
+$btn-padding-x: 1.3rem !default;
+$btn-radius: .2rem !default;
+$btn-border: 1px !default;
+
+//FORMS
+$form-bg: #ffffff !default;
+$form-text: $body !default;
+$form-light: lighten($body, 22%) !default;
+$form-label: $form-light !default;
+$form-border: 1px solid lighten($form-text, 30%) !default;
+$input-radius: $btn-radius !default;
+//$form-label: ;
+$form-placeholder-color: $gray !default;
+$form-border: 1px solid $gray !default;
+$form-padding: 21px 10px 6px 15px !default;
+
+//DROPDOWNS
+$dropdown-radius: $btn-radius !default;
+$dropdown-font-size: .9rem !default;
+$dropdown-top: 40px !default;
+
+//CHARTS
+$progress-bg: $primary !default;
+
+//ANIMATION
+$animation-px: 1rem !default;
+$animation-duration: .5s !default;
+
+//BACKEND
+$backend-bg: #f8fafc !default;
+$backend-sidebar-bg: white !default;
+$backend-sidebar: 250px !default;
+$backend-sidebar-padding: ($backend-sidebar * .15) / 2 !default;
+$backend-article-margin: $backend-sidebar !default;
+$backend-breakpoint: 1168px !default;
+$backend-sidebar-links: #2a5164 !default;
+$backend-sidebar-links-hover: transparent !default;
+$backend-sidebar-links-padding-tb: .6rem !default;
+
+//MODAL
+$modal-bg: $dark !default;
+$modal-min-width: 330px !default;
+$modal-padding: 25px !default;
+
+//CODE
+$code-bg: #1d2730 !default; //lighten($primary, 60%) !default; //#333333
+$code-color: #8ca0b8 !default; //$primary; //#a3c67a
+$code-label: white !default; //#ddd
+
+
+//EMAIL
+$email-bg: $light !default;
+$email-container-bg: transparent !default;
+$email-container-padding: 10px !default;
+$email-content-bg: $white !default;
+$email-content-padding: 20px !default;
+$email-text-align: left !default;
+
+
+//CONVERTIONS
+
+
+//OPERATIONS
+@if $btn-radius == 'full'  {
+  $btn-radius: 9999px !default;
+}
+@if $input-radius == 'full'  {
+  $input-radius: 9999px !default;
+}
+
+@debug($body);
+:root {
+  --body: $body;
+  --bg: $bg;
+  --heading-color: $heading-color;
+  --paragraph-color: $paragraph-color;
+  @each $key, $value in $complete-colors  {
+    --#{$key}: #{$value};
+  }
+}
+
+@if $second_theme {
+$colors-dark: ('primary':$primary, 'secondary':$secondary, 'dark':$dark, 'light':$light, 'gray':$gray, 'blue':$blue, 'indigo':$indigo, 'purple':$purple, 'green':$green, 'teal':$teal, 'red':$red, 'pink':$pink, 'yellow':$yellow, 'orange':$orange, 'white':$white, 'black':$black) !default;
+$complete-colors-dark: $colors !default;
+@each $key, $color in $complete-colors-dark {
+  $variants-colors: ();
+  $lighten400: 5%; $lighten300: 10%; $lighten200: 12%; $lighten100: 20%; 
+  @if $key == 'light' {
+    $lighten400: 1%; $lighten300: 2%; $lighten200: 3%; $lighten100: 4%;
+  }
+  @if $key == 'white' {
+    $variants-colors: (
+      #{$key}-600: darken($color, 5%),
+      #{$key}-700: darken($color, 10%),
+      #{$key}-800: darken($color, 15%),
+      #{$key}-900: darken($color, 30%)
+    );
+  } @else if $key == 'black' {
+    $variants-colors: (
+      #{$key}-100: lighten($color, $lighten100),
+      #{$key}-200: lighten($color, $lighten200),
+      #{$key}-300: lighten($color, $lighten300),
+      #{$key}-400: lighten($color, $lighten400)
+    );
+  } @else {
+    $variants-colors: (
+      #{$key}-100: lighten($color, $lighten100),
+      #{$key}-200: lighten($color, $lighten200),
+      #{$key}-300: lighten($color, $lighten300),
+      #{$key}-400: lighten($color, $lighten400),
+      #{$key}-500: $color,
+      #{$key}-600: darken($color, 5%),
+      #{$key}-700: darken($color, 10%),
+      #{$key}-800: darken($color, 15%),
+      #{$key}-900: darken($color, 30%)
+    );
+  }
+  $complete-colors-dark: map-merge($complete-colors-dark, $variants-colors);
+}
+$custom-colors-dark: ();
+$colors-dark: map-merge($colors-dark, $custom-colors-dark);
+  [data-theme="dark"] {
+    //--body: invert($body);
+    --bg: invert($bg);
+    --heading-color: invert($heading-color);
+    --paragraph-color: invert($paragraph-color);
+    @each $key, $value in $complete-colors  {
+      $value: map-get($complete-colors-dark, $key);
+      // @debug($key);
+      --#{$key}: #{invert($value)};
+      
+    }
+  }
+}

@@ -1,0 +1,399 @@
+@import 'scss/variables';
+
+body {
+  background: linear-gradient(90deg, $backend-sidebar-bg 30%, $backend-bg 70%);
+}
+
+main {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  &.rounded-full {
+    border-radius: 40px !important;
+  }
+}
+
+.container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  @media (max-width: $backend-breakpoint) {
+    padding-left: .2rem;
+    padding-right: .2rem;
+  }
+}
+
+.bg-backend {
+  background-color: $backend-bg;
+}
+.m-backend {
+  margin: $backend-sidebar-padding;
+}
+.p-backend {
+  padding: $backend-sidebar-padding;
+}
+
+//SIDEBAR
+aside.sidebar {
+  position: fixed;
+  z-index: 100;
+  width: $backend-sidebar;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  line-height: 1.1;
+  padding: 20px 0px;
+  background-color: $backend-sidebar-bg;
+  .sidebar-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -0px;
+    padding-bottom: 30px;
+
+    overflow: auto; //hidding scroll bar
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+    padding: ($backend-sidebar-padding * 1.5) $backend-sidebar-padding $backend-sidebar-padding $backend-sidebar-padding;
+    display: block;
+    img {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 96%;
+      max-height: 100px;
+    }
+  }
+  hr { 
+    border: 0; 
+    height: 1px;
+    background-color: rgba($light, .3); 
+  }
+  .sidebar-panel {
+    padding: 10px 0px 10px ($backend-sidebar-padding + 12);
+    color: lighten($backend-sidebar-links, 5%);
+    font-weight: $font-weight-bold;
+    span {
+      display: block;
+      font-size: 85%;
+      color: darken($backend-sidebar-links, 5%);
+      font-weight: $font-weight-light;
+    }
+  }
+  .sidebar-nav {
+    margin-top: 15px;
+    font-size: 13px;
+    list-style: none;
+    width: 100%;
+    padding: 0px $backend-sidebar-padding;
+    vertical-align: middle;
+    li {
+      display: block;
+      margin-top: .1rem;
+      margin-bottom: .1rem;
+      a {
+        padding-top: $backend-sidebar-links-padding-tb;
+        padding-bottom: $backend-sidebar-links-padding-tb;
+        position: relative;
+        padding-left: 12px;
+        color: $backend-sidebar-links !important;
+        font-size: .96rem;
+        font-weight: $font-weight-regular;
+        display: block;
+        text-decoration: none;
+        width: 100%; 
+      }
+      a:hover {
+        opacity: .8;
+        background: $backend-sidebar-links-hover;
+      }
+      .active {
+        cursor: default;
+        color: rgba($backend-sidebar-links, .5) !important;
+        background: transparent !important;
+      }
+      i {
+        width: 27px;
+        text-align: center;
+        padding-right: 10px;
+      }
+      .badge {
+        //margin-top: .76rem;
+        margin-right: 10px;
+        line-height: 1;
+        &.badge-sm.float-right, &.badge-xs.float-right {
+          margin-top: .1rem;
+        }
+      }
+    }
+  }
+  h5 {
+    text-transform: uppercase;
+    color: #677694;
+    padding: 20px 0px 2px 12px !important;
+    font-size: .8rem;
+    line-height: 1;
+    letter-spacing: .06rem;
+  }
+  //MEDIUM Version Icons
+  @media (min-width: $desktop-breakpoint) and (max-width: $backend-breakpoint) {
+    width: 98px;
+    .logo {
+      display: none;
+    }
+    .sidebar-panel {
+      display: none;
+    }
+    .sidebar-nav {
+      width: 96px;
+      margin: 0;
+      padding: .3rem .6rem;
+      li {
+        line-height: 1rem;
+        font-weight: $font-weight-bold;
+        padding-bottom: .3rem;
+        a {
+          text-align: center;
+          padding: .3rem .4rem .2rem .4rem;
+          font-size: .5rem;
+          text-transform: uppercase;
+          border: 1px solid rgba($backend-sidebar-links, .1);
+          border-radius: .5rem;
+        }
+        i {
+          display: block;
+          font-size: 1.3rem;
+          padding: 0;
+          margin: 0 auto;
+        }
+        .badge {
+          display: none;
+        }
+      }
+    }
+    h5 {
+      text-align: center;
+      padding: .8rem 0 .4rem 0 !important;
+      letter-spacing: -.02rem;
+    }
+  }
+  &.shadow-primary {
+    box-shadow: 6px 0 15px -8px rgba($primary, 0.1);
+  }
+  &.shadow {
+    box-shadow: 6px 0 15px -8px rgba($dark, 0.1);
+  }
+  //mobile version
+  @media (max-width: $desktop-breakpoint) {
+		transition: all .25s ease-out;
+		left: -$backend-article-margin;
+    &.active {
+      left: 0px !important;
+    }
+    .logo {
+      display: none;
+    }
+    &.shadow-primary {
+      box-shadow: 6px 0 20px -8px rgba($primary, 0.5);
+    }
+    &.shadow {
+      box-shadow: 6px 0 20px -8px rgba($dark, 0.5);
+    }
+  }
+}
+
+//SEARCH AVATAR BOX
+.topnav {
+  display: inline-flex !important;
+  position: absolute;
+  z-index: 120;
+  right: 12px; top: 8px;
+  text-align: right;
+  background: $light;
+  padding: 5px 6px;
+  border-radius: 25px !important;
+  .sidemenu_toggler {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: white;
+    margin-right: 6px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px !important;
+    i {
+      margin-top: 12.5px;
+      margin-left: 1.5px;
+      color: $gray;
+    }
+  }
+  
+  .search {
+    outline: none !important;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-right: 6px;
+    background-color: white !important;
+    transition: all .35s ease-in-out;
+    color: white;
+    border-radius: 25px !important;
+    padding: .375rem .7rem;
+    text-align: left;
+    &::placeholder {
+      color: white;
+    }
+    &:focus {
+      width: 180px;
+      color: $gray;
+      padding-left: 35px;
+      &::placeholder {
+        color: $gray;
+      }
+    }
+    &:not(:focus) {
+      &::-webkit-search-cancel-button { display: none; }
+    }
+  }
+
+  &::before {
+    pointer-events: none;
+    position: absolute;
+    z-index: 20;
+    top: 12px;
+    left: 17px;
+    font-family: "Font Awesome 5 Pro";
+    content: '\f002';
+    color: $gray !important;
+  }
+
+  .search-spinner {
+    display: none;
+    &.spinner {
+      display: block;
+      position: absolute;
+      z-index: 999999;
+      top: 16px;
+      left: 163px;
+      color: $gray;
+    }
+  }
+}
+
+.hide_search_icon {
+  &::before {
+    display: none !important;
+  }
+}
+
+//input[type="search"]::-webkit-search-cancel-button { display: none; }
+
+
+@media screen and (max-width: $desktop-breakpoint) {
+  .topnav {
+    right: 6px !important;
+    top: 6px;
+    .sidemenu_toggler {
+      display: block;
+    }
+  }
+}
+
+.dropdown-user {
+  outline: none !important; 
+  .dropdown-toggle {
+    cursor: pointer;
+    position: relative;
+    img {
+      border-radius: 25px !important;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .dropdown-toggle::after {
+    display:none
+  }
+}
+
+
+article {
+  position: relative;
+  width: auto;
+  max-width: 100%;
+  min-height: 100vh !important;
+  flex-basis: 0;
+  flex-grow: 1;
+  background-color: $backend-bg;
+  
+	margin-left: $backend-article-margin;
+	overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+
+  header {
+    padding: 1.5rem 2rem 2rem 2rem;
+    align-items: baseline;
+    h1 {
+      display: block;
+      width: 100%;
+      font-size: 3.2rem;
+      line-height: 1;
+      letter-spacing: -1.2px;
+      margin-top: 1rem;
+      .btn {
+        margin-top: -.4rem;
+        padding: 0.25rem 0.5rem;
+        font-size: 1.2rem;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  //MEDIUM Version Icons
+  @media (min-width: $desktop-breakpoint) and (max-width: $backend-breakpoint) {
+    margin-left: 98px;
+    header {
+      padding: 1.5rem 1rem 2rem 1rem;
+    }
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    margin-left: 0px;
+    header {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      padding-top: 65px;
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+
+//PAGE STYLES
+.breadcrumb {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+
+footer {
+  margin-top: 20px;
+  font-size: .8rem;
+  opacity: .5;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  @media (max-width: $backend-breakpoint) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

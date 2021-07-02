@@ -1,0 +1,22 @@
+//V-CALENDAR
+.vc-container {
+  position: absolute !important;
+  z-index: 999 !important;
+}
+
+//V-TOOLTIP
+
+//VUE
+[v-cloak] {
+  display: none;
+}
+
+//ALPINE
+[x-cloak] {
+  display: none;
+}
+
+//RECAPTCHA
+.grecaptcha-badge {
+  visibility: hidden !important;
+}

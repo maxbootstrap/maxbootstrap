@@ -1,0 +1,101 @@
+//GRAY ODD AND EVEN
+
+
+.table th, .table td {
+  border-bottom-width: 0px;
+  vertical-align: middle;
+}
+//from CScontact
+.table-striped {
+  thead th {
+    @media (max-width: $desktop-breakpoint) {
+      padding-top: 40px;
+    }
+  }
+  tbody tr {
+    border-bottom: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    transition: all .15s ease;
+    font-size: .95rem;
+    td:first-child { border-bottom-left-radius: 15px; border-top-left-radius: 15px; }
+    td:last-child { border-bottom-right-radius: 15px; border-top-right-radius: 15px; }
+    td {
+      vertical-align: middle;
+      line-height: 1.1;
+    }
+    &:nth-of-type(odd) {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+    &:hover {
+      background-color: white;
+      transform: scale(1.01);
+    }
+  }
+}
+
+//DIVS AS TABLES
+.table-div-striped {
+  max-width: 100%;
+  padding: .5rem .2rem;
+  .head, figure {
+    align-items: center !important;
+    padding: .5rem .2rem;
+    margin: .4rem 0;
+    font-size: .95rem;
+  }
+  .head {
+    text-align: center;
+    font-weight: bold;
+  }
+  figure {
+    cursor: pointer;
+    border-bottom: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: rgba(54, 54, 54, 0.0980392) 0px 2px 6px 0px;
+    transition: all .15s ease;
+    border-radius: 1.1rem;
+    line-height: 1.1;
+    &:nth-of-type(odd) {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+    &:hover {
+      color: $light;
+      background-color: $primary;
+      //transform: scale(1.01);
+      .text-primary {
+        color: white;
+      }
+      .bg-primary, .badge-primary {
+        background-color: #ffffff60;
+      }
+    }
+    .btn {
+      //font-size: .8rem;
+      //padding: ($btn-padding-y * .5) ($btn-padding-x * .5) ($btn-padding-y * .4) ($btn-padding-x * .5);
+    }
+    div {
+      text-align: center;
+    }
+    @media (max-width: $desktop-breakpoint) {
+      border-radius: $btn-radius;
+    }
+
+  }
+}
+
+
+
+.table-clean {
+  line-height: 1rem;
+  border-collapse:separate; 
+  border-spacing: 0 1.2rem;
+  tr {
+  }
+  th {
+    font-size: .95rem;
+  }
+  td {
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,252 @@
+
+
+.modal {
+  position: fixed;
+  z-index: 1050;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s linear;
+
+  .modal-backdrop {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    //pointer-events: none;
+    background-color: rgba($modal-bg, 0.86);
+  }
+
+  .modal-dialog {
+      position: absolute;
+      z-index: 1;
+      transform: none;
+      min-width: 320px !important;
+      max-height: 90%;
+      @media (max-width: $desktop-breakpoint) {
+        min-width: 90% !important;
+        margin: 0px !important;
+        left: 2%;
+        right: 2%;
+      }
+  }
+
+
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    outline: 0;
+    border-radius: 0px;
+    height: 100% !important;
+    max-height: 100% !important;
+    max-width: 800px;
+    background-color: white;
+    .modal-header,
+    .modal-footer {
+      flex-shrink: 0;
+    }
+    .modal-header {
+      display: flex;
+      align-items: flex-start; // so the close btn always stays on the upper right corner
+      justify-content: space-between; // Put modal header elements (title and dismiss) on opposite ends
+      border-radius: 0px;
+      padding: 16px 20px 6px 25px;
+      border: none;
+      text-align: left;
+      .close {
+        position: absolute;
+        top: 1.7rem;
+        right: 2rem;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: $gray;
+        &:hover {
+          color: $dark;
+        }
+      }
+      &.modal-header-inverted {
+        background-color: $primary;
+        padding-bottom: 13px;
+        color: white;
+        h4 {
+          color: white;
+        }
+        .close {
+          color: $light;
+        }
+      }
+    }
+    h4 {
+      width: auto;
+      font-size: 2.5rem;
+      line-height: 1.2;
+      font-weight: bold;
+      span {
+        font-weight: normal;
+        display: block;
+        font-size: 1rem;
+        opacity: .7;
+      }
+    }
+    h5 {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+    h6 {
+      font-size: 1.2rem;
+    }
+    .modal-body {
+      overflow-y: auto;
+      position: relative;
+      flex: 1 1 auto;
+      padding: 12px 24px 12px 25px;
+      text-align: left;
+    }
+    .modal-footer {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      border: none;
+      }
+
+    @media (max-width: $desktop-breakpoint) {
+      .modal-header {
+        padding: 1.6rem 1rem 1.6rem 1rem !important;
+        .close {
+          right: 1rem;
+        }
+        h4 {
+          font-size: 2.2rem;
+        }
+        h5 {
+          font-size: 1.4rem;
+        }
+        h6 {
+          font-size: 1.1rem;
+        }
+      }
+      .modal-body {
+        padding: 1.5rem 1rem 1rem 1rem !important;
+      }
+    }
+  }
+}
+
+// .modal-dialog-scrollable {
+//   display: flex; // IE10/11
+//   max-height: calc(100% - 1rem);
+
+
+//   .modal-content {
+//     max-height: calc(100vh - 1rem); // IE10/11
+//     overflow: hidden;
+//   }
+
+//   .modal-header,
+//   .modal-footer {
+//     flex-shrink: 0;
+//   }
+
+//   .modal-body {
+//     overflow-y: auto;
+//   }
+// }
+
+.body-fix {
+    overflow: hidden;
+}
+
+//EXTRAS GO TO THE DIALOG
+
+
+.modal-left {
+  top: 0;
+  bottom: 0;
+  left: 0 !important;
+  max-height: 100% !important;
+  min-width: 40%;
+  @media (max-width: $desktop-breakpoint) {
+    right: 8% !important;
+  }
+}
+
+
+.modal-right {
+  top: 0;
+  bottom: 0;
+  right: 0 !important;
+  max-height: 100% !important;
+  min-width: 40%;
+  @media (max-width: $desktop-breakpoint) {
+    left: 8% !important;
+  }
+}
+
+.modal-full {
+  top: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  min-width: 100% !important;
+  max-height: 100% !important;
+
+  .modal-content {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .md-modal-full {
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-height: 100% !important;
+    .modal-content {
+      max-width: 100%;
+    }
+  }
+
+  .md-modal-center {
+    top: auto !important;
+    bottom: auto !important;
+    left: initial !important;
+    right: initial !important;
+    .modal-content {
+      min-width: 300px;
+      max-width: 800px;
+    }
+  }
+
+  .md-modal-left {
+    top: 0;
+    bottom: 0;
+    left: 0 !important;
+    right: auto;
+    max-height: 100% !important;
+    min-width: 40%;
+  }
+
+  .md-modal-right {
+    top: 0;
+    bottom: 0;
+    right: 0 !important;
+    left: auto !important;
+    max-height: 100% !important;
+    min-width: 40%;
+  }
+}

@@ -1,0 +1,77 @@
+
+.form-invisible {
+  margin-bottom: .8rem;
+  position: relative;
+  label {
+    color: $form-placeholder-color;
+    font-size: .8rem;
+    margin-bottom: .1rem;
+    margin-left: 0;
+    font-weight: $font-weight-light;
+    letter-spacing: 0.2;
+    text-transform: uppercase;
+  }
+  small {
+    line-height: 1;
+  }
+  input, textarea, select {
+    width: 100%;
+    max-width: 600px;
+    outline: none;
+    font-size: 1.1rem;
+    color: $form-text;
+    border: none;
+    border-radius: none;
+    border-bottom: 2px solid transparent;
+    padding: 4px 10px 0px 0px;
+    padding-left: 0px !important;
+    background-color: transparent;
+    position: relative;
+    display: block;
+    &:hover {
+      cursor: pointer;
+    }
+    &:focus {
+      outline: none;
+      //border-bottom: 2px solid $light;
+      &::placeholder {
+        //padding-left: .1rem;
+      }
+    }
+    &::placeholder {
+      color: $form-placeholder-color;
+    }
+
+  }
+  textarea {
+    max-width: 100%;
+  }
+
+  select {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &::-ms-expand {
+      display: none;
+    }
+    option{
+      font-size: .5rem;
+      padding-bottom: 1rem;
+      line-height: 2rem;
+    }
+    &:invalid {
+      color: gray !important;
+    }
+    option:disabled {
+      color: $form-placeholder-color !important;
+    }
+    [disabled] {
+      color: gray !important;
+    }
+
+  }
+}

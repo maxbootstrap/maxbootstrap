@@ -1,0 +1,61 @@
+@import 'scss/variables';
+
+//TEXT SIZES
+@media print {
+  body {
+    -webkit-print-color-adjust: exact !important;
+    font-size: $print-font-base;
+  }
+  .text-xxs {
+    font-size: $print-font-base * .5;
+  }
+  .text-xs {
+    font-size: $print-font-base * .6;
+  }
+  .text-sm {
+    font-size: $print-font-base * .7;
+  }
+  .text-normal, .text-base {
+    font-size: $print-font-base;
+  }
+  .text-lg {
+    font-size: $print-font-base * 1.1;
+  }
+  .text-xl {
+    font-size: $print-font-base * 1.2;
+  }
+  .text-2x {
+    font-size: $print-font-base * 1.5;
+  }
+  .text-3x {
+    font-size: $print-font-base * 1.7;
+  }
+  .text-4x {
+    font-size: $print-font-base * 2;
+  }
+  .text-5x {
+    font-size: $print-font-base * 2.3;
+  }
+  .text-6x {
+    font-size: $print-font-base * 2.5;
+  }
+  .text-7x {
+    font-size: $print-font-base * 2.8;
+  }
+  .text-8x {
+    font-size: $print-font-base * 3;
+  }
+  .text-9x {
+    font-size: $print-font-base * 3.3;
+  }
+  .text-10x {
+    font-size: $print-font-base * 3.6;
+  }
+}
+
+.page-break {
+  page-break-after: always;
+}
+.page-break-this {
+  page-break-inside: avoid;
+}
