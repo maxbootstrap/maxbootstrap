@@ -1,9 +1,9 @@
 @charset "UTF-8";
 :root {
-  --body: $body;
-  --bg: $bg;
-  --heading-color: $heading-color;
-  --paragraph-color: $paragraph-color;
+  --body: #151d2e;
+  --bg: {$bg};
+  --heading-color: {$heading-color};
+  --paragraph-color: {$paragraph-color};
   --primary: #3B2098;
   --secondary: #112741;
   --dark: #151d2e;
