@@ -8,6 +8,10 @@
   color: $form-label;
 }
 
+.color-var {
+  color: var(--color-var);
+}
+
 //BACKGROUNDS
 
 .bg-transparent, .bg-none {
@@ -17,6 +21,10 @@
   &:hover {
     background-color: transparent !important;
   }
+}
+
+.bg-var {
+  background-color: var(--bg-var);
 }
 
 //GOES ON TOP OF COLOR
@@ -206,6 +214,8 @@
   
 }
 @media (min-width: $desktop-breakpoint) {
+
+  
   @each $name, $color in $colors {
     .md-color-#{$name} {
       color: var(--#{$name});
@@ -236,7 +246,7 @@
   
   .bg-gradient-#{$name} {
     background-color: $color;
-    background-image: linear-gradient(var(--bg-angle, 135deg), rgba($color, calc(var(--bg-opacity, 1)*1)) 40%, rgba(darken($color, 15%), calc(var(--bg-opacity, 1)*1))  100%);
+    background-image: linear-gradient(var(--bg-angle, 135deg), rgba($color, calc(var(--bg-opacity, 1)*1)) var(--bg-start, 40%), rgba(darken($color, 15%), calc(var(--bg-opacity, 1)*1))  100%);
   }
   .bg-gradient-#{$name}-circular {
     background-color: $color;
@@ -244,15 +254,15 @@
   }
   .bg-gradient-#{$name}-transparent {
     background-color: transparent;
-    background-image: linear-gradient(var(--bg-angle, 180deg), $color 40%, rgba($color, 0%) 100%);
+    background-image: linear-gradient(var(--bg-angle, 180deg), $color var(--bg-start, 40%), rgba($color, 0%) var(--bg-end, 100%));
   }
   .bg-gradient-transparent-#{$name} {
     background-color: transparent;
-    background-image: linear-gradient(var(--bg-angle, 180deg), rgba($color, 0%) 40%, $color 100%);
+    background-image: linear-gradient(var(--bg-angle, 180deg), rgba($color, 0%) var(--bg-start, 40%), $color var(--bg-end, 100%));
   }
   .bg-duo-#{$name} {
     background: $color;
-    background: linear-gradient(var(--bg-angle, 120deg), rgba($color,1) 40%, lighten($color, 2%) 62%, darken($color, 5%) 62%);
+    background: linear-gradient(var(--bg-angle, 120deg), rgba($color,1) var(--bg-start, 40%), lighten($color, 2%) var(--bg-end, 62%), darken($color, 5%) var(--bg-end, 62%));
   }
 
 
@@ -270,7 +280,7 @@
   @if $name != $name2 {
     .bg-gradient-#{$name}-#{$name2} {
       background-color: $color;
-      background-image: linear-gradient(var(--bg-angle, 120deg), rgba($color, var(--bg-opacity, 1)) 40%, rgba($color2, var(--bg-opacity, 1)) 100%);
+      background-image: linear-gradient(var(--bg-angle, 120deg), rgba($color, var(--bg-opacity, 1)) var(--bg-start, 40%), rgba($color2, var(--bg-opacity, 1)) var(--bg-end, 100%));
     }
     .bg-gradient-#{$name}-#{$name2}-circular {
       background-color: $color;
@@ -500,7 +510,7 @@ $instagram: #e4405f;
 
 
 //BLEND MODES
-$blends: normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, difference, exclusion, hue, saturation, color, luminosity;
+$blends: normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, difference, exclusion, hue, saturation, color, luminosity, hard-light;
 @each $blend in $blends {
   .blend-#{$blend} {mix-blend-mode: $blend;}
   .hover-blend-#{$blend} {
@@ -547,4 +557,18 @@ $blends: normal, multiply, screen, overlay, darken, lighten, color-dodge, color-
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.bg-glass {
+  background-color: rgba(darken($primary, 10%), 0.3);
+  box-shadow: rgba($dark, 0.25) 0px 30px 60px, rgba($dark, 0.2) 0px 0px 0px 0.5px inset;
+  backdrop-filter: blur(40px) brightness(80%) saturate(150%);
+  -webkit-backdrop-filter: blur(40px) brightness(80%) saturate(150%);
+}
+
+.hover-bg-glass {
+  &:hover {
+    background-color: rgba(darken($primary, 10%), 0.1);
+    box-shadow: rgba($dark, 0.2) 0px 0px 0px 0.5px inset;
+  }
 }

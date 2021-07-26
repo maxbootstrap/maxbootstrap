@@ -1011,54 +1011,29 @@ $margins: m, ml, mr, mt, mb, my, mx;
 //BORDERS
 $borders: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
 @each $row in $borders {
-  .border-#{$row}px {
+  .border-#{$row} {
     border-style: solid;
     border-width: #{$row}px !important;
     border-color: $body;
   }
-  .border-t-#{$row}px {
+  .border-t-#{$row} {
     border-top-style: solid;
     border-top-width: #{$row}px !important;
     border-color: $body;
   }
-  .border-b-#{$row}px {
+  .border-b-#{$row} {
     border-bottom-style: solid;
     border-bottom-width: #{$row}px !important;
     border-color: $body;
   }
-  .border-l-#{$row}px {
+  .border-l-#{$row} {
     border-left-style: solid;
     border-left-width: #{$row}px !important;
     border-color: $body;
   }
-  .border-r-#{$row}px {
-    border-right-style: solid;
-    border-right-width: #{$row}px !important;
-    border-color: $body;
-  }
-  .border-#{$row} {
-    border-style: solid;
-    border-width: #{$row}rem !important;
-    border-color: $body;
-  }
-  .border-t-#{$row} {
-    border-top-style: solid;
-    border-top-width: #{$row}rem !important;
-    border-color: $body;
-  }
-  .border-b-#{$row} {
-    border-bottom-style: solid;
-    border-bottom-width: #{$row}rem !important;
-    border-color: $body;
-  }
-  .border-l-#{$row} {
-    border-left-style: solid;
-    border-left-width: #{$row}rem !important;
-    border-color: $body;
-  }
   .border-r-#{$row} {
     border-right-style: solid;
-    border-right-width: #{$row}rem !important;
+    border-right-width: #{$row}px !important;
     border-color: $body;
   }
 }

@@ -90,6 +90,14 @@
   background-attachment: left;
 }
 
+.bg-local {
+  background-attachment: local;
+}
+
+.bg-scroll {
+  background-attachment: scroll;
+}
+
 //ANIMATION
 .bg-zoom { 
   transition: all .3s ease-in-out;
@@ -425,10 +433,6 @@
 *[data-tooltip][data-tooltip-theme~="orange"]::before {
     border-top-color: $orange;
 }
-
-
-//PLYR
-
 
 //SVG
 

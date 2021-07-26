@@ -1,4 +1,4 @@
-@import 'scss/variables';
+@import "../scss/variables";
 
 $mobile-email-container-padding: ($email-container-padding * .6);
 @if $mobile-email-container-padding < 0 {

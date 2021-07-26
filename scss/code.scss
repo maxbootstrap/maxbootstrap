@@ -2,51 +2,42 @@
 .code-window {
   position: relative;
   display: inline-block;
-  padding: 3.2rem 2.2rem 2.2rem 2rem;
+  padding: 2.5rem 1.2rem 1.5rem 1.5rem;
   border-radius: 6px;
   color: $code-color;
   background: $code-bg;
   background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14"><g fill="none" fillRule="evenodd" transform="translate(1 1)"><circle cx="6" cy="6" r="6" fill="%23FF5F56" stroke="%23E0443E" strokeWidth=".5" /><circle cx="26" cy="6" r="6" fill="%23FFBD2E" stroke="%23DEA123" strokeWidth=".5" /><circle cx="46" cy="6" r="6" fill="%2327C93F" stroke="%231AAB29" strokeWidth=".5" /></g></svg>');
   background-repeat: no-repeat;
   background-position: 16px 16px;
-  box-shadow: 5px 5px 15px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 5px 5px 15px 0px rgba($code-bg, 0.5);
   margin-bottom: 10px;
   width: 100%;
   max-width: 1100px;
-
-  &.clipboard::after {
-    display: block;
-    cursor: pointer !important;
-    content: "Copy";
-    position: absolute;
-    right: 10px;
-    top: 6px;
-    font-size: 12px;
-    color: $code-color;
-    opacity: .5;
-    -webkit-backface-visibility: hidden;
-  }
 
   code {
     display: block;
     text-align: left;
     overflow-wrap: break-word !important;
     word-break: break-all !important;
+    overflow-x: auto;
   }
 
   @media (max-width: $desktop-breakpoint) {
+    background-size: 35px auto;
+    background-position: 18px 15px;
     max-width: 100% !important;
-    padding: 2.8rem 1.3rem 1.7rem 1.3rem;
+    padding: 2.2rem 1.1rem 1.7rem 1.1rem;
     code {
       width: 100% !important;
       margin-right: 0;
+      padding: 0;
     }
   }
 }
 
 
 //PRE CODE CSS
-pre.code {
+.code-single {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -59,52 +50,59 @@ pre.code {
   padding: 0;
   margin-bottom: .8rem;
 
+  .code-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px 1.2rem;
+    font-weight: bold;
+    font-size: .9rem;
+    color: $code-label;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    margin: 0;
+    background-color: darken($code-bg, 2%);
+    border-right: 1px solid $code-label;
+    opacity: .8;
+  }
+
+  code {
+    position: relative;
+    display: block;
+    overflow-wrap: break-word !important;
+    word-break: break-all !important;
+    //padding: 1.1rem 1rem .9rem 1.2rem;
+    font-size: .8rem;
+    line-height: 1.2rem;
+    color: $code-color;
+    margin: 0 2rem 0 0;
+    padding: 1rem;
+  }
+  @media (max-width: $desktop-breakpoint) {
+    code {
+      font-size: .8rem;
+    }
+
+  }
+  
+}
+
+.code-window, .code-single {
   &.clipboard::after {
     display: block;
     cursor: pointer !important;
     content: "Copy";
     position: absolute;
     right: 8px;
-    top: 3px;
-    font-size: 11px;
-    color: $code-color;
-    opacity: .5;
+    top: 4px;
+    font-size: 12px;
+    color: lighten($code-color, 10%);
+    font-weight: $font-weight-bold;
+    opacity: .6;
     -webkit-backface-visibility: hidden;
   }
-
-  label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 60px;
-    padding: 1.1rem .7rem;
-    //padding: 6px 10px;
-    font-weight: bold;
-    font-size: 13px;
-    color: $code-label;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    pointer-events: none;
-    margin: 0;
-    background-color: darken($code-bg, 2%);
-    border-right: 1px solid darken($code-bg, 5%);
-  }
-
-  code {
-    max-width: 86%;
-    overflow-wrap: break-word !important;
-    word-break: break-all !important;
-    padding: 1.1rem 1rem .9rem 1.2rem;
-    font-size: .8rem;
-    line-height: 1.2rem;
-    color: $code-color;
-  }
-  
-}
-
-
-//VUE
-[v-cloak] {
-  display: none;
 }

@@ -120,7 +120,7 @@
     }
   }
 
-  .hover-btn-#{$name} {
+  .hover-badge-#{$name} {
     &:hover {
       background: lighten($color, 8%);
       border-color: lighten($color, 8%);
@@ -128,3 +128,4 @@
   }
 
 }
+

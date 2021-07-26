@@ -1,6 +1,6 @@
 $second_theme: false !default; //false, 'light', 'dark'
 //GRID
-$desktop-breakpoint: 868px !default;
+$desktop-breakpoint: 720px !default;
 $container: 1300px !default;
 $container-max: 1860px !default;
 $container-min: 1000px !default;
@@ -12,9 +12,9 @@ $grid-columns: $columns !default;
 $grid-gutter-width: 0px !default;
 //$line-height-base: 1.2 !default;
 $container-max-widths: (
-  sm: 540px,
+  sm: 350px,
   md: $desktop-breakpoint,
-  lg: 1000,
+  lg: $container-min,
   xl: $container
 ) !default;
 
@@ -77,13 +77,13 @@ $complete-colors: $colors !default;
   $complete-colors: map-merge($complete-colors, $variants-colors);
 }
 $custom-colors: ();
-//@debug $custom-colors;
 $colors: map-merge($colors, $custom-colors);
 
 //TYPE
 //$font-family--wait: "-apple-system, system-ui, BlinkMacSystemFont" !default; Chrome needs to fix bold
 $font-family: "-apple-system" !default;
 $heading-font-family: $font-family !default;
+
 $font-size: 16px !default;
 $print-font-base: 11pt !default;
 $font-weight-light: 300 !default;
@@ -92,24 +92,53 @@ $font-weight-bold: 700 !default;
 $font-weight-bolder: 700 !default;
 $font-weight: $font-weight-regular !default;
 $font-letter-spacing: 0.025em !default;
+
 $paragraph-weight: $font-weight !default;
 $paragraph-line-height: 1.2 !default;
 $paragraph-color: $body !default;
+
+//HEADINGS
 $h1-size: 2.6rem !default;
 $h2-size: 2.2rem !default;
 $h3-size: 1.9rem !default;
 $h4-size: 1.6rem !default;
 $h5-size: 1.2rem !default;
+$h6-size: 1.1rem !default;
+//MD
+$md-h1-size: calc(#{$h1-size} * 1.1) !default;
+$md-h2-size: calc(#{$h2-size} * 1.1) !default;
+$md-h3-size: calc(#{$h3-size} * 1.1) !default;
+$md-h4-size: calc(#{$h4-size} * 1.1) !default;
+$md-h5-size: calc(#{$h5-size} * 1.1) !default;
+$md-h6-size: calc(#{$h6-size} * 1.1) !default;
 $heading-weight: $font-weight-bold !default;
+$h1-weight: $heading-weight !default;
+$h2-weight: $heading-weight !default;
+$h3-weight: $heading-weight !default;
+$h4-weight: $heading-weight !default;
+$h5-weight: $heading-weight !default;
+$h6-weight: $heading-weight !default;
 $heading-line-height: 1.1 !default;
 $heading-letter-spacing: $font-letter-spacing !default;
+$h1-letter-spacing: $heading-letter-spacing !default;
+$h2-letter-spacing: $heading-letter-spacing !default;
+$h3-letter-spacing: $heading-letter-spacing !default;
+$h4-letter-spacing: $heading-letter-spacing !default;
+$h5-letter-spacing: $heading-letter-spacing !default;
+$h6-letter-spacing: $heading-letter-spacing !default;
 $heading-color: $body !default;
+
+$text-muted-color: $primary !default;
+$text-muted-weight: $font-weight-bold !default;
+$text-muted-letter-spacing: ($font-letter-spacing * 1.05) !default;
+$text-muted-transform: uppercase !default;
 
 //BUTTONS
 $btn-padding-y: .6rem !default;
 $btn-padding-x: 1.3rem !default;
 $btn-radius: .2rem !default;
 $btn-border: 1px !default;
+$btn-disabled-opacity: .7 !default;
 
 //FORMS
 $form-bg: #ffffff !default;
@@ -136,26 +165,24 @@ $animation-px: 1rem !default;
 $animation-duration: .5s !default;
 
 //BACKEND
+$backend-header-height: 60px !default;
+$backend-header-logo-height: ($backend-header-height * .8) !default;
 $backend-bg: #f8fafc !default;
 $backend-sidebar-bg: white !default;
-$backend-sidebar: 250px !default;
-$backend-sidebar-padding: ($backend-sidebar * .15) / 2 !default;
-$backend-article-margin: $backend-sidebar !default;
+$backend-sidebar-width: 250px !default;
+$backend-xs-sidebar-bg: $backend-sidebar-bg !default;
+$backend-xs-sidebar-width: 60px !default;
+$backend-sidebar-padding: ($backend-sidebar-width * .15) / 2 !default;
+$backend-article-margin: $backend-sidebar-width !default;
 $backend-breakpoint: 1168px !default;
 $backend-sidebar-links: #2a5164 !default;
 $backend-sidebar-links-hover: transparent !default;
-$backend-sidebar-links-padding-tb: .6rem !default;
+$backend-sidebar-links-padding: .6rem !default;
 
 //MODAL
 $modal-bg: $dark !default;
 $modal-min-width: 330px !default;
 $modal-padding: 25px !default;
-
-//CODE
-$code-bg: #1d2730 !default; //lighten($primary, 60%) !default; //#333333
-$code-color: #8ca0b8 !default; //$primary; //#a3c67a
-$code-label: white !default; //#ddd
-
 
 //EMAIL
 $email-bg: $light !default;
@@ -164,6 +191,16 @@ $email-container-padding: 10px !default;
 $email-content-bg: $white !default;
 $email-content-padding: 20px !default;
 $email-text-align: left !default;
+
+//CODE
+$code-bg: darken($primary, 15%) !default; //lighten($primary, 60%) !default; //#333333
+$code-color: $light !default; //$primary; //#a3c67a
+$code-label: white !default; //#ddd
+
+//PACKAGES
+// $plugin-highlightjs: false !default;
+// $plugin-swal2: false !default;
+// $plugin-plyr: false !default;
 
 
 //CONVERTIONS
@@ -177,7 +214,6 @@ $email-text-align: left !default;
   $input-radius: 9999px !default;
 }
 
-@debug($body);
 :root {
   --body: #{$body};
   --bg: #{$bg};
@@ -226,6 +262,7 @@ $complete-colors-dark: $colors !default;
   }
   $complete-colors-dark: map-merge($complete-colors-dark, $variants-colors);
 }
+//prefers-color-scheme??
 $custom-colors-dark: ();
 $colors-dark: map-merge($colors-dark, $custom-colors-dark);
   [data-theme="dark"] {
@@ -235,7 +272,6 @@ $colors-dark: map-merge($colors-dark, $custom-colors-dark);
     --paragraph-color: invert($paragraph-color);
     @each $key, $value in $complete-colors  {
       $value: map-get($complete-colors-dark, $key);
-      // @debug($key);
       --#{$key}: #{invert($value)};
       
     }

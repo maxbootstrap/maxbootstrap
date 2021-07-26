@@ -132,7 +132,7 @@
       }
     }
     &:disabled{
-      opacity: .7;
+      opacity: $btn-disabled-opacity;
     }
   }
 
@@ -157,7 +157,7 @@
       }
     }
     &:disabled{
-      opacity: .7;
+      opacity: $btn-disabled-opacity;
     }
   }
 
@@ -170,237 +170,23 @@
 
 }
 
+.btn-glass {
+  background-color: rgba(darken($primary, 10%), 0.3);
+  box-shadow: rgba($dark, 0.25) 0px 30px 60px, rgba($dark, 0.2) 0px 0px 0px 0.5px inset;
+  backdrop-filter: blur(40px) brightness(80%) saturate(150%);
+  -webkit-backdrop-filter: blur(40px) brightness(80%) saturate(150%);
+  &:hover {
+    background-color: rgba(darken($primary, 10%), 0.1);
+    box-shadow: rgba($dark, 0.2) 0px 0px 0px 0.5px inset;
+  }
+}
 
-// .btn-primary {
-//   color: white;
-//   background-color: $primary;
-//   border-color: $primary;
-//   &:hover {
-//     color: white !important;
-//     background: darken($primary, 10%);
-//     border-color: darken($primary, 10%);
-//   }
-//   &:disabled{
-//     opacity: .7;
-//   }
-// }
-
-// .btn-secondary {
-//   color: white;
-//   background-color: $secondary;
-//   border-color: $secondary;
-//   &:hover {
-//     color: white !important;
-//     background: darken($secondary, 10%);
-//     border-color: darken($secondary, 10%);
-//   }
-//   &:disabled{
-//     opacity: .7;
-//   }
-// }
-
-// .btn-dark {
-//   color: white;
-//   background-color: $dark;
-//   border-color: $dark;
-//   &:hover {
-//     color: white !important;
-//     background: lighten($dark, 10%);
-//     border-color: lighten($dark, 10%);
-//   }
-//   &:disabled{
-//     opacity: .7;
-//   }
-// }
-
-// .btn-black {
-//   color: white;
-//   background-color: $black;
-//   border-color: $black;
-//   &:hover {
-//     color: white;
-//     background: lighten($black, 6%);
-//     border-color: lighten($black, 6%);
-//   }
-//   &:disabled{
-//     opacity: .7;
-//   }
-// }
-
-// .btn-gray {
-//   color: white;
-//   background-color: $gray;
-//   border-color: $gray;
-//   &:hover {
-//     color: white;
-//     background: lighten( $gray, 6%);
-//     border-color: lighten( $gray, 6%);
-//   }
-//   &:disabled{
-//     opacity: .7;
-//   }
-// }
-
-// .btn-white {
-//   color: $body;
-//   background-color: white;
-//   border-color: white;
-//   &:hover {
-//     color: $body;
-//     background: $light;
-//     border-color: $light;
-//   }
-//   &:disabled{
-//     opacity: .7;
-//     // background: $light;
-//     // border-color: $light;
-//   }
-// }
-
-// .btn-light {
-//   color: $body;
-//   background-color: $light;
-//   border-color: $light;
-//   &:hover {
-//     color: $body;
-//     background: darken($light, 10%);
-//     border-color: darken($light, 10%);
-//   }
-//   &:disabled{
-//     opacity: .7;
-//     // background: darken($light, 10%);
-//     // border-color: darken($light, 10%);
-//   }
-// }
-
-// .btn-blue {
-//   color: white;
-//   background-color: $blue;
-//   border-color: $blue;
-//   &:hover {
-//     color: white;
-//     background: darken($blue, 10%);
-//     border-color: darken($blue, 10%);
-//   }
-//   &:disabled{
-//     opacity: .7;
-//     // background: lighten($blue, 40%);
-//     // border-color: lighten($blue, 40%);
-//   }
-// }
-
-// .btn-teal {
-//   color: white;
-//   background-color: $teal;
-//   border-color: $teal;
-//   &:hover {
-//     color: white;
-//     background: darken($teal, 10%);
-//     border-color: darken($teal, 10%);
-//   }
-//   &:disabled{
-//     opacity: .7;
-//     // background: lighten($teal, 40%);
-//     // border-color: lighten($teal, 40%);
-//   }
-// }
-
-// .btn-indigo {
-//   color: white;
-//   background-color: $indigo;
-//   border-color: $indigo;
-//   &:hover {
-//     color: white;
-//     background: darken($indigo, 10%);
-//     border-color: darken($indigo, 10%);
-//   }
-//   &:disabled{
-//     opacity: .7;
-//     // background: lighten($indigo, 40%);
-//     // border-color: lighten($indigo, 40%);
-//   }
-// }
-
-// .btn-purple {
-//   color: white;
-//   background-color: $purple;
-//   border-color: $purple;
-//   &:hover {
-//     color: white;
-//     background: darken($purple, 10%);
-//     border-color: darken($purple, 10%);
-//   }
-//   &:disabled{
-//     opacity: .7;
-//     // background: lighten($purple, 40%);
-//     // border-color: lighten($purple, 40%);
-//   }
-// }
-
-// .btn-green {
-//   color: white;
-//   background-color: $green;
-//   border-color: $green;
-//   &:hover {
-//     color: white;
-//     background: darken($green, 10%);
-//     border-color: darken($green, 10%);
-//   }
-//   &:disabled{
-//     opacity: .7;
-//     // background: lighten($green, 40%);
-//     // border-color: lighten($green, 40%);
-//   }
-// }
-
-// .btn-red {
-//   color: white;
-//   background-color: $red;
-//   border-color: $red;
-//   &:hover {
-//     color: white;
-//     background: darken($red, 10%);
-//     border-color: darken($red, 10%);
-//   }
-//   &:disabled{
-//     opacity: .7;
-//     // background: lighten($red, 40%);
-//     // border-color: lighten($red, 40%);
-//   }
-// }
-
-// .btn-orange {
-//   color: white;
-//   background-color: $orange;
-//   border-color: $orange;
-//   &:hover {
-//     color: white;
-//     background: darken($orange, 10%);
-//     border-color: darken($orange, 10%);
-//   }
-//   &:disabled{
-//     opacity: .7;
-//     // background: lighten($orange, 40%);
-//     // border-color: lighten($orange, 40%);
-//   }
-// }
-
-// .btn-yellow {
-//   color: $body;
-//   background-color: $yellow;
-//   border-color: $yellow;
-//   &:hover {
-//     color: $body;
-//     background: darken($yellow, 10%);
-//     border-color: darken($yellow, 10%);
-//   }
-//   &:disabled{
-//     opacity: .7;
-//     // background: lighten($yellow, 40%);
-//     // border-color: lighten($yellow, 40%);
-//   }
-// }
-
+.hover-btn-glass {
+  &:hover {
+    background-color: rgba(darken($primary, 10%), 0.1);
+    box-shadow: rgba($dark, 0.2) 0px 0px 0px 0.5px inset;
+  }
+}
 
 .btn-fast {
   touch-action: manipulation;

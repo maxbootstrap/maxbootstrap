@@ -10,6 +10,18 @@ html, body {
   font-weight: $font-weight;
 }
 
+// *,
+// *::before,
+// *::after {
+//   box-sizing: border-box;
+// }
+
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  border-width: 0;
+}
+
 body {
   font-family: $font-family, -apple-system, "Helvetica Neue", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: $font-size;
@@ -29,7 +41,7 @@ a {
   &:hover {
     text-decoration: none;
     //color: currentColor !important;
-    opacity: .98;
+    opacity: .95 !important;
     outline: none !important;
   }
 }
@@ -122,7 +134,7 @@ ol, ul {
 //DISPLAY
 .visible { visibility: visible;}
 .invisible { visibility: hidden; }
-.hidden { display: none !important; }
+.hidden { display: none; }
 .inline       { display: inline !important; }
 .inline-block { display: inline-block !important; }
 .block        { display: block !important; }
@@ -137,15 +149,31 @@ ol, ul {
   height: 1px;
   clear: both;
 }
-@media (max-width: $desktop-breakpoint) {
+@media (max-width: map-get($container-max-widths, 'sm')) {
+  .xs-visible { visibility: visible;}
+  .xs-invisible { visibility: hidden; }
+  .xs-hidden { display: none !important; }
+  .xs-inline { display: inline !important; }
+  .xs-inline-block { display: inline-block !important; }
+  .xs-block { display: block !important; }
+  .xs-flex { display: flex !important; }
+  .xs-inline-flex { display: inline-flex !important; }
+  .xs-breakline { 
+    display: table;
+    width: 100%;
+    height: 1px;
+    clear: both;
+  }
+}
+@media (max-width: map-get($container-max-widths, 'md')) {
   .sm-visible { visibility: visible;}
   .sm-invisible { visibility: hidden; }
   .sm-hidden { display: none !important; }
-  .sm-inline       { display: inline !important; }
+  .sm-inline { display: inline !important; }
   .sm-inline-block { display: inline-block !important; }
-  .sm-block        { display: block !important; }
+  .sm-block { display: block !important; }
   .sm-flex { display: flex !important; }
-  .sm-inline-flex  { display: inline-flex !important; }
+  .sm-inline-flex { display: inline-flex !important; }
   .sm-breakline { 
     display: table;
     width: 100%;
@@ -157,12 +185,28 @@ ol, ul {
   .md-visible { visibility: visible;}
   .md-invisible { visibility: hidden; }
   .md-hidden { display: none !important; }
-  .md-inline       { display: inline !important; }
+  .md-inline { display: inline !important; }
   .md-inline-block { display: inline-block !important; }
-  .md-block        { display: block !important; }
+  .md-block { display: block !important; }
   .md-flex { display: flex !important; }
-  .md-inline-flex  { display: inline-flex !important; }
+  .md-inline-flex { display: inline-flex !important; }
   .md-breakline { 
+    display: table;
+    width: 100%;
+    height: 1px;
+    clear: both;
+  }
+}
+@media (min-width: $container) {
+  .lg-visible { visibility: visible;}
+  .lg-invisible { visibility: hidden; }
+  .lg-hidden { display: none !important; }
+  .lg-inline { display: inline !important; }
+  .lg-inline-block { display: inline-block !important; }
+  .lg-block { display: block !important; }
+  .lg-flex { display: flex !important; }
+  .lg-inline-flex { display: inline-flex !important; }
+  .lg-breakline { 
     display: table;
     width: 100%;
     height: 1px;
@@ -493,6 +537,9 @@ $orders: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
 
 
 //POSITION
+.static {
+  position: static;
+}
 .relative {
   position: relative;
 }
@@ -502,8 +549,14 @@ $orders: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
 .fixed {
   position: fixed;
 }
+.sticky {
+  position: sticky;
+}
 
 @media (min-width: $desktop-breakpoint) {
+  .md-static {
+    position: static;
+  }
   .md-relative {
     position: relative;
   }
@@ -512,6 +565,9 @@ $orders: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
   }
   .md-fixed {
     position: fixed;
+  }
+  .md-sticky {
+    position: sticky;
   }
 }
 
@@ -1113,7 +1169,7 @@ $mp: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 
   -webkit-user-select: none;
   user-select: none;
   pointer-events: none;
-  opacity: .85;
+  opacity: .9;
 }
 
 .select-none {

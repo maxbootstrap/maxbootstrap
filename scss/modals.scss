@@ -75,7 +75,7 @@
         background-color: $primary;
         padding-bottom: 14px;
         color: white;
-        h4 {
+        .modal-title {
           color: white;
         }
         .close {
@@ -83,9 +83,9 @@
         }
       }
     }
-    h4 {
+    .modal-title {
       width: auto;
-      font-size: 2.5rem;
+      font-size: 2.3rem;
       line-height: 1.1;
       font-weight: $font-weight-bold;
       span {
@@ -94,10 +94,6 @@
         font-size: 1rem;
         opacity: .7;
       }
-    }
-    h5 {
-      font-size: 1.6rem;
-      font-weight: $font-weight-bold;
     }
     .modal-body {
       overflow-y: auto;
@@ -123,22 +119,17 @@
 
     @media (max-width: $desktop-breakpoint) {
       .modal-header {
-        padding: 1.1rem 1.1rem 1.3rem 1rem !important;
+        padding: 1.1rem 1.1rem 1.3rem 1rem;
         .close {
           right: 1rem;
         }
-        h4 {
-          font-size: 2.1rem;
-        }
-        h5 {
-          font-size: 1.4rem;
-        }
-        h6 {
-          //font-size: 1.1rem;
+        .modal-title {
+          font-size: 1.8rem;
         }
       }
       .modal-body {
-        padding: 1.5rem 1rem 1rem 1rem !important;
+        padding: 1.5rem 1rem 1rem 1rem;
+        max-height: 90vh;
       }
     }
   }

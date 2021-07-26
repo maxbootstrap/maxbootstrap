@@ -1072,6 +1072,26 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/dist/backend.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/dist/backend-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/dist/emails.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/dist/emails-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/dist/maksucocss-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1079,6 +1099,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/dist/maksucocss-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/dist/maxbootstrap-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/dist/maxbootstrap-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1101,896 +1132,47 @@
 		"oAP": "/LICENSE",
 		"oF": 0
 		},
-	"/package.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/package-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/apexcharts.css": {
+	"/packages/apexcharts.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/apexcharts-min.css",
-		"oF": 1,
+		"oA": 0,
+		"oAP": "/packages/apexcharts-min.css",
+		"oF": 0,
 		"oS": 3
-		},
-	"/packages/apexcharts/apexcharts.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/apexcharts-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/apexcharts/apexcharts.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/apexcharts.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/apexcharts/locales/ca.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/ca-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/locales/de.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/de-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/locales/el.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/el-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/locales/en.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/en-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/locales/es.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/es-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/locales/fi.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/fi-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/locales/fr.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/fr-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/locales/hi.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/hi-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/locales/hr.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/hr-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/locales/hy.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/hy-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/locales/id.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/id-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/locales/it.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/it-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/locales/ko.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/ko-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/apexcharts/locales/ko.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/ko-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/locales/nl.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/nl-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/locales/pl.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/pl-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/locales/pt-br.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/pt-br-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/locales/ru.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/ru-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/locales/se.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/se-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/locales/tr.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/tr-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/apexcharts/locales/ua.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/packages/apexcharts/locales/ua-min.json",
-		"oF": 1,
-		"oO": 0,
-		"oS": 1
-		},
-	"/packages/cleave.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/cleave-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/clipboard/clipboard.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/clipboard/clipboard-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/clipboard/clipboard.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/clipboard/clipboard.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
 		},
 	"/packages/flickity/flickity-fade.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/packages/flickity/flickity-fade-min.css",
-		"oF": 1,
+		"oF": 0,
 		"oS": 3
-		},
-	"/packages/flickity/flickity-fade.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/flickity/flickity-fade-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
 		},
 	"/packages/flickity/flickity.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/packages/flickity/flickity-min.css",
-		"oF": 1,
+		"oF": 0,
 		"oS": 3
-		},
-	"/packages/flickity/flickity.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/flickity/flickity-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
 		},
 	"/packages/flickity/fullscreen.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/packages/flickity/fullscreen-min.css",
-		"oF": 1,
+		"oF": 0,
 		"oS": 3
 		},
-	"/packages/flickity/fullscreen.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/flickity/fullscreen-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/gumshoe.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/gumshoe.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/moment/moment-with-locales.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/moment/moment-with-locales-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/moment/moment.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/moment/moment-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/be-nl.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/be-nl.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/bg.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/bg.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/chs.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/chs.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/cs.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/cs.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/da-dk.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/da-dk.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/de-ch.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/de-ch.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/de.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/de.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/en-au.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/en-au.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/en-gb.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/en-gb.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/en-za.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/en-za.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/es-es.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/es-es.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/es.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/es.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/et.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/et.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/fi.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/fi.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/fr-ca.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/fr-ca.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/fr-ch.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/fr-ch.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/fr.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/fr.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/hu.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/hu.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/it.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/it.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/ja.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/ja.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/lv.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/lv.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/nl-be.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/nl-be.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/nl-nl.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/nl-nl.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/no.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/no.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/pl.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/pl.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/pt-br.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/pt-br.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/pt-pt.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/pt-pt.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/ru-ua.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/ru-ua.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/ru.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/ru.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/sk.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/sk.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/sl.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/sl.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/th.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/th.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/tr.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/tr.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/uk-ua.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/uk-ua.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/locales/vi.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/locales/vi.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/numeral/numeral.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/numeral/numeral.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/plyr/dist/blank.mp4": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/dist/blank.mp4",
-		"oF": 1
-		},
-	"/packages/plyr/dist/plyr.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/dist/plyr-min.css",
-		"oF": 1,
-		"oS": 3
-		},
-	"/packages/plyr/dist/plyr.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/plyr/dist/plyr-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/plyr/dist/plyr.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/plyr/dist/plyr.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/plyr/dist/plyr.min.js.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/dist/plyr.min.js.map",
-		"oF": 1
-		},
-	"/packages/plyr/dist/plyr.min.mjs": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/dist/plyr.min.mjs",
-		"oF": 1
-		},
-	"/packages/plyr/dist/plyr.min.mjs.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/dist/plyr.min.mjs.map",
-		"oF": 1
-		},
-	"/packages/plyr/dist/plyr.mjs": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/dist/plyr.mjs",
-		"oF": 1
-		},
-	"/packages/plyr/dist/plyr.polyfilled.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/plyr/dist/plyr.polyfilled-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/plyr/dist/plyr.polyfilled.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/packages/plyr/dist/plyr.polyfilled.min-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/packages/plyr/dist/plyr.polyfilled.min.js.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/dist/plyr.polyfilled.min.js.map",
-		"oF": 1
-		},
-	"/packages/plyr/dist/plyr.polyfilled.min.mjs": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/dist/plyr.polyfilled.min.mjs",
-		"oF": 1
-		},
-	"/packages/plyr/dist/plyr.polyfilled.min.mjs.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/dist/plyr.polyfilled.min.mjs.map",
-		"oF": 1
-		},
-	"/packages/plyr/dist/plyr.polyfilled.mjs": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/dist/plyr.polyfilled.mjs",
-		"oF": 1
-		},
-	"/packages/plyr/dist/plyr.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/dist/plyr.svg",
-		"oF": 1,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
-		},
-	"/packages/plyr/src/js": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/build/packages/plyr/src/js",
-		"oF": 1
-		},
-	"/packages/plyr/src/sass/base.scss": {
+	"/packages/highlightjs.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1998,256 +1180,22 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/base.css",
+		"oAP": "/packages/highlightjs.css",
 		"oF": 1,
 		"oS": 0,
 		"sct": 1
 		},
-	"/packages/plyr/src/sass/components/badges.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/components/badges.css",
-		"oF": 1,
-		"oS": 0,
-		"sct": 1
-		},
-	"/packages/plyr/src/sass/components/captions.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/components/captions.css",
-		"oF": 1,
-		"oS": 0,
-		"sct": 1
-		},
-	"/packages/plyr/src/sass/components/control.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/components/control.css",
-		"oF": 1,
-		"oS": 0,
-		"sct": 1
-		},
-	"/packages/plyr/src/sass/components/controls.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/components/controls.css",
-		"oF": 1,
-		"oS": 0,
-		"sct": 1
-		},
-	"/packages/plyr/src/sass/components/menus.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/components/menus.css",
-		"oF": 1,
-		"oS": 0,
-		"sct": 1
-		},
-	"/packages/plyr/src/sass/components/poster.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/components/poster.css",
-		"oF": 1,
-		"oS": 0,
-		"sct": 1
-		},
-	"/packages/plyr/src/sass/components/progress.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/components/progress.css",
-		"oF": 1,
-		"oS": 0,
-		"sct": 1
-		},
-	"/packages/plyr/src/sass/components/sliders.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/components/sliders.css",
-		"oF": 1,
-		"oS": 0,
-		"sct": 1
-		},
-	"/packages/plyr/src/sass/components/times.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/components/times.css",
-		"oF": 1,
-		"oS": 0,
-		"sct": 1
-		},
-	"/packages/plyr/src/sass/components/tooltips.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/components/tooltips.css",
-		"oF": 1,
-		"oS": 0,
-		"sct": 1
-		},
-	"/packages/plyr/src/sass/components/volume.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/components/volume.css",
-		"oF": 1,
-		"oS": 0,
-		"sct": 1
-		},
-	"/packages/plyr/src/sass/lib/animation.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/lib/animation.css",
-		"oF": 1,
-		"oS": 0,
-		"sct": 1
-		},
-	"/packages/plyr/src/sass/lib/css-vars.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/lib/css-vars.css",
-		"oF": 1,
-		"oS": 0,
-		"sct": 1
-		},
-	"/packages/plyr/src/sass/lib/functions.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/lib/functions.css",
-		"oF": 1,
-		"oS": 0,
-		"sct": 1
-		},
-	"/packages/plyr/src/sass/lib/mixins.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/lib/mixins.css",
-		"oF": 1,
-		"oS": 0,
-		"sct": 1
-		},
-	"/packages/plyr/src/sass/plugins/ads.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/plugins/ads.css",
-		"oF": 1,
-		"oS": 0,
-		"sct": 1
-		},
-	"/packages/plyr/src/sass/plugins/preview-thumbnails/index.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/plugins/preview-thumbnails/index.css",
-		"oF": 1,
-		"oS": 0,
-		"sct": 1
-		},
-	"/packages/plyr/src/sass/plugins/preview-thumbnails/settings.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/plugins/preview-thumbnails/settings.css",
-		"oF": 1,
-		"oS": 0,
-		"sct": 1
-		},
-	"/packages/plyr/src/sass/plyr.css": {
+	"/packages/plyr/plyr.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/packages/plyr/src/sass/plyr-min.css",
+		"oAP": "/packages/plyr/plyr-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"/packages/plyr/src/sass/plyr.scss": {
+	"/packages/plyr/sass/base.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2255,12 +1203,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/plyr.css",
-		"oF": 1,
+		"oAP": "/packages/plyr/sass/base.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/packages/plyr/src/sass/settings/badges.scss": {
+	"/packages/plyr/sass/components/badges.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2268,12 +1216,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/settings/badges.css",
-		"oF": 1,
+		"oAP": "/packages/plyr/sass/components/badges.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/packages/plyr/src/sass/settings/breakpoints.scss": {
+	"/packages/plyr/sass/components/captions.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2281,12 +1229,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/settings/breakpoints.css",
-		"oF": 1,
+		"oAP": "/packages/plyr/sass/components/captions.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/packages/plyr/src/sass/settings/captions.scss": {
+	"/packages/plyr/sass/components/control.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2294,12 +1242,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/settings/captions.css",
-		"oF": 1,
+		"oAP": "/packages/plyr/sass/components/control.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/packages/plyr/src/sass/settings/colors.scss": {
+	"/packages/plyr/sass/components/controls.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2307,12 +1255,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/settings/colors.css",
-		"oF": 1,
+		"oAP": "/packages/plyr/sass/components/controls.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/packages/plyr/src/sass/settings/controls.scss": {
+	"/packages/plyr/sass/components/menus.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2320,12 +1268,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/settings/controls.css",
-		"oF": 1,
+		"oAP": "/packages/plyr/sass/components/menus.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/packages/plyr/src/sass/settings/cosmetics.scss": {
+	"/packages/plyr/sass/components/poster.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2333,12 +1281,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/settings/cosmetics.css",
-		"oF": 1,
+		"oAP": "/packages/plyr/sass/components/poster.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/packages/plyr/src/sass/settings/helpers.scss": {
+	"/packages/plyr/sass/components/progress.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2346,12 +1294,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/settings/helpers.css",
-		"oF": 1,
+		"oAP": "/packages/plyr/sass/components/progress.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/packages/plyr/src/sass/settings/menus.scss": {
+	"/packages/plyr/sass/components/sliders.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2359,12 +1307,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/settings/menus.css",
-		"oF": 1,
+		"oAP": "/packages/plyr/sass/components/sliders.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/packages/plyr/src/sass/settings/progress.scss": {
+	"/packages/plyr/sass/components/times.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2372,12 +1320,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/settings/progress.css",
-		"oF": 1,
+		"oAP": "/packages/plyr/sass/components/times.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/packages/plyr/src/sass/settings/sliders.scss": {
+	"/packages/plyr/sass/components/tooltips.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2385,12 +1333,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/settings/sliders.css",
-		"oF": 1,
+		"oAP": "/packages/plyr/sass/components/tooltips.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/packages/plyr/src/sass/settings/tooltips.scss": {
+	"/packages/plyr/sass/components/volume.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2398,12 +1346,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/settings/tooltips.css",
-		"oF": 1,
+		"oAP": "/packages/plyr/sass/components/volume.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/packages/plyr/src/sass/settings/type.scss": {
+	"/packages/plyr/sass/lib/animation.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2411,12 +1359,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/settings/type.css",
-		"oF": 1,
+		"oAP": "/packages/plyr/sass/lib/animation.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/packages/plyr/src/sass/states/fullscreen.scss": {
+	"/packages/plyr/sass/lib/css-vars.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2424,12 +1372,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/states/fullscreen.css",
-		"oF": 1,
+		"oAP": "/packages/plyr/sass/lib/css-vars.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/packages/plyr/src/sass/types/audio.scss": {
+	"/packages/plyr/sass/lib/functions.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2437,12 +1385,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/types/audio.css",
-		"oF": 1,
+		"oAP": "/packages/plyr/sass/lib/functions.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/packages/plyr/src/sass/types/video.scss": {
+	"/packages/plyr/sass/lib/mixins.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2450,12 +1398,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/types/video.css",
-		"oF": 1,
+		"oAP": "/packages/plyr/sass/lib/mixins.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/packages/plyr/src/sass/utils/animation.scss": {
+	"/packages/plyr/sass/plugins/ads.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2463,12 +1411,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/utils/animation.css",
-		"oF": 1,
+		"oAP": "/packages/plyr/sass/plugins/ads.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/packages/plyr/src/sass/utils/hidden.scss": {
+	"/packages/plyr/sass/plugins/preview-thumbnails/index.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2476,180 +1424,420 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sass/utils/hidden.css",
-		"oF": 1,
+		"oAP": "/packages/plyr/sass/plugins/preview-thumbnails/index.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 1
 		},
-	"/packages/plyr/src/sprite/plyr-airplay.svg": {
-		"ft": 2097152,
-		"miP": 0,
+	"/packages/plyr/sass/plugins/preview-thumbnails/settings.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sprite/plyr-airplay.svg",
-		"oF": 1,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
+		"oAP": "/packages/plyr/sass/plugins/preview-thumbnails/settings.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
 		},
-	"/packages/plyr/src/sprite/plyr-captions-off.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sprite/plyr-captions-off.svg",
-		"oF": 1,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
+	"/packages/plyr/sass/plyr.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/packages/plyr/sass/plyr-min.css",
+		"oF": 0,
+		"oS": 3
 		},
-	"/packages/plyr/src/sprite/plyr-captions-on.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 1,
-		"oAP": "/packages/plyr/src/sprite/plyr-captions-on.svg",
-		"oF": 1,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
+	"/packages/plyr/sass/plyr.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/packages/plyr/sass/plyr.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
 		},
-	"/packages/plyr/src/sprite/plyr-download.svg": {
-		"ft": 2097152,
-		"miP": 0,
+	"/packages/plyr/sass/settings/badges.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sprite/plyr-download.svg",
-		"oF": 1,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
+		"oAP": "/packages/plyr/sass/settings/badges.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
 		},
-	"/packages/plyr/src/sprite/plyr-enter-fullscreen.svg": {
-		"ft": 2097152,
-		"miP": 0,
+	"/packages/plyr/sass/settings/breakpoints.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sprite/plyr-enter-fullscreen.svg",
-		"oF": 1,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
+		"oAP": "/packages/plyr/sass/settings/breakpoints.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
 		},
-	"/packages/plyr/src/sprite/plyr-exit-fullscreen.svg": {
-		"ft": 2097152,
-		"miP": 0,
+	"/packages/plyr/sass/settings/captions.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sprite/plyr-exit-fullscreen.svg",
-		"oF": 1,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
+		"oAP": "/packages/plyr/sass/settings/captions.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
 		},
-	"/packages/plyr/src/sprite/plyr-fast-forward.svg": {
-		"ft": 2097152,
-		"miP": 0,
+	"/packages/plyr/sass/settings/colors.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sprite/plyr-fast-forward.svg",
-		"oF": 1,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
+		"oAP": "/packages/plyr/sass/settings/colors.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
 		},
-	"/packages/plyr/src/sprite/plyr-logo-vimeo.svg": {
-		"ft": 2097152,
-		"miP": 0,
+	"/packages/plyr/sass/settings/controls.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sprite/plyr-logo-vimeo.svg",
-		"oF": 1,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
+		"oAP": "/packages/plyr/sass/settings/controls.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
 		},
-	"/packages/plyr/src/sprite/plyr-logo-youtube.svg": {
-		"ft": 2097152,
-		"miP": 0,
+	"/packages/plyr/sass/settings/cosmetics.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sprite/plyr-logo-youtube.svg",
-		"oF": 1,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
+		"oAP": "/packages/plyr/sass/settings/cosmetics.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
 		},
-	"/packages/plyr/src/sprite/plyr-muted.svg": {
-		"ft": 2097152,
-		"miP": 0,
+	"/packages/plyr/sass/settings/helpers.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sprite/plyr-muted.svg",
-		"oF": 1,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
+		"oAP": "/packages/plyr/sass/settings/helpers.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
 		},
-	"/packages/plyr/src/sprite/plyr-pause.svg": {
-		"ft": 2097152,
-		"miP": 0,
+	"/packages/plyr/sass/settings/menus.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sprite/plyr-pause.svg",
-		"oF": 1,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
+		"oAP": "/packages/plyr/sass/settings/menus.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
 		},
-	"/packages/plyr/src/sprite/plyr-pip.svg": {
-		"ft": 2097152,
-		"miP": 0,
+	"/packages/plyr/sass/settings/progress.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sprite/plyr-pip.svg",
-		"oF": 1,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
+		"oAP": "/packages/plyr/sass/settings/progress.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
 		},
-	"/packages/plyr/src/sprite/plyr-play.svg": {
-		"ft": 2097152,
-		"miP": 0,
+	"/packages/plyr/sass/settings/sliders.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sprite/plyr-play.svg",
-		"oF": 1,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
+		"oAP": "/packages/plyr/sass/settings/sliders.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
 		},
-	"/packages/plyr/src/sprite/plyr-restart.svg": {
-		"ft": 2097152,
-		"miP": 0,
+	"/packages/plyr/sass/settings/tooltips.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sprite/plyr-restart.svg",
-		"oF": 1,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
+		"oAP": "/packages/plyr/sass/settings/tooltips.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
 		},
-	"/packages/plyr/src/sprite/plyr-rewind.svg": {
-		"ft": 2097152,
-		"miP": 0,
+	"/packages/plyr/sass/settings/type.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sprite/plyr-rewind.svg",
-		"oF": 1,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
+		"oAP": "/packages/plyr/sass/settings/type.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
 		},
-	"/packages/plyr/src/sprite/plyr-settings.svg": {
-		"ft": 2097152,
-		"miP": 0,
+	"/packages/plyr/sass/states/fullscreen.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sprite/plyr-settings.svg",
-		"oF": 1,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
+		"oAP": "/packages/plyr/sass/states/fullscreen.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
 		},
-	"/packages/plyr/src/sprite/plyr-volume.svg": {
-		"ft": 2097152,
-		"miP": 0,
+	"/packages/plyr/sass/types/audio.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
 		"oA": 1,
-		"oAP": "/packages/plyr/src/sprite/plyr-volume.svg",
-		"oF": 1,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
+		"oAP": "/packages/plyr/sass/types/audio.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/packages/plyr/sass/types/video.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/packages/plyr/sass/types/video.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/packages/plyr/sass/utils/animation.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/packages/plyr/sass/utils/animation.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/packages/plyr/sass/utils/hidden.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/packages/plyr/sass/utils/hidden.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/packages/sweetalert2/scss/_animations.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/packages/sweetalert2/scss/_animations.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/packages/sweetalert2/scss/_body.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/packages/sweetalert2/scss/_body.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/packages/sweetalert2/scss/_core.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/packages/sweetalert2/scss/_core.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/packages/sweetalert2/scss/_mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/packages/sweetalert2/scss/_mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/packages/sweetalert2/scss/_theming.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/packages/sweetalert2/scss/_theming.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/packages/sweetalert2/scss/_toasts-animations.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/packages/sweetalert2/scss/_toasts-animations.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/packages/sweetalert2/scss/_toasts-body.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/packages/sweetalert2/scss/_toasts-body.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/packages/sweetalert2/scss/_toasts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/packages/sweetalert2/scss/_toasts.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/packages/sweetalert2/sweetalert2 copy.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/packages/sweetalert2/sweetalert2 copy.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/packages/sweetalert2/sweetalert2.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/packages/sweetalert2/sweetalert2-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/packages/sweetalert2/sweetalert2.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/packages/sweetalert2/sweetalert2.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
+	"/packages/sweetalert2/variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/packages/sweetalert2/variables.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
 		},
 	"/purgecss.config.js": {
 		"bF": 0,
@@ -3174,6 +2362,17 @@
 		"oF": 2,
 		"oS": 0,
 		"sct": 1
+		},
+	"/src/maxbootstrap-old.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/src/maxbootstrap-old-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/src/maxbootstrap.js": {
 		"bF": 0,
