@@ -2,6 +2,8 @@
 Remember to add/replace your **variables** before importing, 
 and then **@import '../node_modules/bootwind/compiled';** or what ever you path is
 
+https://cdn.jsdelivr.net/gh/maxbootstrap/maxbootstrap@main/dist/maxbootstrap.css
+
 ---
 # CSS
 
