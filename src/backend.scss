@@ -41,8 +41,13 @@ main {
     width: $backend-sidebar-width;
     max-width: $backend-sidebar-width;
     margin-inline: 1rem;
-    img {
+    .nav-logo-complete {
       max-height: $backend-header-logo-height;
+      margin: 0 auto;
+    }
+    .nav-logo-icon {
+      max-height: ($backend-header-logo-height * .6);
+      display: none;
       margin: 0 auto;
     }
   }
@@ -56,7 +61,7 @@ main {
     right: 12px; top: 8px;
     text-align: right;
     background: $backend-xs-sidebar-bg;
-    padding: 5px 6px 5px 10px;
+    padding: 5px 6px;
     border-radius: 25px !important;
     .element {
       cursor: pointer;
@@ -87,13 +92,32 @@ main {
 
   @media (max-width: $container) {
     .nav-logo {
+      margin-inline: 1rem;
+      //margin-left: 0.8rem;
+      //margin-right: 1.2rem;
+      padding: 0;
+      width: $backend-xs-sidebar-width;
+      max-width: $backend-xs-sidebar-width;
+      .nav-logo-complete {
+        display: none;
+      }
+      .nav-logo-icon {
+        display: block;
+      }
+    }
+  }
+
+  @media (max-width: map-get($container-max-widths, 'md')) {
+    .nav-logo {
       display: none;
     }
   }
+
 }
 
 .nav-article {
   padding-left: 0;
+  min-height: 80vh;
   @media (min-width: map-get($container-max-widths, 'md')) {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -145,7 +169,7 @@ main {
   position: relative;
   max-width: $backend-sidebar-width;
   top: 0; /* required */
-  align-self: flex-start;
+  //align-self: flex-start;
   background-color: $backend-sidebar-bg;
   //transition: all 200ms linear;
   margin-inline: 1rem;
@@ -194,13 +218,15 @@ main {
         }
         .badge {
           position: absolute;
-          top: ($backend-sidebar-links-padding * 1.1);
+          top: ($backend-sidebar-links-padding * 1.2);
           right: ($backend-sidebar-links-padding * .8);
+          padding: ($btn-padding-y * .4) ($btn-padding-x * .2);
+          font-weight: $font-weight-bold;
         }
         .active {
           cursor: default;
           color: rgba($white, .9) !important;
-          background: $primary !important;
+          background: $backend-sidebar-active-bg !important;
           &:hover {
             opacity: 1;
           }
@@ -252,6 +278,8 @@ main {
 
 
 footer {
+  flex: 0 0 100%;
+  width: 100%;
   margin-top: 20px;
   font-size: .8rem;
   opacity: .5;
@@ -266,7 +294,7 @@ footer {
 }
 
 .search-input {
-  input, textarea, select {
+  input {
     font-size: 2rem;
     color: $dark;
     caret-color: $primary;
@@ -279,5 +307,77 @@ footer {
       padding-left: .1rem;
       color: $gray;
     }
+  }
+}
+
+.modal--backdrop {
+    position: fixed;
+    z-index: 900;
+    background-color: rgba($light, 0.86);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // backdrop-filter: blur(10px) brightness(90%) saturate(80%);
+    // -webkit-backdrop-filter: blur(10px) brightness(90%) saturate(80%);
+    animation: modal .2s ease-in;
+    pointer-events: none;
+}
+
+.search-results {
+  position: fixed;
+  z-index: 99999;
+  top: 10px;
+  right: 10px;
+  width: 90%;
+  max-width: 500px;
+  min-height: 100px;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  background: $white !important;
+  background-color: $white !important;
+  //box-shadow: 0px 12px 10px 5px rgba($light, 0.5);
+  border-radius: 1rem;
+  .search-result-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    background-color: var(--white);
+    color: $dark;
+    padding: .5rem;
+    margin-top: .25rem;
+    border-radius: 0.25rem;
+    border: 1px solid $light;
+    transition: 0.3s;
+    line-height: .9;
+    &:hover {
+      border: 1px solid $primary;
+    }
+  }
+  // .search-results-head {
+  //   background-color: white;
+  //   padding: .8rem 1rem;
+  //   border-bottom: 1px $light solid;
+  // }
+  // .search-results-body {
+  //   padding: .8rem 1rem;
+  // }
+  // &::before {
+  //   pointer-events: none;
+  //   content: "";
+  //   z-index: -1;
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: rgba($dark, 0.6);
+  //   // backdrop-filter: blur(10px) brightness(90%) saturate(80%);
+  //   // -webkit-backdrop-filter: blur(10px) brightness(90%) saturate(80%);
+  // }
+  @media (max-width: map-get($container-max-widths, 'md')) {
+    left: 10px;
+    width: 95%;
+    padding: 0.5rem 0.8rem 0.8rem 0.8rem;
   }
 }

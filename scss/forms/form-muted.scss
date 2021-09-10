@@ -8,11 +8,13 @@
     font-weight: $font-weight-bold;
     letter-spacing: 0.3;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
     .btn {
       border: none !important;
       font-size: .6rem !important;
-      padding: 0.1rem 0.4rem !important;
-      line-height: 1;
+      padding: 0.05rem 0.3rem !important;
+      //line-height: 1;
       margin-top: -1px;
     }
   }

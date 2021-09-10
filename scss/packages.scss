@@ -223,7 +223,7 @@
 	border-radius: 10px;
 	padding: 0.7rem;
 	z-index: 2000;
-  margin: 6px 0 0 0;
+    margin: 6px 0 0 0;
 	box-shadow: 0 1px 2px 0 rgba($primary, .2), 0 1px 3px 1px rgba($primary, .1);
 	font-family: inherit;
   @media (max-width: $desktop-breakpoint) {
@@ -333,6 +333,10 @@
             &.is-selected button {
                 color: $light;
                 background-color: $primary;
+            }
+            &.is-disabled button {
+                cursor: default;
+                opacity: 0.5;
             }
             button:hover,
             &.is-selected button,

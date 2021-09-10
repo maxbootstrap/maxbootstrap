@@ -285,7 +285,7 @@ p {
   .email-footer {
     padding: 2rem 12px; }
   .email-p {
-    padding: 6px; } }
+    padding: calc($mobile-email-content-padding - $mobile-email-container-padding); } }
 
 h1 {
   font-size: 2.34rem; }

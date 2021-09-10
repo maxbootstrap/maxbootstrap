@@ -143,6 +143,8 @@ $btn-disabled-opacity: .7 !default;
 //FORMS
 $form-bg: #ffffff !default;
 $form-text: $body !default;
+$form-focus-bg: #ffffff !default;
+$form-focus-text: $body !default;
 $form-light: lighten($body, 22%) !default;
 $form-label: $form-light !default;
 $form-border: 1px solid lighten($form-text, 30%) !default;
@@ -178,6 +180,7 @@ $backend-breakpoint: 1168px !default;
 $backend-sidebar-links: #2a5164 !default;
 $backend-sidebar-links-hover: transparent !default;
 $backend-sidebar-links-padding: .6rem !default;
+$backend-sidebar-active-bg: $primary !default;
 
 //MODAL
 $modal-bg: $dark !default;

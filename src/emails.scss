@@ -175,7 +175,7 @@ p {
     padding: 2rem $mobile-email-content-padding;
   }
   .email-p {
-    padding: $mobile-email-content-padding - $mobile-email-container-padding;
+    padding: calc($mobile-email-content-padding - $mobile-email-container-padding);
   }
 }
 

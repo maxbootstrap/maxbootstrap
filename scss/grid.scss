@@ -132,9 +132,9 @@ ol, ul {
 
 
 //DISPLAY
-.visible { visibility: visible;}
-.invisible { visibility: hidden; }
-.hidden { display: none; }
+.visible { visibility: visible !important;}
+.invisible { visibility: hidden !important; }
+.hidden { display: none !important; }
 .inline       { display: inline !important; }
 .inline-block { display: inline-block !important; }
 .block        { display: block !important; }
@@ -893,6 +893,74 @@ $z: (-1, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000);
   transform: translateX(-50%);
 }
 
+@media (max-width: $desktop-breakpoint) {
+  .sm-top-auto {
+    top: auto !important;
+  }
+  .sm-top-center {
+    top: 50% !important;
+    transform: translateY(-50%);
+  }
+
+  .sm-bottom-auto {
+    bottom: auto !important;
+  }
+  .sm-bottom-center {
+    bottom: 50% !important;
+    transform: translateY(-50%);
+  }
+
+  .sm-left-auto {
+    left: auto !important;
+  }
+  .sm-left-center {
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+
+  .sm-right-auto {
+    right: auto !important;
+  }
+  .sm-right-center {
+    right: 50% !important;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .md-top-auto {
+    top: auto !important;
+  }
+  .md-top-center {
+    top: 50% !important;
+    transform: translateY(-50%);
+  }
+
+  .md-bottom-auto {
+    bottom: auto !important;
+  }
+  .md-bottom-center {
+    bottom: 50% !important;
+    transform: translateY(-50%);
+  }
+
+  .md-left-auto {
+    left: auto !important;
+  }
+  .md-left-center {
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+
+  .md-right-auto {
+    right: auto !important;
+  }
+  .md-right-center {
+    right: 50% !important;
+    transform: translateX(-50%);
+  }
+}
+
 
 $positions: (0, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 150, 200, 225, 250, 275, 300);
 @each $row in $positions {
@@ -920,6 +988,37 @@ $positions: (0, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 
 	}
 	.right--#{$row} {
 		right: -#{$row}px !important;
+  }
+}
+//MOBILE
+@media (max-width: $desktop-breakpoint) {
+  @each $row in $positions {
+    //GENERAL
+    .sm-top-#{$row} {
+      top: #{$row}px !important;
+    }
+    .sm-bottom-#{$row} {
+      bottom: #{$row}px !important;
+    }
+    .sm-left-#{$row} {
+      left: #{$row}px !important;
+    }
+    .sm-right-#{$row} {
+      right: #{$row}px !important;
+    }
+    //NEGATIVE
+    .sm-top--#{$row} {
+      top: -#{$row}px !important;
+    }
+    .sm-bottom--#{$row} {
+      bottom: -#{$row}px !important;
+    }
+    .sm-left--#{$row} {
+      left: -#{$row}px !important;
+    }
+    .sm-right--#{$row} {
+      right: -#{$row}px !important;
+    }
   }
 }
 //DESKTOP

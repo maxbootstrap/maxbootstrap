@@ -23,16 +23,19 @@
 .btn-xxs {
   font-size: .6rem !important;
   padding: ($btn-padding-y * .3) ($btn-padding-x * .35) !important;
+  border-radius: calc(#{$btn-radius} * 0.85);
 }
 
 .btn-xs {
   font-size: .7rem !important;
   padding: ($btn-padding-y * .4) ($btn-padding-x * .45) !important;
+  border-radius: calc(#{$btn-radius} * 0.9);
 }
 
 .btn-sm {
   font-size: .8rem !important;
   padding: ($btn-padding-y * .8) ($btn-padding-x * .89) !important;
+  border-radius: calc(#{$btn-radius} * 0.95);
 }
 
 .btn-lg {

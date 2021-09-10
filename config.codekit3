@@ -2395,7 +2395,7 @@
 		"oA": 0,
 		"oAP": "/dist/maxbootstrap.css",
 		"oF": 2,
-		"oS": 2,
+		"oS": 3,
 		"sct": 1
 		},
 	"/src/print.scss": {

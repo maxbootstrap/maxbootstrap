@@ -442,6 +442,16 @@
 }
 .svg-fill-current {
   fill: currentColor;
+  &path {
+    fill: currentColor;
+  }
+  &svg path{
+    fill: currentcolor;
+  }
+}
+.parent svg path{
+  fill: $primary;
+  stroke: $primary;
 }
 .svg-stroke-transparent {
   stroke: transparent;
