@@ -173,6 +173,18 @@
 
 }
 
+.btn-var {
+  color: var(--btn-color);
+  background-color: var(--btn-bg);
+  border-color: var(--btn-border, --btn-bg);
+  &:hover {
+    filter: brightness(98%);
+  }
+  &:disabled {
+    opacity: $btn-disabled-opacity;
+  }
+}
+
 .btn-glass {
   background-color: rgba(darken($primary, 10%), 0.3);
   box-shadow: rgba($dark, 0.25) 0px 30px 60px, rgba($dark, 0.2) 0px 0px 0px 0.5px inset;
