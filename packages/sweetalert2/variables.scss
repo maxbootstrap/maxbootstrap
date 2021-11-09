@@ -30,9 +30,9 @@ $swal2-backdrop-transition: background-color .1s !default;
 // ICONS
 $swal2-icon-size: 5em !default;
 $swal2-icon-animations: true !default;
-$swal2-icon-margin: 2.5em auto .6em !default;
+$swal2-icon-margin: 1.5em auto .5em !default;
 $swal2-icon-font-family: inherit !default;
-$swal2-icon-font-size: 3.75em !default;
+$swal2-icon-font-size: 3.5em !default;
 $swal2-icon-border-color: #000 !default;
 $swal2-icon-zoom: null !default;
 $swal2-success: #a5dc86 !default;
@@ -43,13 +43,13 @@ $swal2-info: #3fc3ee !default;
 $swal2-question: #87adbd !default;
 
 // IMAGE
-$swal2-image-margin: 2em auto 1em !default;
+$swal2-image-margin: 1.5em auto 1em !default;
 
 // TITLE
 $swal2-title-position: relative !default;
 $swal2-title-max-width: 100% !default;
 $swal2-title-margin: 0 !default;
-$swal2-title-padding: .8em 1em 0 !default;
+$swal2-title-padding: .2em !default;
 $swal2-title-color: lighten($swal2-black, 35) !default;
 $swal2-title-font-size: 1.875em !default;
 $swal2-title-font-weight: 600 !default;
@@ -58,7 +58,7 @@ $swal2-title-text-align: center !default;
 // HTML CONTAINER
 $swal2-html-container-justify-content: center !default;
 $swal2-html-container-margin: 0 !default;
-$swal2-html-container-padding: 1em 1.6em .3em !default;
+$swal2-html-container-padding: .2em !default;
 $swal2-html-container-color: lighten($swal2-black, 33) !default;
 $swal2-html-container-font-size: 1.125em !default;
 $swal2-html-container-font-weight: normal !default;
@@ -172,7 +172,7 @@ $swal2-actions-padding: 0 !default;
 
 // COMMON VARIABLES FOR ALL ACTION BUTTONS
 $swal2-button-margin: .3125em !default;
-$swal2-button-padding: .625em 1.1em !default;
+$swal2-button-padding: .62em 1.05em !default;
 $swal2-button-transition: box-shadow .1s !default;
 $swal2-button-box-shadow: 0 0 0 3px transparent !default;
 $swal2-button-font-weight: 500 !default;
