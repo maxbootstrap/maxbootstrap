@@ -1,0 +1,25 @@
+
+.has-danger input {
+    border: 1px solid $red;
+}
+.has-danger label {
+    color: $red;
+}
+.pristine-error {
+    display: table;
+    color: $red;
+    font-size: 0.8rem;
+}
+
+//ICONS
+.error-svg, .success-svg{
+    display: none;
+}
+
+.has-error .error-svg{
+    display: block;
+}
+  
+.has-success .success-svg{
+display: block;
+}

@@ -1942,6 +1942,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/packages\/pristine.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/packages\/pristine.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/packages\/sweetalert2\/scss\/_animations.scss" : {
       "aP" : 0,
       "bl" : 0,
