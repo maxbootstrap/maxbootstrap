@@ -1,4 +1,5 @@
 .badge {
+  position: relative;
   display: inline-block;
   text-align: center;
   white-space: nowrap;
@@ -14,24 +15,22 @@
   border-radius: calc(#{$btn-radius} * 0.7);
   color: $body;
   background: $light;
-  margin-top: -.15rem;
+  margin-top: -.05rem;
   &:hover {
   }
 }
 
-.btn .badge {
-  position: relative;
-  top: -1px;
-}
-
 .badge-xs {
-  font-size: 55%;
-  padding: ($btn-padding-y * .1) ($btn-padding-x * .2);
+  font-size: 60%;
+  line-height: 1;
+  padding: ($btn-padding-y * .15) ($btn-padding-x * .15);
+  border-radius: calc(#{$btn-radius} * 0.4);
 }
 
 .badge-sm {
-  font-size: 60%;
-  padding: ($btn-padding-y * .3) ($btn-padding-x * .35);
+  font-size: 70%;
+  padding: ($btn-padding-y * .25) ($btn-padding-x * .3);
+  border-radius: calc(#{$btn-radius} * 0.8);
 }
 
 .badge-lg {
@@ -98,6 +97,12 @@
     display: block;
     width: 100%;
   }
+}
+
+.btn .badge {
+  position: relative;
+  top: -1px;
+  margin-top: -.15rem;
 }
 
 

@@ -51,6 +51,16 @@ $paddings: p, pl, pr, pt, pb, py, px;
       } @else if $row == px { padding-left: #{$size} !important; padding-right: #{$size} !important;
       }
     }
+    .focus-#{$row}-#{$i}:focus {
+      @if $row == p { padding: #{$size} !important;
+      } @else if $row == pl { padding-left: #{$size} !important;
+      } @else if $row == pr { padding-right: #{$size} !important;
+      } @else if $row == pt { padding-top: #{$size} !important;
+      } @else if $row == pb { padding-bottom: #{$size} !important;
+      } @else if $row == py { padding-top: #{$size} !important; padding-bottom: #{$size} !important;
+      } @else if $row == px { padding-left: #{$size} !important; padding-right: #{$size} !important;
+      }
+    }
   }
 }
 @each $row in $paddings {
@@ -77,6 +87,16 @@ $paddings: p, pl, pr, pt, pb, py, px;
     } @else if $row == pb { padding-bottom: var(--pb-var, 0) !important;
     } @else if $row == py { padding-top: var(--py-var, 0) !important; padding-bottom: var(--py-var, 0) !important;
     } @else if $row == px { padding-left: var(--px-var, 0) !important; padding-right: var(--px-var, 0) !important;
+    }
+  }
+  .focus-#{$row}-var:focus {
+    @if $row == p { padding: var(--p-var, 0) !important;
+    } @else if $row == pl { padding-left: var(--focus-pl-var, 0) !important;
+    } @else if $row == pr { padding-right: var(--focus-pr-var, 0) !important;
+    } @else if $row == pt { padding-top: var(--focus-pt-var, 0) !important;
+    } @else if $row == pb { padding-bottom: var(--focus-pb-var, 0) !important;
+    } @else if $row == py { padding-top: var(--focus-py-var, 0) !important; padding-bottom: var(--focus-py-var, 0) !important;
+    } @else if $row == px { padding-left: var(--focus-px-var, 0) !important; padding-right: var(--focus-px-var, 0) !important;
     }
   }
 }
@@ -345,6 +365,16 @@ $margins: m, ml, mr, mt, mb, my, mx;
         } @else if $row == mb { margin-bottom: -#{$size} !important;
         }
       }
+      .focus-#{$row}-#{$i}:focus {
+        @if $row == m { margin: #{$size} !important;
+        } @else if $row == ml { margin-left: #{$size} !important;
+        } @else if $row == mr { margin-right: #{$size} !important;
+        } @else if $row == mt { margin-top: #{$size} !important;
+        } @else if $row == mb { margin-bottom: #{$size} !important;
+        } @else if $row == my { margin-top: #{$size} !important; margin-bottom: #{$size} !important;
+        } @else if $row == mx { margin-left: #{$size} !important; margin-right: #{$size} !important;
+        }
+      }
     }
     @each $size in $sizesPX {
       .#{$row}-#{$size} {
@@ -368,6 +398,16 @@ $margins: m, ml, mr, mt, mb, my, mx;
     }
 
     .#{$row}-var {
+      @if $row == m { margin: var(--m-var, 0) !important;
+      } @else if $row == ml { margin-left: var(--ml-var, 0) !important;
+      } @else if $row == mr { margin-right: var(--mr-var, 0) !important;
+      } @else if $row == mt { margin-top: var(--mt-var, 0) !important;
+      } @else if $row == mb { margin-bottom: var(--mb-var, 0) !important;
+      } @else if $row == my { margin-top: var(--my-var, 0) !important; margin-bottom: var(--my-var, 0) !important;
+      } @else if $row == mx { margin-left: var(--mx-var, 0) !important; margin-right: var(--mx-var, 0) !important;
+      }
+    }
+    .focus-#{$row}-var:focus {
       @if $row == m { margin: var(--m-var, 0) !important;
       } @else if $row == ml { margin-left: var(--ml-var, 0) !important;
       } @else if $row == mr { margin-right: var(--mr-var, 0) !important;

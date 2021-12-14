@@ -139,6 +139,8 @@ $btn-padding-x: 1.3rem !default;
 $btn-radius: .2rem !default;
 $btn-border: 1px !default;
 $btn-disabled-opacity: .7 !default;
+$btn-weight: $font-weight-regular !default;
+$btn-letter-spacing: $font-letter-spacing !default;
 
 //FORMS
 $form-bg: #ffffff !default;
@@ -193,7 +195,7 @@ $email-bg: $light !default;
 $email-container-bg: transparent !default;
 $email-container-padding: 10px !default;
 $email-content-bg: $white !default;
-$email-content-padding: 20px !default;
+$email-content-padding: 1rem !default;
 $email-text-align: left !default;
 
 //CODE

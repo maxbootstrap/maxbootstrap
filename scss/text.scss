@@ -440,7 +440,19 @@ smaller {
 
 
 //LINE HEIGHTS
-.line-none-all {
+.line-7-all {
+  line-height: .7 !important;
+  h1, h2, h3, h4, h5, h6, p, a, small {
+    line-height: .7 !important;
+  }
+}
+.line-8-all {
+  line-height: .8 !important;
+  h1, h2, h3, h4, h5, h6, p, a, small {
+    line-height: .8 !important;
+  }
+}
+.line-none-all, .line-9-all {
   line-height: .9 !important;
   h1, h2, h3, h4, h5, h6, p, a, small {
     line-height: .9 !important;
@@ -525,7 +537,13 @@ smaller {
   }
 }
 
-.line-none {
+.line-7 {
+  line-height: .7 !important;
+}
+.line-8 {
+  line-height: .8 !important;
+}
+.line-none, .line-9 {
   line-height: .9 !important;
 }
 .line-10 {
@@ -575,7 +593,13 @@ smaller {
 }
 
 @media (min-width: $desktop-breakpoint) {
-  .md-line-none {
+  .md-line-17 {
+    line-height: .7 !important;
+  }
+  .md-line-8 {
+    line-height: .8 !important;
+  }
+  .md-line-none, .md-line-9 {
     line-height: .9 !important;
   }
   .md-line-10 {

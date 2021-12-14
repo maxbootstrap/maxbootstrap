@@ -904,6 +904,9 @@ $z: (-1, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000);
   top: 50%;
   transform: translateY(-50%);
 }
+.top-var {
+  top: var(--top, inherit);
+}
 
 .bottom-auto {
   bottom: auto;
@@ -911,6 +914,9 @@ $z: (-1, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000);
 .bottom-center {
   bottom: 50%;
   transform: translateY(-50%);
+}
+.bottom-var {
+  bottom: var(--bottom, inherit);
 }
 
 .left-auto {
@@ -920,6 +926,9 @@ $z: (-1, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000);
   left: 50%;
   transform: translateX(-50%);
 }
+.left-var {
+  left: var(--left, inherit);
+}
 
 .right-auto {
   right: auto;
@@ -927,6 +936,9 @@ $z: (-1, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000);
 .right-center {
   right: 50%;
   transform: translateX(-50%);
+}
+.right-var {
+  right: var(--right, inherit);
 }
 
 @media (max-width: $desktop-breakpoint) {
@@ -937,6 +949,9 @@ $z: (-1, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000);
     top: 50% !important;
     transform: translateY(-50%);
   }
+  .sm-top-var {
+    top: var(--sm-top, inherit);
+  }
 
   .sm-bottom-auto {
     bottom: auto !important;
@@ -944,6 +959,9 @@ $z: (-1, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000);
   .sm-bottom-center {
     bottom: 50% !important;
     transform: translateY(-50%);
+  }
+  .sm-bottom-var {
+    bottom: var(--sm-bottom, inherit);
   }
 
   .sm-left-auto {
@@ -953,6 +971,9 @@ $z: (-1, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000);
     left: 50% !important;
     transform: translateX(-50%);
   }
+  .sm-left-var {
+    left: var(--sm-left, inherit);
+  }
 
   .sm-right-auto {
     right: auto !important;
@@ -960,6 +981,9 @@ $z: (-1, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000);
   .sm-right-center {
     right: 50% !important;
     transform: translateX(-50%);
+  }
+  .sm-right-var {
+    right: var(--sm-right, inherit);
   }
 }
 
@@ -971,6 +995,9 @@ $z: (-1, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000);
     top: 50% !important;
     transform: translateY(-50%);
   }
+  .md-top-var {
+    top: var(--md-top, inherit);
+  }
 
   .md-bottom-auto {
     bottom: auto !important;
@@ -978,6 +1005,9 @@ $z: (-1, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000);
   .md-bottom-center {
     bottom: 50% !important;
     transform: translateY(-50%);
+  }
+  .md-bottom-var {
+    bottom: var(--md-bottom, inherit);
   }
 
   .md-left-auto {
@@ -987,6 +1017,9 @@ $z: (-1, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000);
     left: 50% !important;
     transform: translateX(-50%);
   }
+  .md-left-var {
+    left: var(--md-left, inherit);
+  }
 
   .md-right-auto {
     right: auto !important;
@@ -994,6 +1027,9 @@ $z: (-1, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000);
   .md-right-center {
     right: 50% !important;
     transform: translateX(-50%);
+  }
+  .md-right-var {
+    right: var(--md-right, inherit);
   }
 }
 

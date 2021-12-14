@@ -92,7 +92,10 @@
             background-color: $primary !important;
         }
         .swal2-title, .swal2-close, .swal2-content {
-            color: white;
+            color: $white;
+        }
+        .swal2-html-container {
+            color: $light;
         }
     }
 }

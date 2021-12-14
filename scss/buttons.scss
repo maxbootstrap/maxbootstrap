@@ -5,6 +5,8 @@
   vertical-align: middle;
   font-size: .96rem;
   line-height: 1.3;
+  font-weight: $btn-weight;
+  letter-spacing: $btn-letter-spacing;
   padding: $btn-padding-y $btn-padding-x;
   transition: all .15s ease-in-out;
   cursor: pointer;
@@ -23,13 +25,13 @@
 .btn-xxs {
   font-size: .6rem !important;
   padding: ($btn-padding-y * .3) ($btn-padding-x * .35) !important;
-  border-radius: calc(#{$btn-radius} * 0.85);
+  border-radius: calc(#{$btn-radius} * 0.6);
 }
 
 .btn-xs {
   font-size: .7rem !important;
   padding: ($btn-padding-y * .4) ($btn-padding-x * .45) !important;
-  border-radius: calc(#{$btn-radius} * 0.9);
+  border-radius: calc(#{$btn-radius} * 0.7);
 }
 
 .btn-sm {
