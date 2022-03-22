@@ -225,7 +225,7 @@ main {
         }
         .active {
           cursor: default;
-          color: rgba($white, .9) !important;
+          color: rgba($backend-sidebar-active-color, .9) !important;
           background: $backend-sidebar-active-bg !important;
           &:hover {
             opacity: 1;
@@ -237,6 +237,7 @@ main {
   &.sticky {
     position: sticky;
     position: -webkit-sticky;
+    z-index: 99;
   }
   &.full-h {
     min-height: 100vh; // calc(100vh - $backend-header-hight) !important;

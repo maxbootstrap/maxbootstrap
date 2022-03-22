@@ -24,7 +24,7 @@ $secondary: #112741 !default;
 $gray: #A0AEC0 !default;
 $blue: #4299E1 !default;
 $indigo: #667EEA !default;
-$purple: #9F7AEA !default;
+$purple: #952de6 !default;
 $green: #1da139 !default;
 $teal: #38B2AC !default;
 $red: #ff2400 !default;
@@ -118,7 +118,7 @@ $h3-weight: $heading-weight !default;
 $h4-weight: $heading-weight !default;
 $h5-weight: $heading-weight !default;
 $h6-weight: $heading-weight !default;
-$heading-line-height: 1.1 !default;
+$heading-line-height: 1.2 !default;
 $heading-letter-spacing: $font-letter-spacing !default;
 $h1-letter-spacing: $heading-letter-spacing !default;
 $h2-letter-spacing: $heading-letter-spacing !default;
@@ -183,12 +183,13 @@ $backend-breakpoint: 1168px !default;
 $backend-sidebar-links: #2a5164 !default;
 $backend-sidebar-links-hover: transparent !default;
 $backend-sidebar-links-padding: .6rem !default;
+$backend-sidebar-active-color: $white !default;
 $backend-sidebar-active-bg: $primary !default;
 
 //MODAL
 $modal-bg: $dark !default;
 $modal-min-width: 330px !default;
-$modal-padding: 25px !default;
+$modal-padding: 0.5rem !default;
 
 //EMAIL
 $email-bg: $light !default;

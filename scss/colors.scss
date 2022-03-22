@@ -40,6 +40,11 @@
   .border-#{$name} {
     border-color: $color !important;
   }
+  .hover-border-#{$name} {
+    &:hover {
+      border-color: $color !important;
+    }
+  }
 }
 .border-transparent {
   border-color: transparent !important;
@@ -105,7 +110,7 @@
   }
   @if $second_theme {
     [data-theme="#{$second_theme}"] {
-      .#{$second_theme}-color-#{$name}-all {
+      .#{$second_theme}\:color-#{$name}-all {
         color: var(--#{$name}) !important;
         h1, h2, h3, h4, h5, h6, p, a, small {
           color: var(--#{$name});
@@ -141,10 +146,10 @@
 
   @if $second_theme {
     [data-theme="#{$second_theme}"] {
-      .#{$second_theme}-color-#{$name} {
+      .#{$second_theme}\:color-#{$name} {
         color: $color !important;
       }
-      .#{$second_theme}-bg-#{$name} {
+      .#{$second_theme}\:bg-#{$name} {
         background-color: $color !important;
       }
     }
@@ -193,6 +198,9 @@
   .shadow-#{$name}-lg {
     //horizontal vertical blur spread
     box-shadow: 0px 8px 25px -5px rgba($color, 0.6);
+  }
+  .shadow-#{$name}-xl {
+    box-shadow: 0 20px 25px -5px rgba($color, 0.1), 0 10px 10px -5px rgba($color, 0.04) !important;
   }
   .shadow-radar-#{$name} {
     box-shadow: 0px 0px 1px 2.8rem rgba($color, 0.09), 0px 0px 1px 1.1rem rgba($color, 0.15);
@@ -565,6 +573,18 @@ $blends: normal, multiply, screen, overlay, darken, lighten, color-dodge, color-
   -webkit-backdrop-filter: blur(15px); /* Safari 9+ */
 }
 
+.bg-frosted-xl {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(30px); /* Chrome and Opera */
+  -webkit-backdrop-filter: blur(30px); /* Safari 9+ */
+}
+
+.bg-frosted-xxl {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(40px); /* Chrome and Opera */
+  -webkit-backdrop-filter: blur(40px); /* Safari 9+ */
+}
+
 .bg-glassmorphism {
   background: rgba(lighten($primary, 60%), 0.25);
   box-shadow: 0 6px 32px -30px rgba($primary, 0.37);
@@ -584,5 +604,53 @@ $blends: normal, multiply, screen, overlay, darken, lighten, color-dodge, color-
   &:hover {
     background-color: rgba(darken($primary, 10%), 0.1);
     box-shadow: rgba($dark, 0.2) 0px 0px 0px 0.5px inset;
+  }
+}
+
+@each $name, $color in $colors {
+  .label-#{$name} {
+    // @if $name == 'black' or $name == 'dark' {
+    //   color: lighten($color, 35%);
+    //   background-color: $color;
+    // } @else {
+    //   color: darken($color, 30%);
+    //   background-color: lighten($color, 10%);
+    // }
+      @if (lightness($color) > 70) {
+        color: darken($color, 25%);
+        background-color: lighten($color, 2%);
+      } @else if (lightness($color) > 40) {
+        color: darken($color, 15%);
+        background-color: lighten($color, 30%);
+      } @else if (lightness($color) > 20) {
+        color: lighten($color, 55%);
+        background-color: $color;
+      } @else {
+        color: lighten($color, 78%);
+        background-color: $color;
+        //background-color: lighten($color, 25%);
+      }
+
+    // @if $name == 'black' or $name == 'dark' {
+    //   color: lighten($color, 55%);
+    //   background-color: $color;
+    // } @else if $name == 'light' or $name == 'white' {
+    //   color: darken($color, 25%);
+    //   background-color: lighten($color, 5%);
+    // } @else if $name == 'indigo' or $name == 'pink' {
+    //   color: darken($color, 20%);
+    //   background-color: lighten($color, 25%);
+    // } @else if $name == 'primary' or $name == 'secondary' {
+    //   @if (lightness($color) > 60) {
+    //     color: darken($color, 55%);
+    //     background-color: $color;
+    //   } @else {
+    //     color: darken($color, 20%);
+    //     background-color: lighten($color, 25%);
+    //   }
+    // } @else {
+    //   color: darken($color, 18%);
+    //   background-color: lighten($color, 36%);
+    // }
   }
 }

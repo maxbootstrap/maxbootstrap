@@ -10,7 +10,7 @@
   --gray: #A0AEC0;
   --blue: #4299E1;
   --indigo: #667EEA;
-  --purple: #9F7AEA;
+  --purple: #952de6;
   --green: #1da139;
   --teal: #38B2AC;
   --red: #ff2400;
@@ -82,15 +82,15 @@
   --indigo-700: #3958e4;
   --indigo-800: #2345e1;
   --indigo-900: #162fa1;
-  --purple-100: #dfd2f8;
-  --purple-200: #c5aff2;
-  --purple-300: #bfa6f1;
-  --purple-400: #af90ed;
-  --purple-500: #9F7AEA;
-  --purple-600: #8f64e7;
-  --purple-700: #7f4ee3;
-  --purple-800: #6f38e0;
-  --purple-900: #4c1caf;
+  --purple-100: #c388f1;
+  --purple-200: #b164ed;
+  --purple-300: #ac5beb;
+  --purple-400: #a144e9;
+  --purple-500: #952de6;
+  --purple-600: #891bdf;
+  --purple-700: #7b18c8;
+  --purple-800: #6d15b1;
+  --purple-900: #430d6d;
   --green-100: #46de66;
   --green-200: #26d54b;
   --green-300: #25cc48;
@@ -302,7 +302,8 @@ main {
             opacity: 1; }
   .nav-sidebar.sticky {
     position: sticky;
-    position: -webkit-sticky; }
+    position: -webkit-sticky;
+    z-index: 99; }
   .nav-sidebar.full-h {
     min-height: 100vh; }
   @media (min-width: 720px) and (max-width: 1300px) {

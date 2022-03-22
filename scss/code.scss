@@ -1,38 +1,114 @@
 //WINDOW
-.code-window {
-  position: relative;
+
+.code-box, .code-window, .code-single {
   display: inline-block;
-  padding: 2.5rem 1.2rem 1.5rem 1.5rem;
-  border-radius: 6px;
-  color: $code-color;
+  position: relative;
+  width: 100%;
   background: $code-bg;
+  border: none;
+  color: $code-color;
+  border-radius: 6px;
+  margin-bottom: .8rem;
+  outline:none !important;
+  code {
+    display: block;
+    color: $code-color;
+  }
+  .tabs {
+    position: absolute;
+    top: 9px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    display: block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: calc(100% - 80px);
+    white-space: nowrap;
+    -moz-user-select: none;
+    user-select: none;
+    .tab {
+      display: inline-block;
+      line-height: 1.8rem;
+      //margin-right: 1px;
+      padding: 0 1rem;
+      font-size: 0.7rem;
+      color: $light;
+      cursor: pointer;
+      -moz-user-select: none;
+      user-select: none;
+      background: rgba($primary, .2);
+      &:hover {
+        background: rgba($primary, .4);
+      }
+      &.tab-active {
+        color: $white;
+        background: rgba($primary, .7);
+      }
+    }
+  }
+  @media (max-width: $desktop-breakpoint) {
+    .tabs {
+      .tab {
+        line-height: 1.4rem;
+        padding: 0 0.6rem;
+      }
+    }
+  }
+
+}
+
+.code-box {
+  padding: 1.8rem 1.2rem 1.5rem 1.5rem;
+}
+
+.code-window {
+  padding: 3.2rem 1.2rem 1.5rem 1.5rem;
+  border-radius: 6px;
   background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14"><g fill="none" fillRule="evenodd" transform="translate(1 1)"><circle cx="6" cy="6" r="6" fill="%23FF5F56" stroke="%23E0443E" strokeWidth=".5" /><circle cx="26" cy="6" r="6" fill="%23FFBD2E" stroke="%23DEA123" strokeWidth=".5" /><circle cx="46" cy="6" r="6" fill="%2327C93F" stroke="%231AAB29" strokeWidth=".5" /></g></svg>');
   background-repeat: no-repeat;
   background-position: 16px 16px;
-  box-shadow: 5px 5px 15px 0px rgba($code-bg, 0.5);
-  margin-bottom: 10px;
-  width: 100%;
-  max-width: 1100px;
+  //box-shadow: 4px 4px 10px 0px rgba($code-bg, 0.5);
   overflow-wrap: break-word !important;
   word-break: break-all !important;
 
-  code {
-    display: block;
-    text-align: left;
-    overflow-wrap: break-word !important;
-    word-break: break-all !important;
-    overflow-x: auto;
+  pre {
+    code {
+      display: block;
+      text-align: left;
+      // overflow-wrap: break-word !important;
+      // word-break: break-all !important;
+      overflow-x: auto;
+      outline:none !important;
+    }
+  }
+
+  .tabs {
+    top: 9px;
+    left: 80px;
+    .tab {
+    }
   }
 
   @media (max-width: $desktop-breakpoint) {
-    background-size: 35px auto;
+    background-size: 37px auto;
     background-position: 18px 15px;
     max-width: 100% !important;
-    padding: 2.2rem 1.1rem 1.7rem 1.1rem;
-    code {
-      width: 100% !important;
-      margin-right: 0;
-      padding: 0;
+    padding: 2.8rem 1.1rem 1.7rem 1.1rem;
+    pre {
+      code {
+        width: 100% !important;
+        // margin-right: 0;
+        // padding: 0;
+      }
+    }
+    .tabs {
+      top: 5px;
+      left: 70px;
+      .tab {
+      }
     }
   }
 }
@@ -40,17 +116,56 @@
 
 //PRE CODE CSS
 .code-single {
-  position: relative;
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  width: 100%;
-  max-width: 1100px;
   border-radius: $btn-radius;
-  border: none;
-  background: $code-bg;
   padding: 0;
-  margin-bottom: .8rem;
+
+  label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px 1.2rem;
+    font-weight: bold;
+    font-size: .8rem;
+    color: $code-label;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    margin: 0;
+    background-color: lighten($code-bg, 4%);
+    border-right: 1px solid lighten($code-label, 5%);
+    opacity: .7;
+  }
+  code {
+    overflow-wrap: break-word !important;
+    word-break: break-all !important;
+    //padding: 1.1rem 1rem .9rem 1.2rem;
+    font-size: .8rem;
+    line-height: 1.2rem;
+    margin: 0 2rem 0 0;
+    padding: 1rem;
+  }
+  @media (max-width: $desktop-breakpoint) {
+  label {
+    padding: 0px 0.8rem;
+    font-size: .7rem;
+  }
+    code {
+      font-size: .7rem;
+    }
+  }
+}
+.code-single-old {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  border-radius: $btn-radius;
+  padding: 0;
 
   .code-title {
     position: relative;
@@ -72,28 +187,27 @@
     opacity: .8;
   }
 
-  code {
-    position: relative;
-    display: block;
-    overflow-wrap: break-word !important;
-    word-break: break-all !important;
-    //padding: 1.1rem 1rem .9rem 1.2rem;
-    font-size: .8rem;
-    line-height: 1.2rem;
-    color: $code-color;
-    margin: 0 2rem 0 0;
-    padding: 1rem;
+  pre {
+    code {
+      overflow-wrap: break-word !important;
+      word-break: break-all !important;
+      //padding: 1.1rem 1rem .9rem 1.2rem;
+      font-size: .8rem;
+      line-height: 1.2rem;
+      margin: 0 2rem 0 0;
+      padding: 1rem;
+    }
   }
   @media (max-width: $desktop-breakpoint) {
-    code {
-      font-size: .8rem;
+    pre {
+      code {
+        font-size: .7rem;
+      }
     }
-
   }
-  
 }
 
-.code-window, .code-single {
+.code-box, .code-window, .code-single {
   &.clipboard::after {
     display: block;
     cursor: pointer !important;
@@ -106,5 +220,8 @@
     font-weight: $font-weight-bold;
     opacity: .6;
     -webkit-backface-visibility: hidden;
+  }
+  &:focus {
+    outline:none !important;
   }
 }

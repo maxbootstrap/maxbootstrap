@@ -132,7 +132,8 @@ ol, ul {
 
 
 //DISPLAY
-.visible { visibility: visible !important;}
+.device-show { display: none !important; }
+.visible { visibility: visible !important; }
 .invisible { visibility: hidden !important; }
 .hidden { display: none !important; }
 .inline       { display: inline !important; }
@@ -1246,6 +1247,43 @@ $percentages: (10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
 
 
 $mp: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, 225, 250, 275, 300, 325, 350, 375, 400, 450, 500, 600, 700, 800, 900, 1000);
+//FLEX SPACING
+@each $row in $mp {
+  .gap-#{$row} {
+    gap: #{$row}px;
+  }
+  .gapy-#{$row} {
+    row-gap: #{$row}px;
+  }
+  .gapx-#{$row} {
+    column-gap: #{$row}px;
+  }
+  //MOBILE
+  @media (max-width: $desktop-breakpoint) {
+    .sm-gap-#{$row} {
+      gap: #{$row}px;
+    }
+    .sm-gapy-#{$row} {
+      row-gap: #{$row}px;
+    }
+    .sm-gapx-#{$row} {
+      column-gap: #{$row}px;
+    }
+  }
+  //DESKTOP
+  @media (min-width: $desktop-breakpoint) {
+    .md-gap-#{$row} {
+      gap: #{$row}px;
+    }
+    .md-gapy-#{$row} {
+      row-gap: #{$row}px;
+    }
+    .md-gapx-#{$row} {
+      column-gap: #{$row}px;
+    }
+  }
+}
+//WIDTH HEIGHT
 @each $row in $mp {
 	//GENERAL
 	.w-#{$row} {
@@ -1317,6 +1355,9 @@ $mp: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 
 }
 
 //CURSOR
+.cursor-default {
+  cursor: default;
+}
 .cursor-pointer {
   cursor: pointer;
 }
