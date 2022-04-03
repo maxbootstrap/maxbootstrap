@@ -65,6 +65,8 @@ table{
   border-collapse: collapse !important;
   table-layout: fixed !important;
   margin: 0 auto !important;
+  border: 0 solid white !important;
+  border-width: 0 !important;
 }
 
 table, td{
@@ -123,6 +125,7 @@ p {
 
 //GRID
 .container {
+  width: 100% !important;
   max-width: 660px !important;
   margin: 0 auto;
   padding: .5rem;
@@ -131,10 +134,13 @@ p {
 }
 
 .email-logo {
-  display: block;
-  width: 100%;
   padding: 1rem $email-content-padding;
   text-align: $email-text-align;
+}
+.email-logo-img {
+  display: block;
+  max-width: 140px;
+  max-height: 140px;
 }
 
 .email-subject {
