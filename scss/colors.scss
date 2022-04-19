@@ -616,7 +616,10 @@ $blends: normal, multiply, screen, overlay, darken, lighten, color-dodge, color-
     //   color: darken($color, 30%);
     //   background-color: lighten($color, 10%);
     // }
-      @if (lightness($color) > 70) {
+      @if ($name == 'red') {
+        color: darken($color, 31%);
+        background-color:  rgba(lighten($color, 2%), 0.6);
+      } @else if (lightness($color) > 70) {
         color: darken($color, 25%);
         background-color: lighten($color, 2%);
       } @else if (lightness($color) > 40) {

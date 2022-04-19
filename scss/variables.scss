@@ -12,7 +12,8 @@ $grid-columns: $columns !default;
 $grid-gutter-width: 0px !default;
 //$line-height-base: 1.2 !default;
 $container-max-widths: (
-  sm: 350px,
+  xs: 0px,
+  sm: 400px,
   md: $desktop-breakpoint,
   lg: $container-min,
   xl: $container

@@ -102,7 +102,7 @@ $paddings: p, pl, pr, pt, pb, py, px;
 }
 
 
-//DESKTOP PADDING
+//TABLET PADDING
 @media (min-width: $desktop-breakpoint) {
   @each $row in $paddings {
     .md-#{$row}-0 {
@@ -115,16 +115,6 @@ $paddings: p, pl, pr, pt, pb, py, px;
       } @else if $row == px { padding-left: 0 !important; padding-right: 0 !important;
       }
     }
-    // .md-#{$row}-1px {
-    //   @if $row == p { padding: 1px !important;
-    //   } @else if $row == pl { padding-left: 1px !important;
-    //   } @else if $row == pr { padding-right: 1px !important;
-    //   } @else if $row == pt { padding-top: 1px !important;
-    //   } @else if $row == pb { padding-bottom: 1px !important;
-    //   } @else if $row == py { padding-top: 1px !important; padding-bottom: 1px !important;
-    //   } @else if $row == px { padding-left: 1px !important; padding-right: 1px !important;
-    //   }
-    // }
     @each $size in $sizes {
       $i: index($sizes, $size);
       .md-#{$row}-#{$i} {
@@ -150,7 +140,6 @@ $paddings: p, pl, pr, pt, pb, py, px;
         }
       }
     }
-
     @each $row in $paddings {
       .md-#{$row}-var {
         @if $row == p { padding: var(--md-p-var, 0) !important;
@@ -163,7 +152,60 @@ $paddings: p, pl, pr, pt, pb, py, px;
         }
       }
     }
+  }
+}
 
+
+//DESKTOP PADDING
+@media (min-width: $container-min) {
+  @each $row in $paddings {
+    .lg-#{$row}-0 {
+      @if $row == p { padding: 0 !important;
+      } @else if $row == pl { padding-left: 0 !important;
+      } @else if $row == pr { padding-right: 0 !important;
+      } @else if $row == pt { padding-top: 0 !important;
+      } @else if $row == pb { padding-bottom: 0 !important;
+      } @else if $row == py { padding-top: 0 !important; padding-bottom: 0 !important;
+      } @else if $row == px { padding-left: 0 !important; padding-right: 0 !important;
+      }
+    }
+    @each $size in $sizes {
+      $i: index($sizes, $size);
+      .lg-#{$row}-#{$i} {
+        @if $row == p { padding: #{$size} !important;
+        } @else if $row == pl { padding-left: #{$size} !important;
+        } @else if $row == pr { padding-right: #{$size} !important;
+        } @else if $row == pt { padding-top: #{$size} !important;
+        } @else if $row == pb { padding-bottom: #{$size} !important;
+        } @else if $row == py { padding-top: #{$size} !important; padding-bottom: #{$size} !important;
+        } @else if $row == px { padding-left: #{$size} !important; padding-right: #{$size} !important;
+        }
+      }
+    }
+    @each $size in $sizesPX {
+      .lg-#{$row}-#{$size} {
+        @if $row == p { padding: #{$size} !important;
+        } @else if $row == pl { padding-left: #{$size} !important;
+        } @else if $row == pr { padding-right: #{$size} !important;
+        } @else if $row == pt { padding-top: #{$size} !important;
+        } @else if $row == pb { padding-bottom: #{$size} !important;
+        } @else if $row == py { padding-top: #{$size} !important; padding-bottom: #{$size} !important;
+        } @else if $row == px { padding-left: #{$size} !important; padding-right: #{$size} !important;
+        }
+      }
+    }
+    @each $row in $paddings {
+      .lg-#{$row}-var {
+        @if $row == p { padding: var(--md-p-var, 0) !important;
+        } @else if $row == pl { padding-left: var(--md-pl-var, 0) !important;
+        } @else if $row == pr { padding-right: var(--md-pr-var, 0) !important;
+        } @else if $row == pt { padding-top: var(--md-pt-var, 0) !important;
+        } @else if $row == pb { padding-bottom: var(--md-pb-var, 0) !important;
+        } @else if $row == py { padding-top: var(--md-py-var, 0) !important; padding-bottom: var(--md-py-var, 0) !important;
+        } @else if $row == px { padding-left: var(--md-px-var, 0) !important; padding-right: var(--md-px-var, 0) !important;
+        }
+      }
+    }
   }
 }
 
@@ -594,6 +636,12 @@ $margins: m, ml, mr, mt, mb, my, mx;
 }
 .rounded-xxl {
   border-radius: 1.5rem;
+}
+.rounded-2x {
+  border-radius: 1.8rem;
+}
+.rounded-3x {
+  border-radius: 2.1rem;
 }
 .rounded-circle {
   border-radius: 50%!important;
@@ -1256,6 +1304,9 @@ $angles: ('10','20','30','40','50','60','70','80','90','100','110','120','130','
   }
   .rotate-#{$angle} {
     transform: rotate(#{$angle}deg);
+  }
+  .rotate--#{$angle} {
+    transform: rotate(-#{$angle}deg);
   }
 }
 

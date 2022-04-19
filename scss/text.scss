@@ -149,18 +149,16 @@ h6 {
 .text-20x {
   font-size: 16.8rem;
 }
+
+
 .text-var {
  font-size: var(--text-size, 1rem);
 }
-
-
-
 @media (max-width: $desktop-breakpoint) {
   .sm-text-var {
    font-size: var(--sm-text-size, 1rem);
   }
 }
-
 @media (max-width: map-get($container-max-widths, 'xs')) {
   .xs-text-var {
    font-size: var(--xs-text-size, 1rem);
@@ -243,6 +241,85 @@ h6 {
   .md-text-var {
     font-size: var(--md-text-size, 1rem);
   }
+}
+
+@media (min-width: $container-min) {
+  .lg-text-xs {
+    font-size: 0.75rem;
+  }
+  .lg-text-sm {
+    font-size: 0.875rem;
+  }
+  .lg-text-normal, .lg-text-base {
+    font-size: 1rem;
+  }
+  .lg-text-lg {
+    font-size: 1.125rem;
+  }
+  .lg-text-xl {
+    font-size: 1.25rem;
+  }
+  .lg-text-2x {
+    font-size: 1.5rem;
+  }
+  .lg-text-3x {
+    font-size: 1.875rem;
+  }
+  .lg-text-4x {
+    font-size: 2.25rem;
+  }
+  .lg-text-5x {
+    font-size: 2.65rem;
+  }
+  .lg-text-6x {
+    font-size: 3rem;
+  }
+  .lg-text-7x {
+    font-size: 3.8rem;
+  }
+  .lg-text-8x {
+    font-size: 4.8rem;
+  }
+  .lg-text-9x {
+    font-size: 5.8rem;
+  }
+  .lg-text-10x {
+    font-size: 6.8rem;
+  }
+  .lg-text-11x {
+    font-size: 7.8rem;
+  }
+  .lg-text-12x {
+    font-size: 8.8rem;
+  }
+  .lg-text-13x {
+    font-size: 9.8rem;
+  }
+  .lg-text-14x {
+    font-size: 10.8rem;
+  }
+  .lg-text-15x {
+    font-size: 11.8rem;
+  }
+  .lg-text-16x {
+    font-size: 12.8rem;
+  }
+  .lg-text-17x {
+    font-size: 13.8rem;
+  }
+  .lg-text-18x {
+    font-size: 14.8rem;
+  }
+  .lg-text-19x {
+    font-size: 15.8rem;
+  }
+  .lg-text-20x {
+    font-size: 16.8rem;
+  }
+  .lg-text-var {
+    font-size: var(--lg-text-size, 1rem);
+  }
+
 }
 
 .text-sub-sm {

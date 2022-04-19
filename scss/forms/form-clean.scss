@@ -90,3 +90,64 @@
     }
   }
 }
+
+
+.form-muted-select {
+  margin-bottom: .8rem;
+  position: relative;
+  max-width: 600px;
+  label {
+    color: $form-label;
+    font-size: .8rem;
+    margin-bottom: .2rem;
+    margin-left: .2rem;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.3;
+    text-transform: uppercase;
+  }
+  select {
+    position: relative;
+    background-color: $light;
+    border: none !important;
+    padding: 12px 14px;
+    color: $form-text;
+    line-height: 1.5rem;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &::-ms-expand {
+      display: none;
+    }
+    &:focus {
+      outline: none;
+      border: none !important;
+    }
+    &>option{
+      //color: $light !important;
+    }
+    &:option:disabled {
+      //color: white;
+      opacity: .5;
+    }
+  }
+    // &:after {
+    //   content: ' ';
+    //   position: absolute;
+    //   z-index: 10;
+    //   top: calc(50% + .8rem);
+    //   right: 20px;
+    //   pointer-events: none;
+    //   opacity: 0.4;
+    //   border-style: solid;
+    //   border-width: 1px 1px 0 0;
+    //   height: 10px;
+    //   width: 10px;
+    //   transform: rotate(135deg);
+    //   pointer-events: none;
+    // }
+  &>option{
+    padding-bottom: 1rem;
+  }
+}
+
