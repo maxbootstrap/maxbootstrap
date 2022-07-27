@@ -779,6 +779,14 @@ $margins: m, ml, mr, mt, mb, my, mx;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
+.rounded-b-xxl {
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+.rounded-b-2x {
+  border-bottom-right-radius: 1.8rem;
+  border-bottom-left-radius: 1.8rem;
+}
 
 .rounded-l-lg {
   border-top-left-radius: 0.5rem;

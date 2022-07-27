@@ -52,8 +52,25 @@
     background-color: $primary;
     //width: attr(data-progressbar) !important;
   }
-  
 }
+progress {
+  -webkit-appearance: none;
+  min-height: 1px;
+  accent-color: $primary;
+  border-radius: $btn-radius;
+}
+// progress:not([value]) {
+//   display: flex;
+//   min-height: 1px;
+//   height: auto;
+//   background-color: $progress-bg;
+//   border-radius: $btn-radius;
+// }
+// progress[value] {
+//     height: 100%;
+//     color: $light;
+//     background-color: $primary;
+// }
 
 //PROGRESS VERTICAL NEEDS WORK
 

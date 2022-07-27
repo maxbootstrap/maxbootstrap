@@ -33,6 +33,12 @@ main {
 }
 
 
+.body-fix {
+  overflow: hidden;
+  padding-right: 15px;
+}
+
+
 .nav-header {
   height: $backend-header-height;
   .nav-logo {
@@ -118,6 +124,7 @@ main {
 .nav-article {
   padding-left: 0;
   min-height: 80vh;
+  max-width: 1200px !important;
   @media (min-width: map-get($container-max-widths, 'md')) {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -321,8 +328,8 @@ footer {
     height: 100%;
     // backdrop-filter: blur(10px) brightness(90%) saturate(80%);
     // -webkit-backdrop-filter: blur(10px) brightness(90%) saturate(80%);
-    animation: modal .2s ease-in;
-    pointer-events: none;
+    //animation: modal .2s ease-in;
+    //pointer-events: none;
 }
 
 .search-results {
@@ -331,7 +338,7 @@ footer {
   top: 10px;
   right: 10px;
   width: 90%;
-  max-width: 500px;
+  max-width: 450px;
   min-height: 100px;
   padding: 1rem 1.5rem 1.5rem 1.5rem;
   background: $white !important;

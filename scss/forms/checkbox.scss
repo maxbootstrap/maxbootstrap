@@ -268,8 +268,8 @@
     border: 0;
     overflow: hidden;
     &:checked + label {
-      background-color: $form-selected;
-      border-color: $form-selected;
+      background-color: var(--form-panel-bg, $form-selected);
+      border-color: var(--form-panel-bg, $form-selected);
       color: white !important;
       box-shadow: none;
     }
@@ -278,7 +278,7 @@
     //float: left;
     position: relative;
     display: inline-block;
-    color: $dark;
+    color: var(--form-panel-bg, $dark);
     font-size: .7rem;
     line-height: 1.1;
     font-weight: bold;
@@ -288,13 +288,15 @@
     min-width: 140px;
     padding: 25px 30px 10px 30px;
     margin-right: 10px;
-    border: 2px solid #ced4da;
+    border: 2px solid var(--form-panel-bg, $form-selected);
     border-radius: $btn-radius;
     transition: all 0.2s ease-in-out;
     b {
+      color: var(--form-panel-bg, $dark);
       font-size: 1.3rem;
     }
     span {
+      color: var(--form-panel-bg, $dark);
       font-size: 3.3rem;
       position: relative;
       display: table;
@@ -337,6 +339,46 @@
       font-size: 3rem !important;
       &::after {
         font-size: .7rem !important;
+      }
+    }
+  }
+}
+
+.form-panel-sm {
+  label {
+    font-size: .6rem;
+    line-height: 1.1;
+    min-height: auto;
+    min-width: auto;
+    padding: 13px 20px 11px 20px;
+    margin-right: 6px;
+    border-width: 1px;
+    border-radius: $btn-radius * 1.1;
+    b {
+      font-size: 1.1rem;
+    }
+    span {
+      font-size: 2.5rem;
+      &::before {
+        font-size: 1.2rem;
+      }
+      &::after {
+        font-size: .6rem;
+      }
+    }
+  }
+  @media (max-width: $desktop-breakpoint) {
+    b {
+      font-size: 1rem !important;
+    }
+    label {
+      padding: 1rem 1.2rem;
+      min-height: 30px;
+    }
+    span {
+      font-size: 2.5rem !important;
+      &::after {
+        font-size: .6rem !important;
       }
     }
   }

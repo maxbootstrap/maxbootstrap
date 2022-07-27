@@ -225,6 +225,36 @@
   clip-path: polygon($x $x, $y $x, $y $y, $x $y);
 }
 
+.snap-y-mandatory, .snap-group {
+  //overflow-x: hidden;
+  //overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+.snap-y-proximity {
+  //overflow-x: hidden;
+  //overflow-y: scroll;
+  scroll-snap-type: y proximity;
+}
+.snap-x-mandatory {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+}
+.snap-x-proximity {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x proximity;
+}
+.snap-center {
+  scroll-snap-align: center;
+}
+.snap-start {
+  scroll-snap-align: start;
+}
+.snap-end {
+  scroll-snap-align: end;
+}
+
 .parallax-group {
   overflow-y: auto;
   overflow-x: hidden;

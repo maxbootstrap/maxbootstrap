@@ -108,7 +108,7 @@
       color: var(--#{$name});
     }
   }
-  @if $second_theme {
+  @if $second_theme != false {
     [data-theme="#{$second_theme}"] {
       .#{$second_theme}\:color-#{$name}-all {
         color: var(--#{$name}) !important;
@@ -144,7 +144,10 @@
     background-color: var(--#{$name}) !important;
   }
 
-  @if $second_theme {
+  @if $second_theme != false {
+    .something {
+      background-color: $second_theme !important;
+    }
     [data-theme="#{$second_theme}"] {
       .#{$second_theme}\:color-#{$name} {
         color: $color !important;
@@ -285,15 +288,6 @@
   .bg-duo-#{$name} {
     background: $color;
     background: linear-gradient(var(--bg-angle, 120deg), rgba($color,1) var(--bg-start, 40%), lighten($color, 2%) var(--bg-end, 62%), darken($color, 5%) var(--bg-end, 62%));
-  }
-
-
-
-  //BG FROSTED BLUR
-  .bg-frosted-#{$name} {
-    background-color: rgba($color, 0.17);
-    -webkit-backdrop-filter: blur(8px); /* Safari 9+ */
-    backdrop-filter: blur(8px); /* Chrome and Opera */
   }
 
   //DUAL COLORS
@@ -606,6 +600,15 @@ $blends: normal, multiply, screen, overlay, darken, lighten, color-dodge, color-
     box-shadow: rgba($dark, 0.2) 0px 0px 0px 0.5px inset;
   }
 }
+//BG FROSTED BLUR
+@each $name, $color in $colors {
+  .bg-frosted-#{$name} {
+    background-color: rgba($color, 0.70);
+    -webkit-backdrop-filter: blur(6px); /* Safari 9+ */
+    backdrop-filter: blur(6px); /* Chrome and Opera */
+  }
+}
+
 
 @each $name, $color in $colors {
   .label-#{$name} {

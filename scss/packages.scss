@@ -10,7 +10,10 @@
 
 //RECAPTCHA
 .grecaptcha-badge {
-  visibility: hidden !important;
+    width: 0px !important;
+    height: 0px !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
 }
 
 

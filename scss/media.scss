@@ -486,7 +486,7 @@
 .img-dark {
   filter: brightness(.8) contrast(1.2);
 }
-@if $second_theme {
+@if $second_theme != false {
   [data-theme="dark"] {
     img {
       filter: brightness(.8) contrast(1.2);

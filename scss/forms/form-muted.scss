@@ -1,3 +1,8 @@
+$form-muted-bg: $light;
+@if $form-bg != #ffffff {
+  $form-muted-bg: $form-bg;
+}
+
 .form-muted-label {
   color: $form-label;
   font-size: .8rem;
@@ -28,7 +33,7 @@
     }
   }
   select {
-    background-color: $form-bg;
+    background-color: $form-muted-bg;
     border: 1px solid transparent;
     line-height: 1.5rem;
     height: 3rem;
@@ -42,16 +47,16 @@
     display: block;
     outline: none;
     color: $form-text;
-    background-color: $light;
-    border: 1px solid $light;
+    background-color: $form-muted-bg;
+    border: 1px solid $form-muted-bg;
     border-radius: $input-radius;
     box-shadow: transparent;
     transition: box-shadow .15s ease;
     -moz-appearance: none;
     -webkit-appearance: none;
     &:focus {
-        box-shadow: 0 0px 0px 0 $form-bg;
-        background-color: lighten($form-bg, 5%);
+        box-shadow: 0 0px 0px 0 $form-muted-bg;
+        background-color: lighten($form-muted-bg, 5%);
     }
     &::placeholder {
     }
@@ -81,7 +86,7 @@
   }
   select {
     position: relative;
-    background-color: $light;
+    background-color: $form-muted-bg;
     border: none !important;
     padding: 12px 14px;
     color: $form-text;
@@ -129,7 +134,7 @@
 
 //CHECKBOX
 .custom-control-label::before {
-  background-color: $light !important;
+  background-color: $form-muted-bg !important;
 }
 .custom-control-input:checked ~ .custom-control-label::before {
   background-color: $primary !important;

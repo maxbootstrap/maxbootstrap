@@ -1,0 +1,85 @@
+.form-line, .form-line-select {
+  position: relative;
+  margin-bottom: .8rem;
+  label {
+    color: $form-label;
+    font-size: .9rem;
+    margin-bottom: .2rem;
+    margin-left: .2rem;
+    font-weight: $font-weight-regular;
+    letter-spacing: 0.3;
+    .btn {
+    }
+  }
+
+}
+
+.form-line {
+  input, textarea, select {
+    width: 100%;
+    display: block;
+    outline: none;
+    color: $form-text;
+    background-color: $form-bg;
+    border-bottom: $form-border;
+    border-radius: $input-radius;
+    padding: 1rem 1.2rem;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    transition: all 0.4s ease-in-out;
+    &:focus {
+      border: $form-border;
+    }
+    &:hover {
+      border: $form-border;
+    }
+  }
+  select {
+    line-height: 1.5rem;
+    height: 3rem;
+  }
+  input, textarea {
+    &::placeholder {
+      color: $gray;
+    }
+  }
+  textarea  {
+    border: $form-border;
+  }
+  input  {
+    max-width: 600px;
+  }
+}
+
+.form-line-select {
+  max-width: 600px;
+  select {
+    width: auto;
+    display: block;
+    outline: none;
+    color: $form-text;
+    background-color: $form-bg;
+    border: $form-border;
+    border-radius: $input-radius;
+    padding: $btn-padding-y $btn-padding-x;
+    border-bottom: $form-border;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &::-ms-expand {
+      display: none;
+    }
+    &:focus {
+      outline: none;
+    }
+    &>option{
+      color: $light !important;
+    }
+    &>option:disabled {
+      //color: white;
+    }
+  }
+  &>option{
+    padding-bottom: 1rem;
+  }
+}

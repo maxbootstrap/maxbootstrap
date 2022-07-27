@@ -144,9 +144,9 @@ $btn-weight: $font-weight-regular !default;
 $btn-letter-spacing: $font-letter-spacing !default;
 
 //FORMS
-$form-bg: #ffffff !default;
+$form-bg: $white !default;
 $form-text: $body !default;
-$form-focus-bg: #ffffff !default;
+$form-focus-bg: $white !default;
 $form-focus-text: $body !default;
 $form-light: lighten($body, 22%) !default;
 $form-label: $form-light !default;
@@ -232,7 +232,7 @@ $code-label: white !default; //#ddd
   }
 }
 
-@if $second_theme {
+@if $second_theme != false {
 $colors-dark: ('primary':$primary, 'secondary':$secondary, 'dark':$dark, 'light':$light, 'gray':$gray, 'blue':$blue, 'indigo':$indigo, 'purple':$purple, 'green':$green, 'teal':$teal, 'red':$red, 'pink':$pink, 'yellow':$yellow, 'orange':$orange, 'white':$white, 'black':$black) !default;
 $complete-colors-dark: $colors !default;
 @each $key, $color in $complete-colors-dark {

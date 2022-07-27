@@ -180,6 +180,10 @@ main {
   padding-left: 18.75px;
   padding-right: 18.75px; }
 
+.body-fix {
+  overflow: hidden;
+  padding-right: 15px; }
+
 .nav-header {
   height: 60px; }
   .nav-header .nav-logo {
@@ -246,7 +250,8 @@ main {
       display: none; } }
 .nav-article {
   padding-left: 0;
-  min-height: 80vh; }
+  min-height: 80vh;
+  max-width: 1200px !important; }
   @media (min-width: 720px) {
     .nav-article {
       padding-left: 1rem;
@@ -414,9 +419,7 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  animation: modal .2s ease-in;
-  pointer-events: none; }
+  height: 100%; }
 
 .search-results {
   position: fixed;
@@ -424,7 +427,7 @@ footer {
   top: 10px;
   right: 10px;
   width: 90%;
-  max-width: 500px;
+  max-width: 450px;
   min-height: 100px;
   padding: 1rem 1.5rem 1.5rem 1.5rem;
   background: #ffffff !important;

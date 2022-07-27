@@ -149,6 +149,83 @@ h6 {
 .text-20x {
   font-size: 16.8rem;
 }
+//WIP
+.text-rxxs {
+  font-size: 0.65rem;
+}
+.text-rxs {
+  font-size: 0.75rem;
+}
+.text-rsm {
+  font-size: 0.875rem;
+}
+.text-rnormal, .text-rbase {
+  font-size: clamp(calc(1rem * .95), 1vw, 1rem);
+}
+.text-rlg {
+  font-size: clamp(calc(1rem * .95), 1.1vw, calc(1rem * 1.65));
+}
+.text-rxl {
+  font-size: 1.25rem;
+  font-size: clamp(calc(1rem * 1.1), 1.2vw, calc(1.2rem * 1.65));
+}
+.text-r2x {
+  font-size: 1.5rem;
+}
+.text-r3x {
+  font-size: 1.875rem;
+}
+.text-r4x {
+  font-size: 2.25rem;
+}
+.text-r5x {
+  font-size: 2.65rem;
+}
+.text-r6x {
+  font-size: 3rem;
+}
+.text-r7x {
+  font-size: 3.8rem;
+}
+.text-r8x {
+  font-size: 4.8rem;
+}
+.text-r9x {
+  font-size: 5.8rem;
+}
+.text-10x {
+  font-size: 6.8rem;
+}
+.text-r11x {
+  font-size: 7.8rem;
+}
+.text-r12x {
+  font-size: 8.8rem;
+}
+.text-r13x {
+  font-size: 9.8rem;
+}
+.text-r14x {
+  font-size: 10.8rem;
+}
+.text-r15x {
+  font-size: 11.8rem;
+}
+.text-r16x {
+  font-size: 12.8rem;
+}
+.text-r17x {
+  font-size: 13.8rem;
+}
+.text-r18x {
+  font-size: 14.8rem;
+}
+.text-1r9x {
+  font-size: 15.8rem;
+}
+.text-r20x {
+  font-size: 16.8rem;
+}
 
 
 .text-var {
@@ -1082,4 +1159,10 @@ smaller {
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.text-clip-none {
+  -webkit-background-clip: none;
+  -moz-background-clip: none;
+  background-clip: none;
+  -webkit-text-fill-color: inherit;
 }
