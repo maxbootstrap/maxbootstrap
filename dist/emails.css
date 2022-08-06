@@ -224,7 +224,7 @@ p {
 .table-grid tbody, .table-grid-clean tbody {
   color: #5a6d87;
   background-color: #edf2f8;
-  border-radius: 0.2rem; }
+  border-radius: 6px; }
   .table-grid tbody tr, .table-grid-clean tbody tr {
     padding: 1rem;
     padding-bottom: 2rem;
@@ -238,7 +238,7 @@ p {
   padding: 1rem; }
   .table-grid-clean thead {
     background-color: #edf2f8;
-    border-radius: 0.2rem; }
+    border-radius: 6px; }
   .table-grid-clean tbody {
     background-color: transparent;
     border-radius: none; }
@@ -265,7 +265,7 @@ p {
   width: auto;
   height: auto;
   max-width: 140px;
-  max-height: 140px; }
+  max-height: 90px; }
 
 .email-subject {
   display: block;

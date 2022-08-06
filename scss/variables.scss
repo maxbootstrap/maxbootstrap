@@ -99,6 +99,8 @@ $paragraph-line-height: 1.2 !default;
 $paragraph-color: $body !default;
 
 //HEADINGS
+$heading-color: $body !default;
+$heading-mobile-percentage: .85 !default;
 $h1-size: 2.6rem !default;
 $h2-size: 2.2rem !default;
 $h3-size: 1.9rem !default;
@@ -127,8 +129,6 @@ $h3-letter-spacing: $heading-letter-spacing !default;
 $h4-letter-spacing: $heading-letter-spacing !default;
 $h5-letter-spacing: $heading-letter-spacing !default;
 $h6-letter-spacing: $heading-letter-spacing !default;
-$heading-color: $body !default;
-
 $text-muted-color: $primary !default;
 $text-muted-weight: $font-weight-bold !default;
 $text-muted-letter-spacing: ($font-letter-spacing * 1.05) !default;
@@ -137,11 +137,12 @@ $text-muted-transform: uppercase !default;
 //BUTTONS
 $btn-padding-y: .6rem !default;
 $btn-padding-x: 1.3rem !default;
-$btn-radius: .2rem !default;
+$btn-radius: 6px !default;
 $btn-border: 1px !default;
 $btn-disabled-opacity: .7 !default;
 $btn-weight: $font-weight-regular !default;
 $btn-letter-spacing: $font-letter-spacing !default;
+$btn-transform: none !default;
 
 //FORMS
 $form-bg: $white !default;
@@ -170,22 +171,6 @@ $progress-bg: $primary !default;
 $animation-px: 1rem !default;
 $animation-duration: .5s !default;
 
-//BACKEND
-$backend-header-height: 60px !default;
-$backend-header-logo-height: ($backend-header-height * .8) !default;
-$backend-bg: #f8fafc !default;
-$backend-sidebar-bg: white !default;
-$backend-sidebar-width: 250px !default;
-$backend-xs-sidebar-bg: $backend-sidebar-bg !default;
-$backend-xs-sidebar-width: 60px !default;
-$backend-sidebar-padding: ($backend-sidebar-width * .15) / 2 !default;
-$backend-article-margin: $backend-sidebar-width !default;
-$backend-breakpoint: 1168px !default;
-$backend-sidebar-links: #2a5164 !default;
-$backend-sidebar-links-hover: transparent !default;
-$backend-sidebar-links-padding: .6rem !default;
-$backend-sidebar-active-color: $white !default;
-$backend-sidebar-active-bg: $primary !default;
 
 //MODAL
 $modal-bg: $dark !default;

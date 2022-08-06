@@ -2172,17 +2172,6 @@
       "pg" : 0,
       "sct" : 1
     },
-    "\/purgecss.config.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 1,
-      "oAP" : "\/purgecss.config-min.js",
-      "oF" : 1,
-      "sC" : 3,
-      "tS" : 0
-    },
     "\/readme.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2873,94 +2862,6 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
-    },
-    "\/vendor\/autoload.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/vendor\/autoload.php",
-      "oF" : 0
-    },
-    "\/vendor\/composer\/autoload_classmap.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/vendor\/composer\/autoload_classmap.php",
-      "oF" : 0
-    },
-    "\/vendor\/composer\/autoload_namespaces.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/vendor\/composer\/autoload_namespaces.php",
-      "oF" : 0
-    },
-    "\/vendor\/composer\/autoload_psr4.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/vendor\/composer\/autoload_psr4.php",
-      "oF" : 0
-    },
-    "\/vendor\/composer\/autoload_real.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/vendor\/composer\/autoload_real.php",
-      "oF" : 0
-    },
-    "\/vendor\/composer\/autoload_static.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/vendor\/composer\/autoload_static.php",
-      "oF" : 0
-    },
-    "\/vendor\/composer\/ClassLoader.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/vendor\/composer\/ClassLoader.php",
-      "oF" : 0
-    },
-    "\/vendor\/composer\/installed.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/vendor\/composer\/installed-min.json",
-      "oF" : 0,
-      "oO" : 0,
-      "oS" : 1
-    },
-    "\/vendor\/composer\/installed.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/vendor\/composer\/installed.php",
-      "oF" : 0
-    },
-    "\/vendor\/composer\/InstalledVersions.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/vendor\/composer\/InstalledVersions.php",
-      "oF" : 0
-    },
-    "\/vendor\/composer\/LICENSE" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/vendor\/composer\/LICENSE",
-      "oF" : 0
     }
   },
   "hooks" : [

@@ -3,6 +3,7 @@ button:focus {outline: 0;}
 .btn {
   display: inline-block;
   text-align: center;
+  text-transform: $btn-transform;
   white-space: nowrap;
   vertical-align: middle;
   font-size: .96rem;

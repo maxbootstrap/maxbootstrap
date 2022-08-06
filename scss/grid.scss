@@ -34,6 +34,13 @@ body {
   -webkit-print-color-adjust: exact !important;
 }
 
+.body-fix {
+  overflow: hidden;
+  @media (min-width: $desktop-breakpoint) {
+    padding-right: 15px;
+  }
+}
+
 a {
   color: var(--body, $body);
   text-decoration: none;

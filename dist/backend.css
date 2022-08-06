@@ -285,7 +285,7 @@ main {
           display: block;
           text-decoration: none;
           width: 100%;
-          border-radius: 0.2rem; }
+          border-radius: 6px; }
         .nav-sidebar .nav-sidebar-content ul li a:hover {
           opacity: .8;
           background: white; }
@@ -315,7 +315,7 @@ main {
     .nav-sidebar {
       max-width: 60px;
       background-color: white;
-      border-radius: 0.2rem; }
+      border-radius: 6px; }
       .nav-sidebar .nav-sidebar-content {
         padding: .4rem; }
         .nav-sidebar .nav-sidebar-content ul {
@@ -328,7 +328,7 @@ main {
               text-align: center;
               padding: .4rem .3rem;
               font-size: 0;
-              border-radius: 0.2rem; }
+              border-radius: 6px; }
             .nav-sidebar .nav-sidebar-content ul li a:hover {
               background-color: #f2f2f2; }
             .nav-sidebar .nav-sidebar-content ul li i {
@@ -357,7 +357,7 @@ main {
   .nav-sidebar.xs-sidebar {
     max-width: 60px;
     background-color: white;
-    border-radius: 0.2rem; }
+    border-radius: 6px; }
     .nav-sidebar.xs-sidebar .nav-sidebar-content {
       padding: .4rem; }
       .nav-sidebar.xs-sidebar .nav-sidebar-content ul {
@@ -370,7 +370,7 @@ main {
             text-align: center;
             padding: .4rem .3rem;
             font-size: 0;
-            border-radius: 0.2rem; }
+            border-radius: 6px; }
           .nav-sidebar.xs-sidebar .nav-sidebar-content ul li a:hover {
             background-color: #f2f2f2; }
           .nav-sidebar.xs-sidebar .nav-sidebar-content ul li i {
@@ -453,3 +453,11 @@ footer {
       left: 10px;
       width: 95%;
       padding: 0.5rem 0.8rem 0.8rem 0.8rem; } }
+.box-admin {
+  background-color: white;
+  padding: 20.625px 18.75px 20.25px 18.75px;
+  border-radius: 6.6px;
+  box-shadow: none; }
+  @media (min-width: 720px) {
+    .box-admin {
+      padding: 23.4375px 21.1875px 22.5px 21.1875px; } }

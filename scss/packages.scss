@@ -16,21 +16,38 @@
     opacity: 0 !important;
 }
 
+@mixin calcSwal2Radius($btn-radius) {
+    @if $btn-radius > 10px  {
+        border-radius: 10px !important;
+    } @else if $btn-radius > 0px {
+        border-radius: ($btn-radius * 2) !important;
+    } @else {
+        border-radius: $btn-radius !important;
+    }
+}
 
 //SWEETALERT2
 .swal2-popup {
     animation-duration: 0.2s !important;
-    border-radius: ($btn-radius * 2) !important;
+    @include calcSwal2Radius($btn-radius);
 
   .swal2-styled {
     padding: $btn-padding-y $btn-padding-x !important;
     font-weight: $font-weight-regular !important;
-    border-radius: $btn-radius !important;
+    @include calcSwal2Radius($btn-radius);
+  }
+
+  .swal2-actions {
+    button {
+        font-size: .9rem !important;
+        padding: 6px 13px !important;
+    }
   }
 
   &.swal2-modal {
     .swal2-title {
       color: $primary;
+      letter-spacing: -0.2px !important;
       &:first-letter {
         text-transform: uppercase;
       }
@@ -48,7 +65,7 @@
     .swal2-title {
       align-self: center !important;
       color: $primary;
-      font-size: 1.05rem !important;
+      font-size: 1rem !important;
       margin: 0.2rem !important;
       &:first-letter {
         text-transform: uppercase;

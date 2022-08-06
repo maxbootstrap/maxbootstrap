@@ -1,5 +1,31 @@
 @import "../scss/variables";
 
+//BACKEND
+$backend-header-height: 60px !default;
+$backend-header-logo-height: ($backend-header-height * .8) !default;
+$backend-bg: #f8fafc !default;
+$backend-sidebar-bg: white !default;
+$backend-sidebar-width: 250px !default;
+$backend-xs-sidebar-bg: $backend-sidebar-bg !default;
+$backend-xs-sidebar-width: 60px !default;
+$backend-sidebar-padding: ($backend-sidebar-width * .15) / 2 !default;
+$backend-article-margin: $backend-sidebar-width !default;
+$backend-breakpoint: 1168px !default;
+$backend-sidebar-links: #2a5164 !default;
+$backend-sidebar-links-hover: transparent !default;
+$backend-sidebar-links-padding: .6rem !default;
+$backend-sidebar-active-color: $white !default;
+$backend-sidebar-active-bg: $primary !default;
+
+$backend-box-bg: $backend-xs-sidebar-bg !default;
+$backend-box-padding: $backend-sidebar-padding !default;
+//$backend-box-shadow: none !default;
+$backend-box-radius: $btn-radius * 1.1 !default;
+
+@if $backend-box-radius > 30px {
+  $backend-box-radius: 30px;
+}
+
 body {
   background: linear-gradient(90deg, $backend-sidebar-bg 30%, $backend-bg 70%);
 }
@@ -387,5 +413,18 @@ footer {
     left: 10px;
     width: 95%;
     padding: 0.5rem 0.8rem 0.8rem 0.8rem;
+  }
+}
+
+.box-admin {
+  background-color: rgba($backend-box-bg, var(--o, 1));
+  padding: ($backend-box-padding * 1.1) ($backend-box-padding * 1) ($backend-box-padding * 1.08) ($backend-box-padding * 1);
+  border-radius: $backend-box-radius;
+  box-shadow: $backend-box-shadow;
+  @if variable-exists(backend-box-shadow) {
+    box-shadow: $backend-box-shadow;
+  }
+  @media (min-width: $desktop-breakpoint) {
+    padding: ($backend-box-padding * 1.25) ($backend-box-padding * 1.13) ($backend-box-padding * 1.2) ($backend-box-padding * 1.13);
   }
 }
