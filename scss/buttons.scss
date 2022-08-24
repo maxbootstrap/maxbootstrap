@@ -6,7 +6,7 @@ button:focus {outline: 0;}
   text-transform: $btn-transform;
   white-space: nowrap;
   vertical-align: middle;
-  font-size: .96rem;
+  font-size: $btn-size;
   line-height: 1.3;
   font-weight: $btn-weight;
   letter-spacing: $btn-letter-spacing;
@@ -26,30 +26,30 @@ button:focus {outline: 0;}
 }
 
 .btn-xxs {
-  font-size: .6rem !important;
+  font-size: $btn-size * .6 !important;
   padding: ($btn-padding-y * .3) ($btn-padding-x * .35) !important;
   border-radius: calc(#{$btn-radius} * 0.6);
 }
 
 .btn-xs {
-  font-size: .7rem !important;
+  font-size: $btn-size * .7 !important;
   padding: ($btn-padding-y * .4) ($btn-padding-x * .45) !important;
   border-radius: calc(#{$btn-radius} * 0.7);
 }
 
 .btn-sm {
-  font-size: .8rem !important;
+  font-size: $btn-size * .8 !important;
   padding: ($btn-padding-y * .8) ($btn-padding-x * .89) !important;
   border-radius: calc(#{$btn-radius} * 0.95);
 }
 
 .btn-lg {
-  font-size: 1.26rem;
+  font-size: $btn-size * 1.2;
   padding: ($btn-padding-y * 1.3) ($btn-padding-x * 1.3);
 }
 
 .btn-xl {
-  font-size: 1.5rem;
+  font-size: $btn-size * 1.5;
   padding: ($btn-padding-y * 1.6) ($btn-padding-x * 1.6);
 }
 .btn-block {
@@ -63,27 +63,27 @@ button:focus {outline: 0;}
 
 @media (min-width: $desktop-breakpoint) {
   .md-btn-xs {
-    font-size: .74rem !important;
+    font-size: $btn-size * .7 !important;
     padding: ($btn-padding-y * .5) ($btn-padding-x * .5) !important;
   }
   
   .md-btn-sm {
-    font-size: .84rem !important;
+    font-size: $btn-size * .8 !important;
     padding: ($btn-padding-y * .9) ($btn-padding-x * .9) !important;
   }
   
   .md-btn-normal {
-    font-size: .96rem !important;
+    font-size: $btn-size !important;
     padding: $btn-padding-y $btn-padding-x !important;
   }
   
   .md-btn-lg {
-    font-size: 1.26rem;
+    font-size: $btn-size * 1.2;
     padding: ($btn-padding-y * 1.3) ($btn-padding-x * 1.3);
   }
   
   .md-btn-xl {
-    font-size: 1.5rem;
+    font-size: $btn-size * 1.5;
     padding: ($btn-padding-y * 1.6) ($btn-padding-x * 1.6);
   }
   .md-btn-block {
@@ -94,22 +94,22 @@ button:focus {outline: 0;}
 
 @media (max-width: $desktop-breakpoint) {
   .sm-btn-xs {
-    font-size: .74rem !important;
+    font-size: $btn-size * .7 !important;
     padding: ($btn-padding-y * .5) ($btn-padding-x * .5) !important;
   }
   
   .sm-btn-sm {
-    font-size: .84rem !important;
+    font-size: $btn-size * .8 !important;
     padding: ($btn-padding-y * .9) ($btn-padding-x * .9) !important;
   }
   
   .sm-btn-lg {
-    font-size: 1.26rem;
+    font-size: $btn-size * 1.2;
     padding: ($btn-padding-y * 1.3) ($btn-padding-x * 1.3);
   }
   
   .sm-btn-xl {
-    font-size: 1.5rem;
+    font-size: $btn-size * 1.5;
     padding: ($btn-padding-y * 1.6) ($btn-padding-x * 1.6);
   }
   .sm-btn-block {

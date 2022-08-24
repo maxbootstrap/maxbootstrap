@@ -292,11 +292,11 @@
     border-radius: $btn-radius;
     transition: all 0.2s ease-in-out;
     b {
-      color: var(--form-panel-bg, $dark);
+      //color: var(--form-panel-bg, $dark);
       font-size: 1.3rem;
     }
     span {
-      color: var(--form-panel-bg, $dark);
+      //color: var(--form-panel-bg, $dark);
       font-size: 3.3rem;
       position: relative;
       display: table;

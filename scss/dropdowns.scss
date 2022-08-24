@@ -13,7 +13,7 @@
   z-index: 9999;
   display: block; //none
   border: none;
-  border-radius: $dropdown-radius * 1.1;
+  border-radius: $dropdown-radius;
   background-color: $white;
   box-shadow: rgba($primary, 0.1) 0px 5px 30px 0px;
   top: $dropdown-top;
@@ -30,7 +30,7 @@
     letter-spacing: 0.4px !important;
     text-transform: capitalize;
     clear: both;
-    border-radius: $dropdown-radius * 1.1;
+    border-radius: $dropdown-radius;
     padding: .6rem 1rem;
     margin: 2px 4px;
     &:hover {

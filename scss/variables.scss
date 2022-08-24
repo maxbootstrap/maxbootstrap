@@ -13,9 +13,9 @@ $grid-gutter-width: 0px !default;
 //$line-height-base: 1.2 !default;
 $container-max-widths: (
   xs: 0px,
-  sm: 400px,
+  sm: 374px,
   md: $desktop-breakpoint,
-  lg: $container-min,
+  lg: $container-min * 1.1,
   xl: $container
 ) !default;
 
@@ -135,6 +135,7 @@ $text-muted-letter-spacing: ($font-letter-spacing * 1.05) !default;
 $text-muted-transform: uppercase !default;
 
 //BUTTONS
+$btn-size: $font-size * .96 !default;
 $btn-padding-y: .6rem !default;
 $btn-padding-x: 1.3rem !default;
 $btn-radius: 6px !default;
@@ -160,9 +161,13 @@ $form-border: 1px solid $gray !default;
 $form-padding: 21px 10px 6px 15px !default;
 
 //DROPDOWNS
-$dropdown-radius: $btn-radius !default;
 $dropdown-font-size: .9rem !default;
 $dropdown-top: 40px !default;
+$dropdown-radius: $btn-radius !default;
+@if $btn-radius > 20px {
+  $dropdown-radius: 20px !default;
+} @else {
+}
 
 //CHARTS
 $progress-bg: $primary !default;
