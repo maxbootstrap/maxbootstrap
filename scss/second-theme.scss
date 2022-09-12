@@ -1,0 +1,55 @@
+
+@if $second_theme != false {
+    $colors-dark: ('primary':$primary, 'secondary':$secondary, 'dark':$dark, 'light':$light, 'gray':$gray, 'blue':$blue, 'indigo':$indigo, 'purple':$purple, 'green':$green, 'teal':$teal, 'red':$red, 'pink':$pink, 'yellow':$yellow, 'orange':$orange, 'white':$white, 'black':$black) !default;
+    $complete-colors-dark: $colors !default;
+    @each $key, $color in $complete-colors-dark {
+    $variants-colors: ();
+    $lighten400: 5%; $lighten300: 10%; $lighten200: 12%; $lighten100: 20%; 
+    @if $key == 'light' {
+        $lighten400: 1%; $lighten300: 2%; $lighten200: 3%; $lighten100: 4%;
+    }
+    @if $key == 'white' {
+        $variants-colors: (
+        #{$key}-600: darken($color, 5%),
+        #{$key}-700: darken($color, 10%),
+        #{$key}-800: darken($color, 15%),
+        #{$key}-900: darken($color, 30%)
+        );
+    } @else if $key == 'black' {
+        $variants-colors: (
+        #{$key}-100: lighten($color, $lighten100),
+        #{$key}-200: lighten($color, $lighten200),
+        #{$key}-300: lighten($color, $lighten300),
+        #{$key}-400: lighten($color, $lighten400)
+        );
+    } @else {
+        $variants-colors: (
+        #{$key}-100: lighten($color, $lighten100),
+        #{$key}-200: lighten($color, $lighten200),
+        #{$key}-300: lighten($color, $lighten300),
+        #{$key}-400: lighten($color, $lighten400),
+        #{$key}-500: $color,
+        #{$key}-600: darken($color, 5%),
+        #{$key}-700: darken($color, 10%),
+        #{$key}-800: darken($color, 15%),
+        #{$key}-900: darken($color, 30%)
+        );
+    }
+    $complete-colors-dark: map-merge($complete-colors-dark, $variants-colors);
+    }
+    //prefers-color-scheme??
+    $custom-colors-dark: ();
+    $colors-dark: map-merge($colors-dark, $custom-colors-dark);
+    [data-theme="dark"] {
+        //--body: invert($body);
+        --bg: invert($bg);
+        --heading-color: invert($heading-color);
+        --paragraph-color: invert($paragraph-color);
+        @each $key, $value in $complete-colors  {
+        $value: map-get($complete-colors-dark, $key);
+        --#{$key}: #{invert($value)};
+        
+        }
+    }
+
+}

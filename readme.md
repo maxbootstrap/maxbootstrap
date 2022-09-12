@@ -1,6 +1,6 @@
-# MaksucoCSS CSS/JS Helpers
+# MaxBootstrap CSS Framework
 Remember to add/replace your **variables** before importing, 
-and then **@import '../node_modules/bootwind/compiled';** or what ever you path is
+and then **@import '../node_modules/maxbootstrap/compiled';** or what ever you path is
 
 https://cdn.jsdelivr.net/gh/maxbootstrap/maxbootstrap@main/dist/maxbootstrap.css
 
@@ -8,7 +8,7 @@ https://cdn.jsdelivr.net/gh/maxbootstrap/maxbootstrap@main/dist/maxbootstrap.css
 # CSS
 
 ## Grid
-Use **[Bootstrap 4](https://getbootstrap.com/docs/4.3/layout/grid/)** docs for the grid and is divided in 24 columns
+Use **[Bootstrap](https://getbootstrap.com/docs/4.3/layout/grid/)** docs for the grid and is divided in 24 columns
 
 ### Containers
 You can use `.container-fluid` and `.container` (centered) and  `.container-max` witch is like fluid but with a limit of 1800px
@@ -19,7 +19,7 @@ You can use `.container-fluid` and `.container` (centered) and  `.container-max`
 
 
 ### Columns
-Same as Bootstrap 4
+Similar to Bootstrap
 `.col-auto`
 To get them all in a row `.col` `.col-sm` `.col-md` `.col-lg` `.col-xl`
 

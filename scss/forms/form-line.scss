@@ -1,42 +1,29 @@
+@mixin form-inner-input {
+  @include form-input;
+  border-bottom: $form-border;
+  padding: 1rem 1.2rem;
+  transition: all 0.4s ease-in-out;
+}
+
 .form-line, .form-line-select {
   position: relative;
   margin-bottom: .8rem;
   label {
-    color: $form-label;
-    font-size: .9rem;
-    margin-bottom: .2rem;
-    margin-left: .2rem;
+    @include form-label;
     font-weight: $font-weight-regular;
-    letter-spacing: 0.3;
-    .btn {
-    }
   }
 
 }
 
 .form-line {
   input, textarea, select {
-    width: 100%;
-    display: block;
-    outline: none;
-    color: $form-text;
-    background-color: $form-bg;
-    border-bottom: $form-border;
-    border-radius: $input-radius;
-    padding: 1rem 1.2rem;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    transition: all 0.4s ease-in-out;
+    @include form-inner-input;
     &:focus {
       border: $form-border;
     }
     &:hover {
       border: $form-border;
     }
-  }
-  select {
-    line-height: 1.5rem;
-    height: 3rem;
   }
   input, textarea {
     &::placeholder {
@@ -46,26 +33,11 @@
   textarea  {
     border: $form-border;
   }
-  input  {
-    max-width: 600px;
-  }
 }
 
 .form-line-select {
-  max-width: 600px;
   select {
-    width: auto;
-    display: block;
-    outline: none;
-    color: $form-text;
-    background-color: $form-bg;
-    border: $form-border;
-    border-radius: $input-radius;
-    padding: $btn-padding-y $btn-padding-x;
-    border-bottom: $form-border;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    @include form-inner-input;
     &::-ms-expand {
       display: none;
     }

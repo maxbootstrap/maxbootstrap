@@ -27,7 +27,7 @@
     z-index: 950;
     transform: none;
     min-width: $modal-min-width;
-    max-height: 90%;
+    max-height: 92%;
     @media (max-width: $desktop-breakpoint) {
       min-width: 90%;
       margin: 0px;
@@ -254,6 +254,36 @@
   }
 }
 
+
+//POPUP
+.modal-popup {
+  position: fixed;
+  z-index: 950;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  width: 96%;
+  max-width: 800px;
+  min-height: 300px;
+  border-radius: 1rem;
+  padding: 1.8rem;
+  background-color: $white;
+  background-color: darken($light, 5%);
+  box-shadow: 0 4px 6px -1px rgba($black, 0.1), 0 2px 4px -1px rgba($black, 0.06), 0px 0px 51px -6px rgba($black,0.21) !important;
+  @media (max-width: map-get($container-max-widths, 'md')) {
+    padding: .8rem;
+  }
+    animation: modal .4s ease-in;
+}
+
+.modal-popup-bottom {
+  left: 50%;
+  transform: translate(-50%, 0%);
+  bottom: 3rem;
+  @media (max-width: map-get($container-max-widths, 'md')) {
+    bottom: 2rem;
+  }
+}
 
 
 @keyframes modal {

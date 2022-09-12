@@ -19,7 +19,7 @@
       box-shadow: 0 0 0 0.2rem rgba(65, 30, 171, 0.25);
     }
     &:focus:not(:checked) ~ label::before {
-      border-color: lighten($form-selected, 20%);
+      border-color: lighten($form-selected, 10%);
       background-color: $form-bg;
     }
     &:not(:disabled):active ~ label::before {
@@ -80,7 +80,6 @@
 
 
 .form-radio {
-
   label {
     &::before {
       border-radius: 50%;
@@ -94,7 +93,7 @@
       background-color: rgba($form-selected, 0.5);
     }
     &:not(:checked) ~ label::before {
-      background-color: $light;
+      background-color: lighten($form-selected, 40%);
       background-image: none;
     }
     &:not(:checked) ~ label::after {
@@ -120,6 +119,50 @@
   }
 }
 
+.form-checkbox-solid {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  label {
+    -webkit-user-select: none;
+    width: auto;
+  }
+  input {
+    position: relative;
+    flex-shrink: 0;
+    height: 1.2rem;
+    width: 1.2rem;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-bottom: .2rem;
+    margin-left: .2rem;
+    border: 2px solid var(--checkbox-bg, lighten($form-selected, 5%));
+    border-radius: $input-radius;
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 45%;
+      left: 50%;
+      width: 35%;
+      height: 60%;
+      border: solid var(--checkbox-bg, lighten($form-selected, 35%));
+      border-width: 0 2px 2px 0;
+      transform-origin: left;
+      transform: translate(-30%, -70%) rotate(45deg);
+    }
+    &:checked {
+      background-color: var(--checkbox-bg, darken($form-selected, 5%));
+      background-repeat: no-repeat;
+      background-image: linear-gradient(-45deg,transparent 65%,$white,linear-gradient(45deg,transparent 75%,$white) 75.99%),linear-gradient(-45deg,$white 40%,transparent 40.99%),linear-gradient(45deg,$form-bg 30%,$form-bg 30.99%,$form-bg 40%,transparent 40.99%),linear-gradient(-45deg,$form-bg 50%,$form-bg 50.99%);
+      &:after {
+        display: block;
+      }
+    }
+  }
+}
 
 //SWITCH
 .form-switch {

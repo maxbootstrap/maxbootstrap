@@ -1,19 +1,6 @@
-@import 'forms/form-none';
-@import 'forms/form-basic';
-@import 'forms/form-invisible';
-@import 'forms/form-clean';
-@import 'forms/form-muted';
-@import 'forms/form-line';
-@import 'forms/form-floating';
-@import 'forms/form-elegant';
-@import 'forms/select';
-@import 'forms/checkbox';
-@import 'forms/form-inner';
-
-//STYLES
-label {
+@mixin form-label {
   color: $form-label;
-  font-size: .8rem;
+  font-size: .9rem;
   margin-bottom: .2rem;
   margin-left: .2rem;
   font-weight: $font-weight-bold;
@@ -26,11 +13,41 @@ label {
     font-size: .6rem !important;
     padding: 0.05rem 0.3rem !important;
     margin-top: -1px;
+    line-height: 1;
   }
 }
+@mixin form-input {
+  font-size: .98rem;
+  position: relative;
+  display: block;
+  outline: none;
+  box-sizing: border-box;
+  line-height: 1.5rem;
+  color: $form-text;
+  padding: .8rem .9rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: $form-bg;
+  border-radius: $input-radius;
+  border: $form-border;
+  width: 100%;
+}
 
-button {
-  background-color: transparent;
+@import 'forms/form-none';
+@import 'forms/form-basic';
+@import 'forms/form-invisible';
+@import 'forms/form-clean';
+@import 'forms/form-muted';
+@import 'forms/form-line';
+@import 'forms/form-floating';
+@import 'forms/form-elegant';
+@import 'forms/form-inner';
+@import 'forms/checkbox';
+
+//STYLES
+label {
+  @include form-label;
 }
 
 .form-inline {

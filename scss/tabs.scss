@@ -1,6 +1,6 @@
 //LINE TABS
 .tabs-line {
-  font-size: 0.95rem;
+  font-size: 0.98rem;
   padding-bottom: 0rem;
   border-bottom: 1px darken($light, 5%) solid;
   color: $gray;
@@ -8,11 +8,13 @@
   //display: inline-flex;
   flex-direction: row;
   .tab-link {
+    cursor: pointer;
     color: $gray;
     letter-spacing: 0.6px;
+    margin: 0;
     border-radius: 0;
-    padding: .8rem;
-    padding-bottom: 1rem;
+    padding: .7rem;
+    padding-bottom: .8rem;
     border: 0px;
     border-bottom: 4px solid transparent;
     background-color: transparent;
@@ -21,14 +23,17 @@
     &:hover {
       color: $body;
     }
-    &.active {
+    &.tab-active {
       cursor: default;
+      pointer-events: none;
       color: $primary;
       background-color: transparent;
-      border-bottom: 4px solid $primary;
-      outline: none !important;
-      &:hover {
-      }
+      border-color: $primary;
+    }
+  }
+  &.text-uppercase {
+    .tab-link {
+      text-transform: uppercase;
     }
   }
 }
@@ -55,38 +60,60 @@
       padding: .2rem;
       padding-left: 1rem;
       margin-bottom: .5rem;
-      &.active {
+      &.tab-active {
         border-left: 4px solid $primary;
         border-bottom: none;
+        pointer-events: none;
       }
     }
   }
 }
 
 
-//LINE VERTICAL
+//BUTTONS TABS
 .tabs-btn {
   display: inline-flex;
   flex-direction: row;
-  .tab-link {
-    text-align: center;
-    padding: .4rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  .btn {
+    margin-right: .5rem;
     margin-bottom: .1rem;
-    border-radius: $btn-radius;
-    &.active {
-      color: $light;
-      border-left: none;
-      border-bottom: none;
-      background-color: $primary;
+    &.tab-active {
+      cursor: default;
+      pointer-events: none;
     }
   }
 }
 
 
-
-//BTN TABS
-//use regular btn's
-
-//BTN VERTICAL
+//PANEL TABS
+.tabs-panel {
+  display: inline-flex;
+  flex-direction: row;
+  margin-bottom: -1px;
+  .btn {
+    margin-right: .5rem;
+    margin-bottom: 0;
+    border-width: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    &.tab-active {
+      cursor: default;
+      pointer-events: none;
+      &:hover {
+      }
+      // &::before, &::after {
+      //   z-index: 1;
+      //   content: "";
+      //   display: block;
+      //   position: absolute;
+      //   width: var(--tab-radius,.5rem);
+      //   height: var(--tab-radius,.5rem);
+      //   bottom: 0;
+      // }
+      // &::before {
+      //   left: calc(var(--tab-radius,.5rem) * -1);
+      //   --circle-pos: top left;
+      // }
+    }
+  }
+}

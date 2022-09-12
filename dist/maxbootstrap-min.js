@@ -1,1 +1,0 @@
-function modalFix(e=null,o="body"){"open"==e?document.querySelector(o).classList.add("body-fix"):"close"==e?document.querySelector(o).classList.remove("body-fix"):document.querySelector(o).classList.toggle("body-fix")}function inputFileChange(e,o){var t=o.target.files[0];document.getElementById(e).innerHTML=t.name}

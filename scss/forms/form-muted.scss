@@ -3,34 +3,15 @@ $form-muted-bg: $light;
   $form-muted-bg: $form-bg;
 }
 
-.form-muted-label {
-  color: $form-label;
+@mixin form-muted-label {
+  @include form-label;
   font-size: .8rem;
-  font-weight: $font-weight-bold;
-  letter-spacing: 0.3;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
 }
+
 .form-muted {
   margin-bottom: .8rem;
   label {
-    color: $form-label;
-    font-size: .8rem;
-    margin-bottom: .2rem;
-    margin-left: .2rem;
-    font-weight: $font-weight-bold;
-    letter-spacing: 0.3;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    .btn {
-      border: none !important;
-      font-size: .6rem !important;
-      padding: 0.05rem 0.3rem !important;
-      //line-height: 1;
-      margin-top: -1px;
-    }
+    @include form-muted-label;
   }
   select {
     background-color: $form-muted-bg;
@@ -42,18 +23,11 @@ $form-muted-bg: $light;
         border: none !important;
     }
   }
-  input, textarea {
-    width: 100%;
-    display: block;
-    outline: none;
-    color: $form-text;
+  input, textarea, select {
     background-color: $form-muted-bg;
     border: 1px solid $form-muted-bg;
-    border-radius: $input-radius;
     box-shadow: transparent;
     transition: box-shadow .15s ease;
-    -moz-appearance: none;
-    -webkit-appearance: none;
     &:focus {
         box-shadow: 0 0px 0px 0 $form-muted-bg;
         background-color: lighten($form-muted-bg, 5%);
@@ -61,40 +35,21 @@ $form-muted-bg: $light;
     &::placeholder {
     }
   }
-  input  {
-    padding: 12px 14px;
-    max-width: 600px;
-   }
-   textarea {
-    padding: 12px 14px;
+  textarea {
     resize: vertical;
-   }
+  }
 }
 
 .form-muted-select {
   margin-bottom: .8rem;
   position: relative;
-  max-width: 600px;
   label {
-    color: $form-label;
-    font-size: .8rem;
-    margin-bottom: .2rem;
-    margin-left: .2rem;
-    font-weight: $font-weight-bold;
-    letter-spacing: 0.3;
-    text-transform: uppercase;
+    @include form-muted-label;
   }
   select {
-    position: relative;
+    @include form-muted-label;
     background-color: $form-muted-bg;
-    border: none !important;
-    padding: 12px 14px;
-    color: $form-text;
-    line-height: 1.5rem;
-    width: 100%;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    border: 1px solid $form-muted-bg;
     &::-ms-expand {
       display: none;
     }
@@ -110,32 +65,7 @@ $form-muted-bg: $light;
       opacity: .5;
     }
   }
-    // &:after {
-    //   content: ' ';
-    //   position: absolute;
-    //   z-index: 10;
-    //   top: calc(50% + .8rem);
-    //   right: 20px;
-    //   pointer-events: none;
-    //   opacity: 0.4;
-    //   border-style: solid;
-    //   border-width: 1px 1px 0 0;
-    //   height: 10px;
-    //   width: 10px;
-    //   transform: rotate(135deg);
-    //   pointer-events: none;
-    // }
   &>option{
     padding-bottom: 1rem;
   }
-}
-
-
-
-//CHECKBOX
-.custom-control-label::before {
-  background-color: $form-muted-bg !important;
-}
-.custom-control-input:checked ~ .custom-control-label::before {
-  background-color: $primary !important;
 }
