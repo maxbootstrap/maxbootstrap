@@ -13,7 +13,7 @@
     transition: box-shadow .15s ease;
     &:focus {
       outline: none;
-      border: 1px solid #fff;
+      //border: 1px solid #fff;
       box-shadow: 0 1px 3px 0 darken($form-bg, 20%);
     }
     &::placeholder {
@@ -22,7 +22,7 @@
 }
 
 .form-clean {
-  margin-bottom: .8rem;
+  @include form;
   label {
     @include form-clean-label;
   }

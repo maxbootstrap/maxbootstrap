@@ -15,6 +15,158 @@
   }
 }
 
+.box-img {
+  width: 100px;
+  color: $dark;
+  text-align: center;
+  font-size: .9rem;
+  div {
+    width: 100%;
+    height: 92px;
+    padding: 13px;
+    background-color: $white;
+    border-radius: 20px;
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      mix-blend-mode: darken;
+      opacity: .9;
+      transition: all 0.4s ease-in-out;
+    }
+  }
+  @media (max-width: $desktop-breakpoint) {
+    width: 80px;
+    margin-top: .5rem;
+    margin-right: .5rem;
+    div {
+      height: 72px;
+      padding: 8px;
+      margin-bottom: .4rem;
+    }
+  }
+  &.no-m {
+    div {
+        margin-bottom: 0;
+    }
+  }
+}
+
+//BOXES
+.box, .box-xxs, .box-xs, .box-sm, .box-lg, .box-xl {
+  background-color: rgba($box-bg, var(--o, 1));
+  box-shadow: $box-shadow;
+  // @if variable-exists($box-shadow) {
+  //   box-shadow: $box-shadow;
+  // }
+  @media (max-width: $desktop-breakpoint) {
+  }
+  &.box-o-1 {
+    background-color: rgba($box-bg, .1);
+  }
+  &.box-o-3 {
+    background-color: rgba($box-bg, .3);
+  }
+  &.box-o-5 {
+    background-color: rgba($box-bg, .5);
+  }
+  &.box-o-7 {
+    background-color: rgba($box-bg, .7);
+  }
+  &.box-o-9 {
+    background-color: rgba($box-bg, .9);
+  }
+}
+
+.box {
+  padding: ($box-padding * 1.25) ($box-padding * 1.13) ($box-padding * 1.2) ($box-padding * 1.13);
+  border-radius: $box-radius * .95;
+  @media (max-width: $desktop-breakpoint) {
+    padding: ($box-padding * 1.1) ($box-padding * .95) ($box-padding * 1.08) ($box-padding * .95);
+    border-radius: $box-radius;
+  }
+}
+
+.box-xxs {
+  padding: $box-padding * .4;
+  border-radius: $box-radius * .4;
+  @media (max-width: $desktop-breakpoint) {
+    padding: $box-padding * .3;
+    border-radius: $box-radius * .35;
+  }
+}
+
+.box-xs {
+  padding: $box-padding * .8;
+  border-radius: $box-radius * .8;
+  @media (max-width: $desktop-breakpoint) {
+    padding: $box-padding * .7;
+    border-radius: $box-radius * .75;
+  }
+}
+
+.box-sm {
+  padding: $box-padding;
+  border-radius: $box-radius * .9;
+  @media (max-width: $desktop-breakpoint) {
+    padding: $box-padding * .9;
+    border-radius: $box-radius * .85;
+  }
+}
+
+.box-lg {
+  padding: ($box-padding * 1.65) ($box-padding * 1.53) ($box-padding * 1.6) ($box-padding * 1.53);
+  border-radius: $box-radius * 1.5;
+  @media (max-width: $desktop-breakpoint) {
+    padding: ($box-padding * 1.15) ($box-padding * 1.01) ($box-padding * 1.13) ($box-padding * 1.01);
+    border-radius: $box-radius;
+  }
+}
+
+.box-xl {
+  padding: ($box-padding * 2.65) ($box-padding * 2) ($box-padding * 2.6) ($box-padding * 2);
+  border-radius: $box-radius * 2.5;
+  @media (max-width: $desktop-breakpoint) {
+    padding: ($box-padding * 1.65) ($box-padding * 1.51) ($box-padding * 1.63) ($box-padding * 1.51);
+    border-radius: $box-radius * 1.2;
+  }
+}
+
+//CAROUSEL
+//https://css-tricks.com/css-only-carousel/
+.browser-carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overscroll-behavior-inline: contain;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+	
+	&::-webkit-scrollbar {
+        width: 0px !important;
+        background: transparent;
+        display: none;
+	}
+	&::-webkit-scrollbar-thumb {
+        width: 0px !important;
+        background: transparent;
+	}
+	&::-webkit-scrollbar-track {
+        width: 0px !important;
+        background: transparent;
+	}
+  .carousel-cell {
+      scroll-snap-align: start;
+  }
+  &.carousel-center {
+    .carousel-cell {
+        scroll-snap-align: center;
+    }
+  }
+}
+
 
 //NAV
 #navbar {

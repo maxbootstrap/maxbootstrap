@@ -16,6 +16,7 @@
 }
 
 .form-line {
+  @include form;
   input, textarea, select {
     @include form-inner-input;
     &:focus {

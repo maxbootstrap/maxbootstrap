@@ -1,23 +1,30 @@
 @mixin form-inner-label {
   @include form-label;
     position: absolute;
-    top: 1px;
+    z-index: 5;
+    top: 10px;
     left: nth($form-padding, -1) - 3px;
-    display: block;
-    padding-bottom: 3px;
-    padding-top: 7px;
     width: calc(100% - 20px);
     font-size: .7rem;
     line-height: 1;
     background: transparent;
 }
 
+@mixin form-inner-input {
+  @include form-input;
+    padding: 1.4rem .9rem .6rem .9rem;
+    background-color: $white;
+}
+
+
 
 .form-inner {
-  position: relative;
-  margin-bottom: .4rem;
+  @include form;
+  label {
+    @include form-inner-label;
+  }
   input, textarea, select {
-    @include form-input;
+    @include form-inner-input;
     &::placeholder {
       color: $form-light;
       opacity: 0.8;
@@ -26,13 +33,9 @@
       color: $form-label;
     }
     &:focus {
-      outline: none;
       //background-color: darken($form-bg, 1%);
       border-color: lighten($form-text, 50%);
     }
-  }
-  label {
-    @include form-inner-label;
   }
   @if $input-radius == 9999px or $input-radius == 'full'  {
     input, textarea {
@@ -54,9 +57,9 @@
 
 
 .form-inner-select {
-  position: relative;
+  @include form;
   select {
-    @include form-input;
+    @include form-inner-input;
     &::-ms-expand {
       display: none;
     }
@@ -113,23 +116,35 @@
 
 .form-inner, .form-inner-select {
   input:disabled {
-    background-color: darken($form-bg, 4%);
-    border: 1px solid darken($form-bg, 4%);
-    opacity: 0.8;
+    background-color: darken($form-bg, 6%);
+    opacity: 0.9;
   }
   input[readonly] {
     background-color: transparent;
-    border: 1px transparent;
+    border-color: darken($form-bg, 10%);
     //box-shadow: none;
-    padding-left: .5rem;
   }
   input[readonly] + label {
-    left: .5rem;
+    //left: .5rem;
   }
   .text-muted {
     margin-top: .1rem;
     padding-left: .5rem;
     color: lighten($form-text, 30%) !important;
+  }
+  &.form-lg {
+    @include form-input-lg;
+  }
+  &.form-sm {
+    @include form-input-sm;
+  }
+  &.form-inverted {
+    @include form-inverted;
+    input, textarea, select {
+      &:not(:placeholder-shown) ~ label {
+        color: $form-light;
+      }
+    }
   }
 }
 
@@ -139,7 +154,7 @@
     font-size: 1.1rem !important;
   }
   label {
-    top: 2px;
+    top: 12px;
     font-size: .8rem;
     .btn {
       font-size: .65rem !important;
@@ -162,16 +177,16 @@
   }
 }
 
-
-
 .form-inner-inverted {
-  input, textarea, select {
-    background-color: $dark;
-    color: lighten($dark, 80%);
-  }
-  label {
-    color: lighten($dark, 40%);
-    background-color: $dark;
-  }
-
+  // input, textarea, select {
+  //   background-color: $dark;
+  //   color: lighten($dark, 80%);
+  // }
+  // label {
+  //   color: lighten($dark, 40%);
+  //   background-color: $dark;
+  // }
 }
+
+
+

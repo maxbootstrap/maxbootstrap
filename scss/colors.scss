@@ -217,6 +217,14 @@
   .shadow-#{$name}-full {
     box-shadow: 0px 6px 28px 0px rgba($color, 0.2);
   }
+  .box-shadow-#{$name} {
+    box-shadow: 0 80px 80px rgba($color,.07),0 40px 33px rgba($color,.05),0 22px 17px rgba($color,.042),0 12px 10px rgba($color,.035),0 6px 5px rgba($color,.028),0 2px 2px rgba($color,.02);
+  }
+  .hover-box-shadow-#{$name} {
+    &:hover {
+      box-shadow: 0 80px 80px rgba($color,.07),0 40px 33px rgba($color,.05),0 22px 17px rgba($color,.042),0 12px 10px rgba($color,.035),0 6px 5px rgba($color,.028),0 2px 2px rgba($color,.02);
+    }
+  }
   .hover-shadow-#{$name} {
     &:hover {
       box-shadow: 0px 8px 25px -5px rgba($color, 0.6);
@@ -288,6 +296,23 @@
   .bg-duo-#{$name} {
     background: $color;
     background: linear-gradient(var(--bg-angle, 120deg), rgba($color,1) var(--bg-start, 40%), lighten($color, 2%) var(--bg-end, 62%), darken($color, 5%) var(--bg-end, 62%));
+  }
+
+  .overlay-var {
+    &:after {
+      display: block;
+      content: '';
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+      background: var(--overlay-bg);
+    }
+    & > * {
+      z-index: 100;
+    }
   }
 
   //DUAL COLORS

@@ -545,6 +545,12 @@ $aligns: left, center, right, justify;
   word-break: break-all;
 }
 
+.break-none {
+  white-space: nowrap;
+  word-break: keep-all;
+  hyphens: none;
+}
+
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;

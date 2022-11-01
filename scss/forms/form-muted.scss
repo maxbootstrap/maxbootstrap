@@ -5,35 +5,29 @@ $form-muted-bg: $light;
 
 @mixin form-muted-label {
   @include form-label;
-  font-size: .8rem;
+  font-size: .76rem;
+}
+@mixin form-muted-input {
+  @include form-input;
+  background-color: $form-muted-bg;
+  border: 1px solid $form-muted-bg;
+  box-shadow: transparent;
+  transition: box-shadow .15s ease;
+  &:focus {
+      box-shadow: 0 0px 0px 0 $form-muted-bg;
+      background-color: lighten($form-muted-bg, 5%);
+  }
+  &::placeholder {
+  }
 }
 
 .form-muted {
-  margin-bottom: .8rem;
+  @include form;
   label {
     @include form-muted-label;
   }
-  select {
-    background-color: $form-muted-bg;
-    border: 1px solid transparent;
-    line-height: 1.5rem;
-    height: 3rem;
-    &:focus {
-        box-shadow: 0 0px 0px 0 $form-bg;
-        border: none !important;
-    }
-  }
   input, textarea, select {
-    background-color: $form-muted-bg;
-    border: 1px solid $form-muted-bg;
-    box-shadow: transparent;
-    transition: box-shadow .15s ease;
-    &:focus {
-        box-shadow: 0 0px 0px 0 $form-muted-bg;
-        background-color: lighten($form-muted-bg, 5%);
-    }
-    &::placeholder {
-    }
+    @include form-muted-input;
   }
   textarea {
     resize: vertical;
@@ -41,21 +35,14 @@ $form-muted-bg: $light;
 }
 
 .form-muted-select {
-  margin-bottom: .8rem;
-  position: relative;
+  @include form;
   label {
     @include form-muted-label;
   }
   select {
-    @include form-muted-label;
-    background-color: $form-muted-bg;
-    border: 1px solid $form-muted-bg;
+    @include form-muted-input;
     &::-ms-expand {
       display: none;
-    }
-    &:focus {
-      outline: none;
-      border: none !important;
     }
     &>option{
       //color: $light !important;

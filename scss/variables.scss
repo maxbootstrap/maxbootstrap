@@ -9,7 +9,7 @@ $columns: 24 !default;
 $container-max-widths: (
   xs: 250px,
   sm: 374px,
-  md: 720px,
+  md: 820px,
   lg: $container-min * 1.1,
   xl: $container
 ) !default;
@@ -28,6 +28,7 @@ $red: #ff2400 !default;
 $pink: #f2658a !default;
 $yellow: #ffeb04 !default;
 $orange: #ff8800 !default;
+$sand: #F4F2F2 !default;
 $light: #edf2f8 !default;
 $dark: #151d2e !default;
 $white: #ffffff !default;
@@ -36,7 +37,7 @@ $body: $dark !default;
 $bg: white !default;
 
 
-$colors: ('primary':$primary, 'secondary':$secondary, 'dark':$dark, 'light':$light, 'gray':$gray, 'blue':$blue, 'indigo':$indigo, 'purple':$purple, 'green':$green, 'teal':$teal, 'red':$red, 'pink':$pink, 'yellow':$yellow, 'orange':$orange, 'white':$white, 'black':$black) !default;
+$colors: ('primary':$primary, 'secondary':$secondary, 'dark':$dark, 'light':$light, 'gray':$gray, 'blue':$blue, 'indigo':$indigo, 'purple':$purple, 'green':$green, 'teal':$teal, 'red':$red, 'pink':$pink, 'yellow':$yellow, 'orange':$orange, 'sand':$sand, 'white':$white, 'black':$black) !default;
 $complete-colors: $colors !default;
 @each $key, $color in $complete-colors {
   $variants-colors: ();
@@ -78,7 +79,7 @@ $colors: map-merge($colors, $custom-colors);
 
 //TYPE
 //$font-family--wait: "-apple-system, system-ui, BlinkMacSystemFont" !default; Chrome needs to fix bold
-$font-family: "-apple-system" !default;
+$font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu !default;
 $heading-font-family: $font-family !default;
 
 $font-size: 16px !default;
@@ -140,6 +141,7 @@ $btn-disabled-opacity: .7 !default;
 $btn-weight: $font-weight-regular !default;
 $btn-letter-spacing: $font-letter-spacing !default;
 $btn-transform: none !default;
+$badge-radius: $btn-radius !default;
 
 //FORMS
 $form-bg: $white !default;
@@ -165,6 +167,15 @@ $dropdown-radius: $btn-radius !default;
 } @else {
 }
 
+//BOXES
+$box-bg: $white !default;
+$box-padding: 1.2rem !default;
+$box-shadow: none !default;
+$box-radius: $btn-radius * 1.1 !default;
+@if $box-radius > 20px {
+  $box-radius: 20px;
+}
+
 //CHARTS
 $progress-bg: $primary !default;
 
@@ -175,7 +186,7 @@ $animation-duration: .5s !default;
 
 //MODAL
 $modal-bg: $dark !default;
-$modal-min-width: 330px !default;
+$modal-min-width: 300px !default;
 $modal-padding: 0.5rem !default;
 
 //EMAIL

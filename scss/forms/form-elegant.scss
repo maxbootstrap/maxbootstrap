@@ -20,8 +20,7 @@
 }
 
 .form-elegant {
-  position: relative;
-  margin-bottom: .4rem;
+  @include form;
   border: 0;
   border-bottom: $form-border;
   input, textarea, select {

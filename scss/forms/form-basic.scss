@@ -1,6 +1,5 @@
 .form-basic, .form-basic-select {
-  position: relative;
-  margin-bottom: .8rem;
+  @include form;
   label {
     @include form-label;
     font-weight: $font-weight-regular;
@@ -23,7 +22,7 @@
 }
 
 .form-basic-select {
-  max-width: 100%;
+  @include form;
   overflow: hidden;
   select {
     @include form-input;

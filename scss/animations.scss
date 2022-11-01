@@ -277,3 +277,28 @@
 .parallax-5 {
   transform: translateZ(-25px) scale(3.5);
 }
+
+.fadein-delay {
+  opacity: 0;
+  animation: 1s ease 2s normal forwards 1 fade-in;
+}
+@keyframes fade-in{
+    20% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.animate-shake {
+  animation: shake-animation 5s ease infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes shake-animation {
+   0% { transform:translate(0,0) }
+  1.78571% { transform:translate(4px,0) }
+  3.57143% { transform:translate(0,0) }
+  5.35714% { transform:translate(4px,0) }
+  7.14286% { transform:translate(0,0) }
+  8.92857% { transform:translate(4px,0) }
+  10.71429% { transform:translate(0,0) }
+  100% { transform:translate(0,0) }
+}

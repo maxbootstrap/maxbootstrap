@@ -22,7 +22,7 @@
 }
 
 //GAPS
-@for $i from 1 through 20 {
+@for $i from 1 through 30 {
   .gap-#{$i} {
     --gap: #{$i}px;
     gap: #{$i}px;
@@ -36,7 +36,7 @@
   }
 }
 @media (min-width: $desktop-breakpoint) {
-  @for $i from 1 through 20 {
+  @for $i from 1 through 30 {
     .md-gap-#{$i} {
       --gap-md: #{$i}px;
       gap: #{$i}px;

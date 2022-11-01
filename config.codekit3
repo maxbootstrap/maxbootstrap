@@ -4,19 +4,11 @@
     {
       "name" : "Process All Remaining Files and Folders",
       "stepType" : 1,
-      "uuidString" : "8F1D91EE-47FE-4435-A8B2-82A11AAEB6AE"
+      "uuidString" : "B51C97BD-8D1A-4568-856E-57C0D745B2FF"
     }
   ],
-  "creatorBuild" : "34418",
+  "creatorBuild" : "34434",
   "files" : {
-    "\/.gitignore" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/.gitignore",
-      "oF" : 0
-    },
     "\/dist\/emails.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -24,7 +16,7 @@
       "co" : 0,
       "ft" : 16,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/emails-min.css",
       "oF" : 0,
       "pg" : 0
@@ -36,18 +28,10 @@
       "co" : 0,
       "ft" : 16,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/maxbootstrap-min.css",
       "oF" : 0,
       "pg" : 0
-    },
-    "\/LICENSE" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/LICENSE",
-      "oF" : 0
     },
     "\/packages\/apexcharts.css" : {
       "aP" : 1,
@@ -56,7 +40,7 @@
       "co" : 0,
       "ft" : 16,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/packages\/apexcharts-min.css",
       "oF" : 0,
       "pg" : 0
@@ -68,7 +52,7 @@
       "co" : 0,
       "ft" : 16,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/packages\/flickity\/flickity-fade-min.css",
       "oF" : 0,
       "pg" : 0
@@ -80,7 +64,7 @@
       "co" : 0,
       "ft" : 16,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/packages\/flickity\/flickity-min.css",
       "oF" : 0,
       "pg" : 0
@@ -92,7 +76,7 @@
       "co" : 0,
       "ft" : 16,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/packages\/flickity\/fullscreen-min.css",
       "oF" : 0,
       "pg" : 0
@@ -107,7 +91,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/packages\/highlightjs.css",
-      "oF" : 1,
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -119,7 +103,7 @@
       "co" : 0,
       "ft" : 16,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/packages\/plyr\/plyr-min.css",
       "oF" : 0,
       "pg" : 0
@@ -416,7 +400,7 @@
       "co" : 0,
       "ft" : 16,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/packages\/plyr\/sass\/plyr-min.css",
       "oF" : 0,
       "pg" : 0
@@ -429,7 +413,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/packages\/plyr\/sass\/plyr.css",
       "oF" : 0,
       "oS" : 0,
@@ -699,7 +683,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/packages\/pristine.css",
       "oF" : 0,
       "oS" : 0,
@@ -834,7 +818,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/packages\/sweetalert2\/sweetalert2 copy.css",
       "oF" : 0,
       "oS" : 0,
@@ -848,7 +832,7 @@
       "co" : 0,
       "ft" : 16,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/packages\/sweetalert2\/sweetalert2-min.css",
       "oF" : 0,
       "pg" : 0
@@ -861,7 +845,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/packages\/sweetalert2\/sweetalert2.css",
       "oF" : 0,
       "oS" : 0,
@@ -891,31 +875,12 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/packages\/wire-elements\/spotlight.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
-    },
-    "\/readme.md" : {
-      "cB" : 0,
-      "cS" : 0,
-      "eF" : 1,
-      "eL" : 1,
-      "ema" : 1,
-      "eSQ" : 1,
-      "ft" : 4096,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/readme.html",
-      "oF" : 0,
-      "oFM" : 0,
-      "oS" : 0,
-      "pHT" : 0,
-      "pME" : 1,
-      "rFN" : 0,
-      "uCM" : 0
     },
     "\/reset-no se usa.scss" : {
       "aP" : 0,
@@ -925,7 +890,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/reset-no se usa.css",
       "oF" : 0,
       "oS" : 0,
@@ -1047,7 +1012,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/scss\/dark.css",
-      "oF" : 1,
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -1092,7 +1057,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/scss\/extras.css",
-      "oF" : 1,
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -1107,7 +1072,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/scss\/forms.css",
-      "oF" : 1,
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -1262,6 +1227,21 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/scss\/functions.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/scss\/functions.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/scss\/grid.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -1270,7 +1250,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/scss\/grid.css",
       "oF" : 0,
       "oS" : 0,
@@ -1345,7 +1325,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/scss\/modals-copy.css",
       "oF" : 0,
       "oS" : 0,
@@ -1362,7 +1342,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/scss\/modals.css",
-      "oF" : 1,
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -1497,7 +1477,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/src\/documentation.css",
-      "oF" : 1,
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -1510,9 +1490,9 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/emails.css",
-      "oF" : 3,
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
@@ -1525,7 +1505,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/maxbootstrap.css",
       "oF" : 2,
       "oS" : 0,
@@ -1540,7 +1520,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/print.css",
       "oF" : 2,
       "oS" : 0,
@@ -1559,7 +1539,8 @@
     "displayValue" : "MaxBootstrap",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-peach",
-    "iconImageWasSetByUser" : 0
+    "iconImageWasSetByUser" : 0,
+    "lastBuiltDate" : 685235816.91277099
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -2266,7 +2247,8 @@
         "active" : 1
       },
       "no-fallthrough" : {
-        "active" : 1
+        "active" : 1,
+        "optionString" : "{'allowEmptyCase': false}"
       },
       "no-floating-decimal" : {
         "active" : 0
