@@ -386,82 +386,19 @@
 
 
 //SOCIAL
-$facebook: #3b57a1;
-$twitter: #4aa0eb;
-$google: #D93D2C;
-$whatsapp: #35B83F;
-$instagram: #e4405f;
-.facebook, .color-facebook {
-    color: $facebook;
-}
-.hover-facebook {
-  &:hover {
-    color: $facebook;
-  }
-}
-.bg-facebook {
-    background-color: $facebook;
-    &:hover {
-        background-color: lighten($facebook, 10%)
-    }
-}
-.twitter, .color-twitter {
-    color: $twitter;
-}
-.hover-twitter {
-  &:hover {
-    color: $twitter;
-  }
-}
-.bg-twitter {
-    background-color: $twitter;
-    &:hover {
-        background-color: lighten($twitter, 10%)
-    }
-}
-.google, .color-google {
-    color: $google;
-}
-.hover-google {
-  &:hover {
-    color: $google;
-  }
-}
-.bg-google {
-    background-color: $google;
-    &:hover {
-        background-color: lighten($google, 10%)
-    }
-}
-.whatsapp, .color-whatsapp {
-    color: $whatsapp;
-}
-.hover-whatsapp {
-  &:hover {
-    color: $whatsapp;
-  }
-}
-.bg-whatsapp {
-    background-color: $whatsapp;
-    &:hover {
-        background-color: lighten($whatsapp, 10%)
-    }
-}
-.instagram, .color-instagram {
-    color: $instagram;
-}
-.hover-instagram {
-  &:hover {
-    color: $instagram;
-  }
-}
-.bg-instagram {
-    background-color: $instagram;
-    &:hover {
-        background-color: lighten($instagram, 10%)
-    }
-}
+$social: ('facebook':#3b57a1, 'twitter':#4aa0eb, 'google':#D93D2C, 'whatsapp':#35B83F, 'linkedin':#0B66C2, 'instagram':#e4405f);
 
+@each $name, $color in $social {
+  .#{$name}, .color-#{$name} {
+    color: $color !important;
+  }
+  .bg-#{$name} {
+    background-color: $color !important;
+    &:hover {
+        background-color: lighten($color, 10%)
+    }
+  }
+}
 
 //FILTERS
 .filter-none {
@@ -605,7 +542,7 @@ $blends: normal, multiply, screen, overlay, darken, lighten, color-dodge, color-
 }
 
 .bg-glassmorphism {
-  background: rgba(lighten($primary, 60%), 0.25);
+  background: var(--bg-color, rgba(lighten($primary, 60%), 0.25));
   box-shadow: 0 6px 32px -30px rgba($primary, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -613,7 +550,7 @@ $blends: normal, multiply, screen, overlay, darken, lighten, color-dodge, color-
 }
 
 .bg-glass {
-  background-color: rgba(darken($primary, 10%), 0.3);
+  background-color: var(--bg-color, rgba(darken($primary, 10%), 0.3));
   box-shadow: rgba($dark, 0.25) 0px 30px 60px, rgba($dark, 0.2) 0px 0px 0px 0.5px inset;
   backdrop-filter: blur(40px) brightness(80%) saturate(150%);
   -webkit-backdrop-filter: blur(40px) brightness(80%) saturate(150%);

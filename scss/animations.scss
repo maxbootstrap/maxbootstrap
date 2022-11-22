@@ -280,7 +280,7 @@
 
 .fadein-delay {
   opacity: 0;
-  animation: 1s ease 2s normal forwards 1 fade-in;
+  animation: var(--duration, 2s) ease var(--delay, 1s) normal forwards 1 fade-in;
 }
 @keyframes fade-in{
     20% { opacity: 0; }
