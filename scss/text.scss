@@ -566,30 +566,30 @@ $aligns: left, center, right, justify;
 
 //WEIGHT
 .text-light, .light {
-  font-weight: $font-weight-light;
+  font-weight: $font-weight-light !important;
 }
 .text-regular, .regular {
-  font-weight: $font-weight-regular;
+  font-weight: $font-weight-regular !important;
 }
 .text-bold, .bold{
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-bold !important;
 }
 .text-bolder, .bolder, .text-black {
-  font-weight: $font-weight-bolder;
+  font-weight: $font-weight-bolder !important;
 }
 
 @media (min-width: $desktop-breakpoint) {
   .md-text-light, .md-light {
-    font-weight: $font-weight-light;
+    font-weight: $font-weight-light !important;
   }
   .md-text-regular, .md-regular {
-    font-weight: $font-weight-regular;
+    font-weight: $font-weight-regular !important;
   }
   .md-text-bold, .md-bold {
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-bold !important;
   }
   .md-text-bolder, .md-bolder, .md-text-black {
-    font-weight: $font-weight-bolder;
+    font-weight: $font-weight-bolder !important;
   }
 }
 

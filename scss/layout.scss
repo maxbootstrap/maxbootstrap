@@ -39,7 +39,7 @@ body {
 .body-fix {
   overflow: hidden;
   @media (min-width: $desktop-breakpoint) {
-    padding-right: 15px;
+    //padding-right: 15px;
   }
 }
 
@@ -218,107 +218,6 @@ ol, ul {
   width: 100%;
   height: 1px;
   clear: both;
-}
-// @each $breakpoint, $max-width in $container-max-widths {
-//   @media (max-width: $max-width) {
-//     .#{$breakpoint}-visible { visibility: visible;}
-//     .#{$breakpoint}-invisible { visibility: hidden; }
-//     .#{$breakpoint}-hidden { display: none !important; }
-//     .#{$breakpoint}-inline { display: inline !important; }
-//     .#{$breakpoint}-inline-block { display: inline-block !important; }
-//     .#{$breakpoint}-block { display: block !important; }
-//     .#{$breakpoint}-flex { display: flex !important; }
-//     .#{$breakpoint}-inline-flex { display: inline-flex !important; }
-//     .#{$breakpoint}-breakline { 
-//       display: table;
-//       width: 100%;
-//       height: 1px;
-//       clear: both;
-//     }
-//   }
-// }
-
-@media (max-width: map-get($container-max-widths, 'sm')) {
-  .xs-visible { visibility: visible;}
-  .xs-invisible { visibility: hidden; }
-  .xs-hidden { display: none !important; }
-  .xs-inline { display: inline !important; }
-  .xs-inline-block { display: inline-block !important; }
-  .xs-block { display: block !important; }
-  .xs-flex { display: flex !important; }
-  .xs-inline-flex { display: inline-flex !important; }
-  .xs-breakline { 
-    display: table;
-    width: 100%;
-    height: 1px;
-    clear: both;
-  }
-}
-@media (max-width: map-get($container-max-widths, 'md')) {
-  .sm-visible { visibility: visible;}
-  .sm-invisible { visibility: hidden; }
-  .sm-hidden { display: none !important; }
-  .sm-inline { display: inline !important; }
-  .sm-inline-block { display: inline-block !important; }
-  .sm-block { display: block !important; }
-  .sm-flex { display: flex !important; }
-  .sm-inline-flex { display: inline-flex !important; }
-  .sm-breakline { 
-    display: table;
-    width: 100%;
-    height: 1px;
-    clear: both;
-  }
-}
-
-@media (min-width: map-get($container-max-widths, 'md')) {
-  .md-visible { visibility: visible;}
-  .md-invisible { visibility: hidden; }
-  .md-hidden { display: none !important; }
-  .md-inline { display: inline !important; }
-  .md-inline-block { display: inline-block !important; }
-  .md-block { display: block !important; }
-  .md-flex { display: flex !important; }
-  .md-inline-flex { display: inline-flex !important; }
-  .md-breakline { 
-    display: table;
-    width: 100%;
-    height: 1px;
-    clear: both;
-  }
-}
-
-@media (min-width: map-get($container-max-widths, 'lg')) {
-  .lg-visible { visibility: visible;}
-  .lg-invisible { visibility: hidden; }
-  .lg-hidden { display: none !important; }
-  .lg-inline { display: inline !important; }
-  .lg-inline-block { display: inline-block !important; }
-  .lg-block { display: block !important; }
-  .lg-flex { display: flex !important; }
-  .lg-inline-flex { display: inline-flex !important; }
-  .lg-breakline { 
-    display: table;
-    width: 100%;
-    height: 1px;
-    clear: both;
-  }
-}
-@media (min-width: map-get($container-max-widths, 'xl')) {
-  .xl-visible { visibility: visible;}
-  .xl-invisible { visibility: hidden; }
-  .xl-hidden { display: none !important; }
-  .xl-inline { display: inline !important; }
-  .xl-inline-block { display: inline-block !important; }
-  .xl-block { display: block !important; }
-  .xl-flex { display: flex !important; }
-  .xl-inline-flex { display: inline-flex !important; }
-  .xl-breakline { 
-    display: table;
-    width: 100%;
-    height: 1px;
-    clear: both;
-  }
 }
 
 .order-first {
@@ -677,6 +576,110 @@ $orders: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
   clear: both;
 }
 
+//SHOW HIDE
+
+// @each $breakpoint, $max-width in $container-max-widths {
+//   @media (max-width: $max-width) {
+//     .#{$breakpoint}-visible { visibility: visible;}
+//     .#{$breakpoint}-invisible { visibility: hidden; }
+//     .#{$breakpoint}-hidden { display: none !important; }
+//     .#{$breakpoint}-inline { display: inline !important; }
+//     .#{$breakpoint}-inline-block { display: inline-block !important; }
+//     .#{$breakpoint}-block { display: block !important; }
+//     .#{$breakpoint}-flex { display: flex !important; }
+//     .#{$breakpoint}-inline-flex { display: inline-flex !important; }
+//     .#{$breakpoint}-breakline { 
+//       display: table;
+//       width: 100%;
+//       height: 1px;
+//       clear: both;
+//     }
+//   }
+// }
+
+@media (max-width: map-get($container-max-widths, 'sm')) {
+  .xs-visible { visibility: visible;}
+  .xs-invisible { visibility: hidden; }
+  .xs-hidden { display: none !important; }
+  .xs-inline { display: inline !important; }
+  .xs-inline-block { display: inline-block !important; }
+  .xs-block { display: block !important; }
+  .xs-flex { display: flex !important; }
+  .xs-inline-flex { display: inline-flex !important; }
+  .xs-breakline { 
+    display: table;
+    width: 100%;
+    height: 1px;
+    clear: both;
+  }
+}
+@media (max-width: map-get($container-max-widths, 'md')) {
+  .sm-visible { visibility: visible;}
+  .sm-invisible { visibility: hidden; }
+  .sm-hidden { display: none !important; }
+  .sm-inline { display: inline !important; }
+  .sm-inline-block { display: inline-block !important; }
+  .sm-block { display: block !important; }
+  .sm-flex { display: flex !important; }
+  .sm-inline-flex { display: inline-flex !important; }
+  .sm-breakline { 
+    display: table;
+    width: 100%;
+    height: 1px;
+    clear: both;
+  }
+}
+
+@media (min-width: map-get($container-max-widths, 'md')) {
+  .md-visible { visibility: visible;}
+  .md-invisible { visibility: hidden; }
+  .md-hidden { display: none !important; }
+  .md-inline { display: inline !important; }
+  .md-inline-block { display: inline-block !important; }
+  .md-block { display: block !important; }
+  .md-flex { display: flex !important; }
+  .md-inline-flex { display: inline-flex !important; }
+  .md-breakline { 
+    display: table;
+    width: 100%;
+    height: 1px;
+    clear: both;
+  }
+}
+
+@media (min-width: map-get($container-max-widths, 'lg')) {
+  .lg-visible { visibility: visible;}
+  .lg-invisible { visibility: hidden; }
+  .lg-hidden { display: none !important; }
+  .lg-inline { display: inline !important; }
+  .lg-inline-block { display: inline-block !important; }
+  .lg-block { display: block !important; }
+  .lg-flex { display: flex !important; }
+  .lg-inline-flex { display: inline-flex !important; }
+  .lg-breakline { 
+    display: table;
+    width: 100%;
+    height: 1px;
+    clear: both;
+  }
+}
+@media (min-width: map-get($container-max-widths, 'xl')) {
+  .xl-visible { visibility: visible;}
+  .xl-invisible { visibility: hidden; }
+  .xl-hidden { display: none !important; }
+  .xl-inline { display: inline !important; }
+  .xl-inline-block { display: inline-block !important; }
+  .xl-block { display: block !important; }
+  .xl-flex { display: flex !important; }
+  .xl-inline-flex { display: inline-flex !important; }
+  .xl-breakline { 
+    display: table;
+    width: 100%;
+    height: 1px;
+    clear: both;
+  }
+}
+
 
 //POSITION
 .static {
@@ -725,41 +728,41 @@ $z: (-1, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000);
 
 //POSITION
 .absolute-full {
-  position: absolute;
+  position: absolute !important;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
 }
 .absolute-tc {
-  position: absolute;
+  position: absolute !important;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 .absolute-tl {
-  position: absolute;
+  position: absolute !important;
   top: 0;
   left: 0;
 }
 .absolute-tr {
-  position: absolute;
+  position: absolute !important;
   top: 0;
   right: 0;
 }
 .absolute-bc {
-  position: absolute;
+  position: absolute !important;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 .absolute-bl {
-  position: absolute;
+  position: absolute !important;
   bottom: 0;
   left: 0;
 }
 .absolute-br {
-  position: absolute;
+  position: absolute !important;
   bottom: 0;
   right: 0;
 }
@@ -769,24 +772,24 @@ $z: (-1, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000);
   transform: translateY(-50%);
 }
 .absolute-hc {
-  position: absolute;
+  position: absolute !important;
   left: 50%;
   transform: translateX(-50%);
 }
 .absolute-c {
-  position: absolute;
+  position: absolute !important;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .absolute-cl {
-  position: absolute;
+  position: absolute !important;
   top: 50%;
   transform: translateY(-50%);
   left: 0;
 }
 .absolute-cr {
-  position: absolute;
+  position: absolute !important;
   top: 50%;
   transform: translateY(-50%);
   right: 0;
@@ -1141,7 +1144,7 @@ $z: (-1, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 1000);
 }
 
 
-$positions: (0, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 150, 200, 225, 250, 275, 300);
+$positions: (0, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 150, 200, 225, 250, 275, 300);
 @each $row in $positions {
 	//GENERAL
 	.top-#{$row} {

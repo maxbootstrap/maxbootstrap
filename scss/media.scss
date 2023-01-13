@@ -245,6 +245,20 @@
 
 
 //ICONS
+.icon-admin {
+  font-size: clamp(1.2rem, 2.1vw, 2.1rem);
+  line-height: .9 !important;
+  font-weight: bold;
+  padding: 0.6rem .75rem 0.6rem .8rem;
+  min-width: 30px;
+  border-radius: $btn-radius;
+  text-align: center;
+  box-shadow: 0px 1px 0px 1px rgba(0,0,0,0.08);
+  text-shadow: 0px 1px 0px rgba(0,0,0,0.1);
+  @media (max-width: $desktop-breakpoint) {
+    padding: 0.5rem .7rem;
+  }
+}
 .icon-circle {
   display: table;
   padding: .8rem .73rem;

@@ -1,11 +1,11 @@
 @import "../scss/variables";
 
-$mobile-email-container-padding: ($email-container-padding * .6);
+$mobile-email-container-padding: ($email-container-padding * .5);
 @if $mobile-email-container-padding < 0 {
   $mobile-email-container-padding: 0;
 }
 
-$mobile-email-content-padding: ($email-content-padding * .6);
+$mobile-email-content-padding: ($email-content-padding * .5);
 @if $mobile-email-content-padding < 0 {
   $mobile-email-content-padding: 0;
 }
@@ -28,6 +28,10 @@ body, .body{
   box-sizing: border-box;
   mso-line-height-rule: exactly;
   background-color: $email-bg;
+  color: darken($body, 25%);
+}
+:root {
+  --body: darken($body, 25%);
 }
 
 center {
@@ -80,6 +84,7 @@ td,
 p {
   font-size: $font-size;
   margin: 0;
+  color: darken($body, 15%);
 }
 
 .table-grid, .table-grid-clean {
@@ -88,7 +93,7 @@ p {
     font-weight: $font-weight-bold;
   }
   tbody {
-    color: darken($gray, 25%);
+    color: darken($gray, 45%);
     background-color: $light;
     border-radius: $btn-radius;
     tr {
@@ -99,7 +104,7 @@ p {
   }
   tfoot {
     padding-top: 3rem;
-    color: darken($gray, 25%);
+    color: darken($gray, 45%);
   }
 }
 
@@ -141,8 +146,8 @@ p {
   display: block;
   width: auto;
   height: auto;
-  max-width: 140px;
-  max-height: 90px;
+  max-width: 90px;
+  max-height: 70px;
 }
 
 .email-subject {

@@ -702,6 +702,39 @@ $margins: m, ml, mr, mt, mb, my, mx;
   }
 }
 
+.rounded-var-xs {
+  border-radius: calc(var(--rounded, $btn-radius) * .5) !important;
+}
+.rounded-var-sm {
+  border-radius: calc(var(--rounded, $btn-radius) * .8) !important;
+}
+.rounded-var {
+  border-radius: var(--rounded, $btn-radius) !important;
+}
+.rounded-var-lg {
+  border-radius: calc(var(--rounded, $btn-radius) * 1.08) !important;
+}
+.rounded-var-xl {
+  border-radius: calc(var(--rounded, $btn-radius) * 1.25) !important;
+}
+@media (max-width: $desktop-breakpoint) {
+  .rounded-var-xs {
+    border-radius: calc(var(--rounded, $btn-radius) * .45) !important;
+  }
+  .rounded-var-sm {
+    border-radius: calc(var(--rounded, $btn-radius) * .75) !important;
+  }
+  .rounded-var {
+    border-radius: calc(var(--rounded, $btn-radius) * .95) !important;
+  }
+  .rounded-var-lg {
+    border-radius: calc(var(--rounded, $btn-radius) * 1.03) !important;
+  }
+  .rounded-var-xl {
+    border-radius: calc(var(--rounded, $btn-radius) * 1.2) !important;
+  }
+}
+
 .rounded-t-none {
   border-top-left-radius: 0;
   border-top-right-radius: 0;

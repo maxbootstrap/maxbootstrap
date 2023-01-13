@@ -4,7 +4,7 @@
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  font-size: 65%;
+  font-size: 80%;
   font-weight: $font-weight-regular;
   line-height: 1;
   padding: ($btn-padding-y * .4) ($btn-padding-x * .4);
@@ -22,7 +22,6 @@
 
 .badge-xs {
   font-size: 60%;
-  line-height: 1;
   padding: ($btn-padding-y * .15) ($btn-padding-x * .15);
   border-radius: calc(#{$badge-radius} * 0.4);
 }

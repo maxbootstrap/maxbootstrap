@@ -9,11 +9,11 @@ $columns: 24 !default;
 $container-max-widths: (
   xs: 250px,
   sm: 374px,
-  md: 820px,
+  md: 768px,
   lg: $container-min * 1.1,
   xl: $container
 ) !default;
-$desktop-breakpoint: map-get($container-max-widths, 'md') !default;
+$desktop-breakpoint: map-get($container-max-widths, 'lg') !default;
 
 //COLORS
 $primary: #3B2098 !default;
@@ -170,7 +170,7 @@ $dropdown-radius: $btn-radius !default;
 //BOXES
 $box-bg: $white !default;
 $box-padding: 1.2rem !default;
-$box-shadow: none !default;
+$box-shadow: null !default;
 $box-radius: $btn-radius * 1.1 !default;
 @if $box-radius > 20px {
   $box-radius: 20px;
@@ -194,7 +194,7 @@ $email-bg: $light !default;
 $email-container-bg: transparent !default;
 $email-container-padding: 10px !default;
 $email-content-bg: $white !default;
-$email-content-padding: 1rem !default;
+$email-content-padding: 0.9rem !default;
 $email-text-align: left !default;
 
 //CODE
