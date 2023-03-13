@@ -112,7 +112,7 @@
     [data-theme="#{$second_theme}"] {
       .#{$second_theme}\:color-#{$name}-all {
         color: var(--#{$name}) !important;
-        h1, h2, h3, h4, h5, h6, p, a, small {
+        h1, h2, h3, h4, h5, h6, p, a, small, strong, b {
           color: var(--#{$name});
         }
       }
@@ -189,7 +189,7 @@
 
 //OPACITY
   .bg-#{$name}-o {
-    background-color: rgba($color, var(--bg-opacity, .5));
+    background-color: rgba($color, var(--bg-opacity, .5)) !important;
   }
   .shadow-#{$name} {
     //horizontal vertical blur spread

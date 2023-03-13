@@ -10,11 +10,11 @@
 }
 
 //RESPONSIVE GRID
-@each $breakpoint, $max-width in $container-max-widths {
+@each $breakName, $max-width in $container-min-widths {
   @media (min-width: $max-width) {
     @for $i from 1 through $columns {
-      .#{$breakpoint}-grid-#{$i} {
-        display: grid;
+      .#{$breakName}-grid-#{$i} {
+        //display: grid;
         grid-template-columns: repeat(#{$i}, 1fr);
       }
     }
@@ -35,18 +35,36 @@
     row-gap: #{$i}px;
   }
 }
-@media (min-width: $desktop-breakpoint) {
+@media (min-width: map-get($container-max-widths, 'md')) {
   @for $i from 1 through 30 {
     .md-gap-#{$i} {
       --gap-md: #{$i}px;
       gap: #{$i}px;
 
     }
-    .gapx-#{$i} {
+    .md-gapx-#{$i} {
       --gapx-md: #{$i}px;
       column-gap: #{$i}px;
     }
-    .gapy-#{$i} {
+    .md-gapy-#{$i} {
+      --gapy-md: #{$i}px;
+      row-gap: #{$i}px;
+    }
+  }
+}
+@media (min-width: map-get($container-max-widths, 'lg')) {
+  @for $i from 1 through 30 {
+    .lg-gap-#{$i} {
+      --gap-lg: #{$i}px;
+      gap: #{$i}px;
+
+    }
+    .lg-gapx-#{$i} {
+      --gapx-lg: #{$i}px;
+      column-gap: #{$i}px;
+    }
+    .lg-gapy-#{$i} {
+      --gapy-lg: #{$i}px;
       row-gap: #{$i}px;
     }
   }

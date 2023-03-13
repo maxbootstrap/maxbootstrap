@@ -6,7 +6,9 @@
   vertical-align: middle;
   font-size: 80%;
   font-weight: $font-weight-regular;
-  line-height: 1;
+  //line-height: 1;
+  leading-trim: both;
+  text-edge: cap alphabetic;
   padding: ($btn-padding-y * .4) ($btn-padding-x * .4);
   background: transparent;
   border-width: $btn-border;

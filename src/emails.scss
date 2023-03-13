@@ -28,10 +28,11 @@ body, .body{
   box-sizing: border-box;
   mso-line-height-rule: exactly;
   background-color: $email-bg;
-  color: darken($body, 25%);
+  color: $email-color !important;
 }
 :root {
-  --body: darken($body, 25%);
+  --body: $email-color;
+  --paragraph-color: #{$email-color};
 }
 
 center {
@@ -74,6 +75,7 @@ table{
 }
 
 table, td{
+  color: $email-color;
   position: relative;
   border-spacing: 0px;
   border-collapse: collapse;
@@ -84,16 +86,16 @@ td,
 p {
   font-size: $font-size;
   margin: 0;
-  color: darken($body, 15%);
+  color: darken($email-color, 15%) !important;
 }
 
 .table-grid, .table-grid-clean {
   thead {
-    color: $gray;
+    color: lighten($email-color, 15%);
     font-weight: $font-weight-bold;
   }
   tbody {
-    color: darken($gray, 45%);
+    color: $email-color;
     background-color: $light;
     border-radius: $btn-radius;
     tr {
@@ -104,17 +106,19 @@ p {
   }
   tfoot {
     padding-top: 3rem;
-    color: darken($gray, 45%);
+    color: lighten($email-color, 25%);
   }
 }
 
 .table-grid-clean {
   padding: $email-content-padding;
   thead {
+    color: $email-color;
     background-color: $light;
     border-radius: $btn-radius;
   }
   tbody {
+    color: $email-color;
     background-color: transparent;
     border-radius: none;
     tr {
@@ -122,7 +126,7 @@ p {
     }
   }
   tfoot {
-    color: $gray;
+    color: lighten($email-color, 25%);
     font-weight: $font-weight-bold;
   }
 }
@@ -158,6 +162,7 @@ p {
 }
 
 .email-content {
+  color: $email-color;
   background-color: $email-content-bg;
   text-align: $email-text-align;
 }
@@ -176,16 +181,16 @@ p {
 
 @media (max-width: $desktop-breakpoint) {
   .container {
-    padding: $mobile-email-container-padding;
+    padding: 3px;
   }
   .email-logo {
     padding: 1rem $mobile-email-content-padding;
   }
   .email-subject {
-    padding: 2rem $mobile-email-content-padding;
+    padding: 1.8rem $mobile-email-content-padding;
   }
   .email-footer {
-    padding: 2rem $mobile-email-content-padding;
+    padding: 1.8rem $mobile-email-content-padding;
   }
   .email-p {
     padding: calc($mobile-email-content-padding - $mobile-email-container-padding);
@@ -213,7 +218,7 @@ h5 {
 
 //FOOTER
   .footer{
-    color: rgba(255,255,255,.5);
+    color: rgba($dark,.5);
   
   }
   .footer .heading{

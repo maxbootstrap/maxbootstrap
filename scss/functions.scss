@@ -10,8 +10,39 @@ $light-just-number: str-replace('' + $light, '#', '');
 
 
 [x-cloak], [v-cloak] {
+    visibility: hidden !important;
+    overflow: hidden !important;
     display: none !important;
 }
 .grecaptcha-badge {
   visibility: hidden !important;
 }
+
+//MIN MIXINS
+@mixin min-tablet {
+    @media (min-width: map-get($container-min-widths, 'md')) {
+        @content;
+    }
+}
+@mixin min-desktop {
+    @media (min-width: map-get($container-min-widths, 'lg')) {
+        @content;
+    }
+}
+
+//MAX MIXINS
+@mixin max-mobile {
+    @media (max-width: map-get($container-max-widths, 'md')) {
+        @content;
+    }
+}
+@mixin max-tablet {
+    @media (max-width: map-get($container-max-widths, 'lg')) {
+        @content;
+    }
+}
+// @mixin max-tablet {
+//     @media only screen and (max-width: map-get($grid-breakpoints, "lg")) {
+//         @content;
+//     }
+// }

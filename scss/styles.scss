@@ -83,6 +83,9 @@ hr, .hr {
 .shadow-full {
   box-shadow: 0 4px 6px -1px rgba($black, 0.1), 0 2px 4px -1px rgba($black, 0.06), 0px 0px 51px -6px rgba($black,0.21) !important;
 }
+.shadow-var {
+  box-shadow: 0px 15px 50px -25px var(--shadow-color, transparent);
+}
 .hover-shadow-full {
   &:hover {
     box-shadow: 0 4px 6px -1px rgba($black, 0.1), 0 2px 4px -1px rgba($black, 0.06), 0px 0px 51px -6px rgba($black,0.21) !important;

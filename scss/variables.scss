@@ -13,6 +13,11 @@ $container-max-widths: (
   lg: $container-min * 1.1,
   xl: $container
 ) !default;
+$container-min-widths: (
+  md: map-get($container-max-widths, 'md'),
+  lg: map-get($container-max-widths, 'lg'),
+  xl: map-get($container-max-widths, 'xl')
+) !default;
 $desktop-breakpoint: map-get($container-max-widths, 'lg') !default;
 
 //COLORS
@@ -102,7 +107,7 @@ $h1-size: 2.6rem !default;
 $h2-size: 2.2rem !default;
 $h3-size: 1.9rem !default;
 $h4-size: 1.6rem !default;
-$h5-size: 1.2rem !default;
+$h5-size: 1.35rem !default;
 $h6-size: 1.1rem !default;
 //MD
 $md-h1-size: calc(#{$h1-size} * 1.1) !default;
@@ -141,7 +146,7 @@ $btn-disabled-opacity: .7 !default;
 $btn-weight: $font-weight-regular !default;
 $btn-letter-spacing: $font-letter-spacing !default;
 $btn-transform: none !default;
-$badge-radius: $btn-radius !default;
+$badge-radius: $btn-radius * .8 !default;
 
 //FORMS
 $form-bg: $white !default;
@@ -155,7 +160,6 @@ $input-radius: $btn-radius !default;
 $form-selected: $primary !default;
 //$form-label: ;
 $form-placeholder-color: $gray !default;
-$form-border: 1px solid $gray !default;
 $form-padding: 21px 10px 6px 15px !default;
 
 //DROPDOWNS
@@ -190,6 +194,7 @@ $modal-min-width: 300px !default;
 $modal-padding: 0.5rem !default;
 
 //EMAIL
+$email-color: $dark !default;
 $email-bg: $light !default;
 $email-container-bg: transparent !default;
 $email-container-padding: 10px !default;

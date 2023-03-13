@@ -8,6 +8,8 @@ button:focus {outline: 0;}
   vertical-align: middle;
   font-size: $btn-size;
   line-height: normal;
+  leading-trim: both;
+  text-edge: cap alphabetic;
   font-weight: $btn-weight;
   letter-spacing: $btn-letter-spacing;
   padding: $btn-padding-y $btn-padding-x;
