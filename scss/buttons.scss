@@ -1,6 +1,9 @@
 button:focus {outline: 0;}
 
 .btn {
+  @if $btn-font-family != $font-family {
+    font-family: $btn-font-family, -apple-system, "Helvetica Neue", "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+  }
   display: inline-block;
   text-align: center;
   text-transform: $btn-transform;

@@ -86,6 +86,7 @@ $colors: map-merge($colors, $custom-colors);
 //$font-family--wait: "-apple-system, system-ui, BlinkMacSystemFont" !default; Chrome needs to fix bold
 $font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu !default;
 $heading-font-family: $font-family !default;
+$btn-font-family: $font-family !default;
 
 $font-size: 16px !default;
 $print-font-base: 11pt !default;
