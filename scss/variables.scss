@@ -159,6 +159,7 @@ $form-label: $form-light !default;
 $form-border: 1px solid lighten($form-text, 30%) !default;
 $input-radius: $btn-radius !default;
 $form-selected: $primary !default;
+$form-checkbox-bg: lighten($form-selected, 8%) !default;
 //$form-label: ;
 $form-placeholder-color: $gray !default;
 $form-padding: 21px 10px 6px 15px !default;

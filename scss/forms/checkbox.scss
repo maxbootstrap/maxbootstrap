@@ -60,13 +60,13 @@
       box-shadow: 0 0 0 0.2rem rgba(65, 30, 171, 0.25);
     }
     &:focus:not(:checked) ~ label::before {
-      border-color: lighten($form-selected, 10%);
-      background-color: $form-bg;
+      border-color: $form-checkbox-bg;
+      background-color: $form-checkbox-bg;
     }
     &:not(:disabled):active ~ label::before {
       color: #fff;
-      background-color: lighten($form-selected, 30%);
-      border-color: lighten($form-selected, 30%);
+      background-color: lighten($form-checkbox-bg, 20%);
+      border-color: lighten($form-checkbox-bg, 20%);
     }
     &:disabled ~ label {
       color: #a5adb6;
