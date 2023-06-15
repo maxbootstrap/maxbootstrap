@@ -245,6 +245,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: inline-block;
   text-align: center;
   text-align-last: center;
+  font-family: $font-family;
   font-weight: $font-weight-bold;
   color: #9AA2B5;
   background-color: $light;

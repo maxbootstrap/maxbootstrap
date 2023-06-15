@@ -168,3 +168,24 @@
     }
   }
 }
+
+.dropdown-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+  //grid-template-rows: auto;
+  grid-auto-flow: dense;
+  justify-content: center;
+  margin: 0 auto;
+
+  .dropdown-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+  }
+  @media (max-width: $desktop-breakpoint) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

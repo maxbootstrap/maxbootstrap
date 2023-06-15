@@ -145,6 +145,11 @@ ol, ul {
   flex: 0 0 auto;
   width: auto;
 }
+.col-fit {
+  position: relative;
+  flex: 0 0 auto;
+  width: fit-content;
+}
 @for $i from 1 through $columns {
   .col-#{$i} {
     position: relative;
@@ -179,6 +184,12 @@ ol, ul {
       position: relative;
       flex: 0 0 auto;
       width: auto;
+    }
+
+    .col-#{$breakpoint}-fit {
+      position: relative;
+      flex: 0 0 auto;
+      width:  fit-content;
     }
 
     @for $i from 1 through $columns {
@@ -1491,6 +1502,23 @@ $mp: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
+  }
+}
+
+@media (max-width: map-get($container-min-widths, 'md')) {
+  .sm-x-scroll {
+    display: inline-flex;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    max-width: 100%;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
 

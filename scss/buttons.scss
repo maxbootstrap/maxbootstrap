@@ -4,13 +4,14 @@ button:focus {outline: 0;}
   @if $btn-font-family != $font-family {
     font-family: $btn-font-family, -apple-system, "Helvetica Neue", "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
   }
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   text-align: center;
   text-transform: $btn-transform;
   //white-space: nowrap;
   vertical-align: middle;
   font-size: $btn-size;
-  line-height: normal;
+  line-height: 1;
   leading-trim: both;
   text-edge: cap alphabetic;
   font-weight: $btn-weight;
@@ -24,6 +25,10 @@ button:focus {outline: 0;}
   border-style: solid;
   border-color: transparent;
   border-radius: $btn-radius;
+  svg {
+    //font-size: 120%;
+    opacity: 1 !important;
+  }
   &:hover {
     color: inherit;
   }

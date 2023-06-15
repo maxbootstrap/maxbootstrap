@@ -13,15 +13,6 @@
   overflow: hidden;
   outline: 0;
 
-  .modal-backdrop {
-    position: absolute;
-    z-index: 900;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba($modal-bg, 0.7);
-    animation: modal .2s ease-in;
-  }
-
   .modal-dialog {
     position: absolute;
     z-index: 950;
@@ -136,6 +127,18 @@
   }
 }
 
+.modal-backdrop {
+  position: fixed;
+  z-index: 900;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($modal-bg, 0.7);
+  animation: modal .2s ease-in;
+  pointer-events: none;
+  content: "";
+}
 
 //POSITIONS
 .modal-left {

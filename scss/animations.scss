@@ -71,8 +71,41 @@
   animation: $animation-duration ease-in-out 0s 1 fadeOut;
 }
 
+//SPINNER
+.spinner {
+  border: 3px solid $light;
+  border-top: 3px solid lighten($primary, 10%);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+.spinner-xs {
+  border: 3px solid $light;
+  border-top: 3px solid lighten($primary, 10%);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  animation: spin 2s linear infinite;
+}
+.spinner-lg {
+  border: 5px solid $light;
+  border-top: 5px solid lighten($primary, 10%);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+}
+.spin {
+  animation: spin var(--duration, 2000ms) infinite linear;
+}
+
 
 //KEYFRAMES
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 @keyframes slideLeft {
   0% {
     transform: translateX($animation-px);

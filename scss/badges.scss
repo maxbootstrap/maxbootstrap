@@ -1,20 +1,21 @@
 .badge {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   font-size: 80%;
   font-weight: $font-weight-regular;
-  //line-height: 1;
+  line-height: 1;
   leading-trim: both;
   text-edge: cap alphabetic;
-  padding: ($btn-padding-y * .4) ($btn-padding-x * .4);
+  padding: ($badge-padding-y * 1) ($badge-padding-x * 1);
   background: transparent;
   border-width: $btn-border;
   border-style: solid;
   border-color: transparent;
-  border-radius: calc(#{$badge-radius} * 0.7);
+  border-radius: calc(#{$badge-radius} * 1);
   color: $body;
   background: $light;
   margin-top: -.05rem;
@@ -22,50 +23,70 @@
   }
 }
 
+// .badge {
+//   position: relative;
+//   top: -1px;
+//   margin-top: -.05rem;
+// }
+
+.badge-xxs {
+  font-size: 50%;
+  padding: ($badge-padding-y * .4) ($badge-padding-x * .4);
+  border-radius: calc(#{$badge-radius} * 0.4);
+}
+
 .badge-xs {
   font-size: 60%;
-  padding: ($btn-padding-y * .15) ($btn-padding-x * .15);
-  border-radius: calc(#{$badge-radius} * 0.4);
+  padding: ($badge-padding-y * .6) ($badge-padding-x * .6);
+  border-radius: calc(#{$badge-radius} * 0.6);
 }
 
 .badge-sm {
   font-size: 70%;
-  padding: ($btn-padding-y * .25) ($btn-padding-x * .3);
+  padding: ($badge-padding-y * .8) ($badge-padding-x * .8);
   border-radius: calc(#{$badge-radius} * 0.8);
 }
 
 .badge-lg {
   margin-top: -.5%;
   font-size: 90%;
-  //padding: ($btn-padding-y *.6) ($btn-padding-x * .7);
+  padding: ($badge-padding-y * 1.1) ($badge-padding-x * 1.1);
+  border-radius: calc(#{$badge-radius} * 1.05);
 }
 
 .badge-xl {
   margin-top: -.5%;
   font-size: 100%;
-  padding: ($btn-padding-y *.3) ($btn-padding-x * .6);
+  padding: ($badge-padding-y * 1.2) ($badge-padding-x * 1.2);
+  border-radius: calc(#{$badge-radius} * 1.1);
 }
 
 @media (min-width: $desktop-breakpoint) {
+  .md-badge-xxs {
+    font-size: 50%;
+    padding: ($badge-padding-y * .4) ($badge-padding-x * .4);
+  }
+
   .md-badge-xs {
     font-size: 55%;
-    padding: ($btn-padding-y * .1) ($btn-padding-x * .2);
+    padding: ($badge-padding-y * .6) ($badge-padding-x * .6);
   }
   
   .md-badge-sm {
     font-size: 60%;
-    padding: ($btn-padding-y * .3) ($btn-padding-x * .35);
+    padding: ($badge-padding-y * .8) ($badge-padding-x * .8);
   }
   
   .md-badge-lg {
     margin-top: -.5%;
     font-size: 90%;
+    padding: ($badge-padding-y * 1.1) ($badge-padding-x * 1.1);
   }
   
   .md-badge-xl {
     margin-top: -.5%;
     font-size: 100%;
-    padding: ($btn-padding-y *.3) ($btn-padding-x * .6);
+    padding: ($badge-padding-y * 1.2) ($badge-padding-x * 1.2);
   }
   .md-badge-block {
     display: block;
@@ -75,24 +96,29 @@
 
 @media (max-width: $desktop-breakpoint) {
   .sm-badge-xs {
+    font-size: 50%;
+    padding: ($badge-padding-y * .4) ($badge-padding-x * .4);
+  }
+  .sm-badge-xs {
     font-size: 55%;
-    padding: ($btn-padding-y * .1) ($btn-padding-x * .2);
+    padding: ($badge-padding-y * .6) ($badge-padding-x * .6);
   }
   
   .sm-badge-sm {
     font-size: 60%;
-    padding: ($btn-padding-y * .3) ($btn-padding-x * .35);
+    padding: ($badge-padding-y * .8) ($badge-padding-x * .8);
   }
   
   .sm-badge-lg {
     margin-top: -.5%;
     font-size: 90%;
+    padding: ($badge-padding-y * 1.1) ($badge-padding-x * 1.1);
   }
   
   .sm-badge-xl {
     margin-top: -.5%;
     font-size: 100%;
-    padding: ($btn-padding-y *.3) ($btn-padding-x * .6);
+    padding: ($badge-padding-y * 1.2) ($badge-padding-x * 1.2);
   }
   .sm-badge-block {
     display: block;
@@ -100,11 +126,6 @@
   }
 }
 
-.btn .badge {
-  position: relative;
-  top: -1px;
-  margin-top: -.15rem;
-}
 
 
 @each $name, $color in $colors {

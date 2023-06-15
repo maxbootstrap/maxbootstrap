@@ -104,6 +104,7 @@
   //all content
   .color-#{$name}-all {
     color: var(--#{$name}) !important;
+    fill: var(--#{$name});
     h1, h2, h3, h4, h5, h6, p, a, small {
       color: var(--#{$name});
     }
@@ -341,7 +342,7 @@
       position: absolute;
       z-index: 1;
       background-color: rgba($color, .4);
-      background-image: linear-gradient(var(--overlay-angle, 120deg), rgba($color, .4) 30%, rgba($color, .2) 100%);
+      background-image: linear-gradient(var(--overlay-angle, 160deg), rgba($color, .2) 30%, rgba($color, .4) 100%);
     }
   }
 

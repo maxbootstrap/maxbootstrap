@@ -137,7 +137,7 @@ p {
   width: 100% !important;
   max-width: 660px !important;
   margin: 0 auto;
-  padding: .5rem;
+  //padding: .5rem;
   padding: $email-container-padding;
   background-color: $email-container-bg;
 }
@@ -179,7 +179,7 @@ p {
 }
 
 
-@media (max-width: $desktop-breakpoint) {
+@media screen and (max-width: $desktop-breakpoint) {
   .container {
     padding: 3px;
   }

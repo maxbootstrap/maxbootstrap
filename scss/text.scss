@@ -23,32 +23,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: $h1-size;
+  font-size: calc(#{$h1-size} * var(--heading-size-adjust, 1));
   font-weight: $h1-weight;
   letter-spacing: $h1-letter-spacing;
 }
 h2 {
-  font-size: $h2-size;
+  font-size: calc(#{$h2-size} * var(--heading-size-adjust, 1));
   font-weight: $h2-weight;
   letter-spacing: $h2-letter-spacing;
 }
 h3 {
-  font-size: $h3-size;
+  font-size: calc(#{$h3-size} * var(--heading-size-adjust, 1));
   font-weight: $h3-weight;
   letter-spacing: $h3-letter-spacing;
 }
 h4 {
-  font-size: $h4-size;
+  font-size: calc(#{$h4-size} * var(--heading-size-adjust, 1));
   font-weight: $h4-weight;
   letter-spacing: $h4-letter-spacing;
 }
 h5 {
-  font-size: $h5-size; //standard
+  font-size: calc(#{$h5-size} * var(--heading-size-adjust, 1));
   font-weight: $h5-weight;
   letter-spacing: $h5-letter-spacing;
 }
 h6 {
-  font-size: 1.05rem; //standard
+  font-size: calc(#{$h6-size} * var(--heading-size-adjust, 1));
   font-weight: $h6-weight;
   letter-spacing: $h6-letter-spacing;
 }
@@ -57,22 +57,22 @@ h6 {
     font-size: $font-size * .95;
   }
   h1 {
-    font-size: $h1-size * $heading-mobile-percentage;
+    font-size: calc(#{$h1-size} * #{$heading-mobile-percentage} * var(--heading-size-adjust, 1));
   }
   h2 {
-    font-size: $h2-size * $heading-mobile-percentage;
+    font-size: calc(#{$h2-size} * #{$heading-mobile-percentage} * var(--heading-size-adjust, 1));
   }
   h3 {
-    font-size: $h3-size * $heading-mobile-percentage;
+    font-size: calc(#{$h3-size} * #{$heading-mobile-percentage} * var(--heading-size-adjust, 1));
   }
   h4 {
-    font-size: $h4-size * $heading-mobile-percentage;
+    font-size: calc(#{$h4-size} * #{$heading-mobile-percentage} * var(--heading-size-adjust, 1));
   }
   h5 {
-    font-size: $h5-size * $heading-mobile-percentage;
+    font-size: calc(#{$h5-size} * #{$heading-mobile-percentage} * var(--heading-size-adjust, 1));
   }
-  h5 {
-    font-size: $h6-size * $heading-mobile-percentage;
+  h6 {
+    font-size: calc(#{$h6-size} * #{$heading-mobile-percentage} * var(--heading-size-adjust, 1));
   }
 }
 
@@ -603,6 +603,12 @@ smaller {
 
 
 //LINE HEIGHTS
+.line-6-all {
+  line-height: .6 !important;
+  h1, h2, h3, h4, h5, h6, p, a, small, input {
+    line-height: .6 !important;
+  }
+}
 .line-7-all {
   line-height: .7 !important;
   h1, h2, h3, h4, h5, h6, p, a, small {
@@ -700,6 +706,9 @@ smaller {
   }
 }
 
+.line-6 {
+  line-height: .6 !important;
+}
 .line-7 {
   line-height: .7 !important;
 }
