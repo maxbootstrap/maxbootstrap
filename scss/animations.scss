@@ -312,11 +312,18 @@
 }
 
 .fadein-delay {
-  opacity: 0;
-  animation: var(--duration, 2s) ease var(--delay, 1s) normal forwards 1 fade-in;
+  opacity: 1;
+  animation: var(--duration, 1.6s) ease var(--delay, 0.8s) normal forwards 1 fade-in;
+  //-webkit-animation-fill-mode: initial;
+  //animation-fill-mode:forwards;
+}
+.fadein {
+  opacity: 1;
+  animation: var(--duration, 1.6s) ease 0s normal forwards 1 fade-in;
+  animation-fill-mode: initial;
 }
 @keyframes fade-in{
-    20% { opacity: 0; }
+    0% { opacity: 0; }
     100% { opacity: 1; }
 }
 

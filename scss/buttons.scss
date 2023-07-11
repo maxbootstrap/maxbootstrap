@@ -11,7 +11,7 @@ button:focus {outline: 0;}
   //white-space: nowrap;
   vertical-align: middle;
   font-size: $btn-size;
-  line-height: 1;
+  line-height: 1.2;
   leading-trim: both;
   text-edge: cap alphabetic;
   font-weight: $btn-weight;
@@ -35,25 +35,25 @@ button:focus {outline: 0;}
 }
 
 .btn-xxs {
-  font-size: $btn-size * .6 !important;
+  font-size: $btn-size * .6;
   //line-height: .9;
-  padding: ($btn-padding-y * .3) ($btn-padding-x * .35) !important;
+  padding: ($btn-padding-y * .3) ($btn-padding-x * .35);
   border-radius: calc(#{$btn-radius} * 0.6);
   --check-mark: calc(#{$btn-size} * .6);
 }
 
 .btn-xs {
-  font-size: $btn-size * .7 !important;
+  font-size: $btn-size * .7;
   //line-height: 1;
-  padding: ($btn-padding-y * .4) ($btn-padding-x * .45) !important;
+  padding: ($btn-padding-y * .4) ($btn-padding-x * .45);
   border-radius: calc(#{$btn-radius} * 0.7);
   --check-mark: calc(#{$btn-size} * .7);
 }
 
 .btn-sm {
-  font-size: $btn-size * .8 !important;
+  font-size: $btn-size * .8;
   //line-height: 1.1;
-  padding: ($btn-padding-y * .8) ($btn-padding-x * .89) !important;
+  padding: ($btn-padding-y * .8) ($btn-padding-x * .89);
   border-radius: calc(#{$btn-radius} * 0.95);
   --check-mark: calc(#{$btn-size} * .8);
 }
