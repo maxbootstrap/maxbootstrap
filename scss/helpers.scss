@@ -246,7 +246,8 @@ $paddings: p, pl, pr, pt, pb, py, px;
       }
     }
     @each $size in $sizes {
-      .sm-#{$row}-#{$size} {
+      $numeric-size: str-replace($size, '.', '');
+      .sm-#{$row}-#{$numeric-size} {
         @if $row == p { padding: #{$size} !important;
         } @else if $row == pl { padding-left: #{$size} !important;
         } @else if $row == pr { padding-right: #{$size} !important;

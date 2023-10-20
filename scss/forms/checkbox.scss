@@ -448,44 +448,68 @@
   }
 }
 
+.form-panel-xs {
+	label {
+		font-size: .6rem;
+		line-height: 1;
+		min-height: auto;
+		min-width: auto;
+		padding: 6px 8px 5px 8px;
+		margin-right: 3px;
+		border-width: 1px;
+		border-radius: $btn-radius * 0.9;
+		b {
+			font-size: 0.9rem;
+		}
+		span {
+			font-size: 1.5rem;
+			&::before {
+				font-size: 1rem;
+			}
+			&::after {
+				font-size: .5rem;
+			}
+		}
+	}
+}
 .form-panel-sm {
-  label {
-    font-size: .6rem;
-    line-height: 1.1;
-    min-height: auto;
-    min-width: auto;
-    padding: 13px 20px 11px 20px;
-    margin-right: 6px;
-    border-width: 1px;
-    border-radius: $btn-radius * 1.1;
-    b {
-      font-size: 1.1rem;
-    }
-    span {
-      font-size: 2.5rem;
-      &::before {
-        font-size: 1.2rem;
-      }
-      &::after {
-        font-size: .6rem;
-      }
-    }
-  }
-  @media (max-width: $desktop-breakpoint) {
-    b {
-      font-size: 1rem !important;
-    }
-    label {
-      padding: 1rem 1.2rem;
-      min-height: 30px;
-    }
-    span {
-      font-size: 2.5rem !important;
-      &::after {
-        font-size: .6rem !important;
-      }
-    }
-  }
+	label {
+		font-size: .6rem;
+		line-height: 1.1;
+		min-height: auto;
+		min-width: auto;
+		padding: 13px 20px 11px 20px;
+		margin-right: 6px;
+		border-width: 1px;
+		border-radius: $btn-radius * 1.1;
+		b {
+			font-size: 1.1rem;
+		}
+		span {
+			font-size: 2.5rem;
+			&::before {
+				font-size: 1.2rem;
+			}
+			&::after {
+				font-size: .6rem;
+			}
+		}
+	}
+	@media (max-width: $desktop-breakpoint) {
+		b {
+			font-size: 1rem !important;
+		}
+		label {
+			padding: 1rem 1.2rem;
+			min-height: 30px;
+		}
+		span {
+			font-size: 2.5rem !important;
+			&::after {
+				font-size: .6rem !important;
+			}
+		}
+	}
 }
 
 
@@ -519,7 +543,7 @@
   }
   @media (max-width: $desktop-breakpoint) {
     label {
-      padding: 1.1rem 1.5rem;
+      //padding: 1.1rem 1.5rem;
     }
   }
 }
@@ -551,7 +575,7 @@
   }
   @media (max-width: $desktop-breakpoint) {
     label {
-      padding: 1.1rem 1.5rem;
+      //padding: 1.1rem 1.5rem;
     }
   }
 }

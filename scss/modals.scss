@@ -136,7 +136,7 @@
   height: 100vh;
   background-color: rgba($modal-bg, 0.7);
   animation: modal .2s ease-in;
-  pointer-events: none;
+  pointer-events: auto;
   content: "";
 }
 

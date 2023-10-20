@@ -1,8 +1,3 @@
-$form-muted-bg: $light;
-@if $form-bg != #ffffff {
-  $form-muted-bg: $form-bg;
-}
-
 @mixin form-muted-label {
   @include form-label;
   font-size: .76rem;
@@ -10,7 +5,7 @@ $form-muted-bg: $light;
 @mixin form-muted-input {
   @include form-input;
   background-color: $form-muted-bg;
-  border: 1px solid $form-muted-bg;
+  border: $form-muted-border;
   box-shadow: transparent;
   transition: box-shadow .15s ease;
   &:focus {

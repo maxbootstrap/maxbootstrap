@@ -36,6 +36,16 @@
   .x-scroll {
     max-width: 100%;
   }
+  .popperContent {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    max-height: 480px;
+  }
 }
 .popper-hidden {
   visibility: hidden;

@@ -4,7 +4,7 @@
     {
       "name" : "Process All Remaining Files and Folders",
       "stepType" : 1,
-      "uuidString" : "9CD9A4BB-3C3D-42C6-AED2-6E5515275FC6"
+      "uuidString" : "B4E42BF4-14FE-4CF9-96FE-1BAD9E20F2F8"
     }
   ],
   "creatorBuild" : "34434",
@@ -1537,7 +1537,7 @@
   "projectAttributes" : {
     "creationDate" : 594017849.58181596,
     "displayValue" : "MaxBootstrap",
-    "displayValueWasSetByUser" : 0,
+    "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-peach",
     "iconImageWasSetByUser" : 0,
     "lastBuiltDate" : 685235816.91277099

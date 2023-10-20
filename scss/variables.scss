@@ -3,20 +3,27 @@ $second_theme: false !default; //false, 'light', 'dark'
 $container: 1300px !default;
 $container-max: 1860px !default;
 $container-min: 1000px !default;
+$container-px: 0.5rem !default;
 $container-sm-px: 0.5rem !default; //0 !default;
 $columns: 24 !default;
 //$line-height-base: 1.2 !default;
+$container-max-w-temp: $container-max * 1.08;
+@if $container-max > 1550px {
+  $container-max-w-temp: $container-max * .8;
+}
 $container-max-widths: (
   xs: 250px,
   sm: 374px,
   md: 768px,
   lg: $container-min * 1.1,
-  xl: $container
+  xl: $container,
+  xxl: $container-max-w-temp
 ) !default;
 $container-min-widths: (
   md: map-get($container-max-widths, 'md'),
   lg: map-get($container-max-widths, 'lg'),
-  xl: map-get($container-max-widths, 'xl')
+  xl: map-get($container-max-widths, 'xl'),
+  xxl: map-get($container-max-widths, 'xxl')
 ) !default;
 $desktop-breakpoint: map-get($container-max-widths, 'lg') !default;
 
@@ -134,7 +141,7 @@ $h5-letter-spacing: $heading-letter-spacing !default;
 $h6-letter-spacing: $heading-letter-spacing !default;
 $text-muted-color: $primary !default;
 $text-muted-weight: $font-weight-bold !default;
-$text-muted-letter-spacing: ($font-letter-spacing * 1.05) !default;
+$text-muted-letter-spacing: ($font-letter-spacing * 1.1) !default; //letter-spacing: .05em;
 $text-muted-transform: uppercase !default;
 
 //BUTTONS
@@ -168,6 +175,9 @@ $form-checkbox-bg: lighten($form-selected, 8%) !default;
 //$form-label: ;
 $form-placeholder-color: $gray !default;
 $form-padding: 21px 10px 6px 15px !default;
+
+$form-muted-bg: $light !default;
+$form-muted-border: 1px solid $light !default;
 
 //DROPDOWNS
 $dropdown-font-size: .9rem !default;
