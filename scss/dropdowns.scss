@@ -22,10 +22,7 @@
   background-color: red;
 }
 .popper-dropdown {
-  position: absolute;
   z-index: 150;
-  top: 0;
-  left: 0;
   background-color: $white !important;
   opacity: 1 !important;
   max-width: 280px;
@@ -74,7 +71,7 @@
     color: $body;
     display: block;
     font-size: $dropdown-font-size;
-    font-weight: $font-weight-regular;
+    font-weight: $dropdown-font-weight;
     line-height: 1.1;
     letter-spacing: 0.4px !important;
     text-transform: capitalize;

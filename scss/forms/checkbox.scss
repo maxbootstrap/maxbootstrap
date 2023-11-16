@@ -52,7 +52,7 @@
   }
   input {
     &:checked ~ label::before {
-      color: #fff;
+      color: $form-checkbox-bg;
       border-color: $form-selected;
       background-color: $form-selected;
     }
@@ -101,7 +101,7 @@
       height: 1rem;
       pointer-events: none;
       content: "";
-      background-color: var(--checkbox-bg, darken($form-bg, 5%));
+      background-color: var(--checkbox-bg, $form-checkbox-bg);
       border: none;
       border-radius: 0.2rem;
     }

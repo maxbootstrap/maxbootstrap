@@ -49,7 +49,7 @@ $body: $dark !default;
 $bg: white !default;
 
 
-$colors: ('primary':$primary, 'secondary':$secondary, 'dark':$dark, 'light':$light, 'gray':$gray, 'blue':$blue, 'indigo':$indigo, 'purple':$purple, 'green':$green, 'teal':$teal, 'red':$red, 'pink':$pink, 'yellow':$yellow, 'orange':$orange, 'sand':$sand, 'white':$white, 'black':$black) !default;
+$colors: ('primary':$primary, 'secondary':$secondary, 'dark':$dark, 'light':$light, 'gray':$gray, 'blue':$blue, 'indigo':$indigo, 'purple':$purple, 'green':$green, 'teal':$teal, 'red':$red, 'pink':$pink, 'yellow':$yellow, 'orange':$orange, 'sand':$sand, 'white':$white, 'black':$black, 'body':$body) !default;
 $complete-colors: $colors !default;
 @each $key, $color in $complete-colors {
   $variants-colors: ();
@@ -125,20 +125,20 @@ $h6-size: 1.08rem !default;
 // $md-h5-size: calc(#{$h5-size} * 1.1) !default;
 // $md-h6-size: calc(#{$h6-size} * 1.1) !default;
 $heading-weight: $font-weight-bold !default;
-$h1-weight: $heading-weight !default;
-$h2-weight: $heading-weight !default;
-$h3-weight: $heading-weight !default;
-$h4-weight: $heading-weight !default;
-$h5-weight: $heading-weight !default;
-$h6-weight: $heading-weight !default;
+$h1-weight: if(variable-exists('heading-weight-1'), $heading-weight-1, $heading-weight) !default;
+$h2-weight: if(variable-exists('heading-weight-2'), $heading-weight-2, $heading-weight) !default;
+$h3-weight: if(variable-exists('heading-weight-3'), $heading-weight-3, $heading-weight) !default;
+$h4-weight: if(variable-exists('heading-weight-4'), $heading-weight-4, $heading-weight) !default;
+$h5-weight: if(variable-exists('heading-weight-5'), $heading-weight-5, $heading-weight) !default;
+$h6-weight: if(variable-exists('heading-weight-6'), $heading-weight-6, $heading-weight) !default;
 $heading-line-height: 1.2 !default;
 $heading-letter-spacing: $font-letter-spacing !default;
-$h1-letter-spacing: $heading-letter-spacing !default;
-$h2-letter-spacing: $heading-letter-spacing !default;
-$h3-letter-spacing: $heading-letter-spacing !default;
-$h4-letter-spacing: $heading-letter-spacing !default;
-$h5-letter-spacing: $heading-letter-spacing !default;
-$h6-letter-spacing: $heading-letter-spacing !default;
+$h1-letter-spacing: if(variable-exists('heading-letter-spacing-1'), $heading-letter-spacing-1, $heading-letter-spacing) !default;
+$h2-letter-spacing: if(variable-exists('heading-letter-spacing-2'), $heading-letter-spacing-2, $heading-letter-spacing) !default;
+$h3-letter-spacing: if(variable-exists('heading-letter-spacing-3'), $heading-letter-spacing-3, $heading-letter-spacing) !default;
+$h4-letter-spacing: if(variable-exists('heading-letter-spacing-4'), $heading-letter-spacing-4, $heading-letter-spacing) !default;
+$h5-letter-spacing: if(variable-exists('heading-letter-spacing-5'), $heading-letter-spacing-5, $heading-letter-spacing) !default;
+$h6-letter-spacing: if(variable-exists('heading-letter-spacing-6'), $heading-letter-spacing-6, $heading-letter-spacing) !default;
 $text-muted-color: $primary !default;
 $text-muted-weight: $font-weight-bold !default;
 $text-muted-letter-spacing: ($font-letter-spacing * 1.1) !default; //letter-spacing: .05em;
@@ -181,6 +181,7 @@ $form-muted-border: 1px solid $light !default;
 
 //DROPDOWNS
 $dropdown-font-size: .9rem !default;
+$dropdown-font-weight: $font-weight-regular !default;
 $dropdown-top: 40px !default;
 $dropdown-radius: $btn-radius !default;
 @if $btn-radius > 20px {
