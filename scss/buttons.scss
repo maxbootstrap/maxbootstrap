@@ -220,8 +220,8 @@ button:focus {outline: 0;}
 .btn-glass {
   background-color: rgba(darken($primary, 10%), 0.3);
   box-shadow: rgba($dark, 0.25) 0px 30px 60px, rgba($dark, 0.2) 0px 0px 0px 0.5px inset;
-  backdrop-filter: blur(40px) brightness(80%) saturate(150%);
   -webkit-backdrop-filter: blur(40px) brightness(80%) saturate(150%);
+  backdrop-filter: blur(40px) brightness(80%) saturate(150%);
   &:hover {
     background-color: rgba(darken($primary, 10%), 0.1);
     box-shadow: rgba($dark, 0.2) 0px 0px 0px 0.5px inset;

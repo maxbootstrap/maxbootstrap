@@ -514,47 +514,47 @@ $blends: normal, multiply, screen, overlay, darken, lighten, color-dodge, color-
 }
 .bg-frosted-sm {
   background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(4px); /* Chrome and Opera */
   -webkit-backdrop-filter: blur(4px); /* Safari 9+ */
+  backdrop-filter: blur(4px); /* Chrome and Opera */
 }
 
 .bg-frosted {
   background-color: rgba(255, 255, 255, 0.17);
-  backdrop-filter: blur(8px); /* Chrome and Opera */
   -webkit-backdrop-filter: blur(8px); /* Safari 9+ */
+  backdrop-filter: blur(8px); /* Chrome and Opera */
 }
 
 .bg-frosted-lg {
   background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(15px); /* Chrome and Opera */
   -webkit-backdrop-filter: blur(15px); /* Safari 9+ */
+  backdrop-filter: blur(15px); /* Chrome and Opera */
 }
 
 .bg-frosted-xl {
   background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(30px); /* Chrome and Opera */
   -webkit-backdrop-filter: blur(30px); /* Safari 9+ */
+  backdrop-filter: blur(30px); /* Chrome and Opera */
 }
 
 .bg-frosted-xxl {
   background-color: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(40px); /* Chrome and Opera */
   -webkit-backdrop-filter: blur(40px); /* Safari 9+ */
+  backdrop-filter: blur(40px); /* Chrome and Opera */
 }
 
 .bg-glassmorphism {
   background: var(--bg-color, rgba(lighten($primary, 60%), 0.25));
   box-shadow: 0 6px 32px -30px rgba($primary, 0.37);
-  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .bg-glass {
   background-color: var(--bg-color, rgba(darken($primary, 10%), 0.3));
   box-shadow: rgba($dark, 0.25) 0px 30px 60px, rgba($dark, 0.2) 0px 0px 0px 0.5px inset;
-  backdrop-filter: blur(40px) brightness(80%) saturate(150%);
   -webkit-backdrop-filter: blur(40px) brightness(80%) saturate(150%);
+  backdrop-filter: blur(40px) brightness(80%) saturate(150%);
 }
 
 .hover-bg-glass {
