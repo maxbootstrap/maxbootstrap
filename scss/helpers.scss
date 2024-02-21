@@ -1350,10 +1350,16 @@ $borders: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
 }
 
 //ANIMATIONS
-.zoom { 
+.zoom {
   transition: all .2s ease-in-out;
-  &:hover { 
-    transform: scale(1.03); 
+  img, video {
+    transition: all .3s ease-in-out;
+  }
+  &:hover {
+    transform: scale(1.03);
+    img, video {
+      transform: scale(1.05); 
+    }
   }
 }
 
